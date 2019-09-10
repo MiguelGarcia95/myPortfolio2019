@@ -26,11 +26,17 @@ body {
     height: 100vh;
     background-color: red;
     position: fixed;
+    font-family: 'Fjalla One';
+    box-sizing: border-box;
+    padding-left: 50px;
     nav {
-      ul {
-        li {
-
-        }
+      width: 100%;
+      height: 240px; 
+      overflow: hidden;
+      p {
+        width: 100%;
+        line-height: 60px;
+        font-size: 1.5rem;
       }
     }
     .name {
@@ -40,10 +46,16 @@ body {
       box-sizing: border-box;
       padding-bottom: 50px;
       padding-right: 50px;
-      padding-left: 50px;
-      text-align: center;
-      h1 {}
-      h2 {}
+      text-transform: uppercase;
+      h1 {
+        font-size: 2.2rem;
+        letter-spacing: -1px;
+        line-height: 50px;
+      }
+      h2 {
+        font-size: 1rem;
+        letter-spacing: 5px;
+      }
     }
   }
 
