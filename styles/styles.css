@@ -12,4 +12,28 @@ body {
   width: 100vw;
   max-width: 100%;
 }
+
+.body-wrapper {
+  width: 100%;
+  height: 300vh;
+}
+
+.body-wrapper .sidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: red;
+  position: fixed;
+}
+
+.body-wrapper .sidebar .name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
