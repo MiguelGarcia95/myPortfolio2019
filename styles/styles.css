@@ -97,7 +97,7 @@ body {
   left: 50px;
 }
 
-.body-wrapper .content .projects .project .images .back img {
+.body-wrapper .content .projects .project .images .back {
   width: 80%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -106,7 +106,7 @@ body {
      object-position: top;
 }
 
-.body-wrapper .content .projects .project .images .front img {
+.body-wrapper .content .projects .project .images .front {
   width: 40%;
   height: 350px;
 }

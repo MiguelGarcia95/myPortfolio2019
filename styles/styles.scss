@@ -80,18 +80,14 @@ body {
           position: absolute;
           left: 50px;
           .back {
-            img {
-              width: 80%;
-              object-fit: cover;
-              height: 250px;
-              object-position: top;
-            }
+            width: 80%;
+            object-fit: cover;
+            height: 250px;
+            object-position: top;
           }
           .front {
-            img {
-              width: 40%;
-              height: 350px;
-            }
+            width: 40%;
+            height: 350px;
           }
         }
         .info {
