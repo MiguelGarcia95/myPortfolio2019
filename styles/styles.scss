@@ -63,6 +63,30 @@ body {
     width: 100%;
     box-sizing: border-box;
     padding-left: 300px;
-  }
+    .section {} 
+    .projects {
+      .project {
+        .images {
+          .back {
+            img {
 
+            }
+          }
+          .front {
+            img {
+
+            }
+          }
+        }
+        .info {
+          .title {
+
+          }
+          .description {
+
+          }
+        }
+      }
+    }
+  }
 }
