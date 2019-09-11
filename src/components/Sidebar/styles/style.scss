@@ -42,14 +42,18 @@
   right: 0;
   text-align: center;
   width: 50px;
-  text-align: center;
+  height: 120px;
+  top: 0; bottom: 0; 
+  margin: auto;
   h1 {
     width: 40px;
     line-height: 40px;
     margin-left: 5px;
     writing-mode: vertical-rl;
     overflow: hidden;
+    text-align: center;
     height: 120px;
     text-orientation: sideways-right;
+    font-family: 'Fjalla One';
   }
 }
