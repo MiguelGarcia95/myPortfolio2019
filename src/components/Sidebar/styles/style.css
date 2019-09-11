@@ -45,4 +45,24 @@
   font-size: 1rem;
   letter-spacing: 5px;
 }
+
+.nav-name {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 50px;
+  text-align: center;
+}
+
+.nav-name h1 {
+  width: 40px;
+  line-height: 40px;
+  margin-left: 5px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  overflow: hidden;
+  height: 120px;
+  text-orientation: sideways-right;
+}
 /*# sourceMappingURL=style.css.map */
