@@ -11,7 +11,12 @@ function App() {
         <div className="section projects">
           <div className="row">
             <div className="project pf flex-1"></div>
-            <div className="project flex-2"></div>
+            <div className="project flex-1"></div>
+            <div className="project pl flex-2"></div>
+          </div>
+          <div className="row">
+            <div className="project pf flex-3"></div>
+            {/* <div className="project flex-2"></div> */}
             <div className="project pl flex-1"></div>
           </div>
           {/* <div className="project">
