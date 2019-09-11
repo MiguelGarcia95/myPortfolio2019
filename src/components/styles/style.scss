@@ -21,7 +21,6 @@ body {
 .body-wrapper {
   width: 100%;
   height: 300vh;
-
   .content {
     width: 100%;
     box-sizing: border-box;
@@ -33,12 +32,12 @@ body {
       width: 100%;
       box-sizing: border-box;
       padding: 0 50px;
-      padding-top: 100px;
+      padding-top: 50px;
       .row {
         width: 1200px;
         margin: auto;
         margin-bottom: 40px;
-        height: 300px;
+        height: 400px;
         position: relative;
         display: flex;
         .project {
@@ -61,42 +60,21 @@ body {
             flex: 4;
             background-color: blue;
           }
+          .background {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+          .info {
+            .title {
+
+            }
+            .description {
+
+            }
+          }
         }
-
-        // .images {
-        //   width: 400px;
-        //   height: 100%;
-        //   position: absolute;
-        //   // left: 50px;
-        //   img {position: absolute;}
-        //   .back {
-        //     width: 300px;
-        //     object-fit: cover;
-        //     height: 200px;
-        //     object-position: top;
-        //     // top: 0; bottom: 0;
-        //     // left: 0; right: 0;
-        //     bottom: 50px;
-        //     left: 50px;
-        //     margin: auto;
-        //     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
-        //   }
-        //   .front {
-        //     width: 35%;
-        //     height: 200px;
-        //     bottom: 25px;
-        //     left: 25px;
-        //     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
-        //   }
-        // }
-        // .info {
-        //   .title {
-
-        //   }
-        //   .description {
-
-        //   }
-        // }
       }
     }
   }

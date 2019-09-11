@@ -10,9 +10,15 @@ function App() {
       <div className="content">
         <div className="section projects">
           <div className="row">
-            <div className="project pf flex-1"></div>
-            <div className="project flex-1"></div>
-            <div className="project pl flex-2"></div>
+            <div className="project pf flex-1">
+              <img className="background" src="https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg" alt=""/>
+            </div>
+            <div className="project flex-1">
+              <img className='background' src="https://cssauthor.com/wp-content/uploads/2014/08/App-News-iPhone-6-PSD-1-289x576.jpg" alt=""/>
+            </div>
+            <div className="project pl flex-2">
+              <img className='background' src="https://appsamurai.com/wp-content/uploads/2017/08/2-2.png" alt=""/>
+            </div>
           </div>
           <div className="row">
             <div className="project pf flex-3"></div>
