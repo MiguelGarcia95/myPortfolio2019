@@ -6,6 +6,7 @@ function App() {
   return (
     <div class="body-wrapper">
       <Sidebar />
+      
       <div class="content">
         <div class="section projects">
           <div class="project">
