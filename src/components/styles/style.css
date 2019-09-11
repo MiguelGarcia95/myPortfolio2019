@@ -18,54 +18,6 @@ body {
   height: 300vh;
 }
 
-.body-wrapper .sidebar {
-  width: 300px;
-  height: 100vh;
-  background-color: red;
-  position: fixed;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-family: 'Fjalla One';
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 50px;
-}
-
-.body-wrapper .sidebar nav {
-  width: 100%;
-  height: 240px;
-  overflow: hidden;
-}
-
-.body-wrapper .sidebar nav p {
-  width: 100%;
-  line-height: 60px;
-  font-size: 1.5rem;
-}
-
-.body-wrapper .sidebar .name {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-bottom: 50px;
-  padding-right: 50px;
-  text-transform: uppercase;
-}
-
-.body-wrapper .sidebar .name h1 {
-  font-size: 2.2rem;
-  letter-spacing: -1px;
-  line-height: 50px;
-}
-
-.body-wrapper .sidebar .name h2 {
-  font-size: 1rem;
-  letter-spacing: 5px;
-}
-
 .body-wrapper .content {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -126,4 +78,4 @@ body {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
