@@ -57,14 +57,11 @@
 }
 
 .nav-name {
-  position: absolute;
+  position: fixed;
   right: 0;
   text-align: center;
   width: 100px;
-  height: 200px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  height: 100vh;
 }
 
 .nav-name h1 {
@@ -80,5 +77,9 @@
   height: 200px;
   text-orientation: sideways-right;
   font-family: 'Fjalla One';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
