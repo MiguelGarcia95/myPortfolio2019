@@ -82,14 +82,28 @@ body {
             background-color: rgba(0,0,0,0.5);
             transition: 0.5s;
             &:hover {
-              background-color: rgba(0,0,0,0);              
+              background-color: rgba(0,0,0,0);     
+              .title {
+                opacity: 1;
+              }         
             }
             .title {
-
+              transition: 0.5s;
+              opacity: 0;
+              width: 100%;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              font-size: 2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              color: white;
+              position: absolute;
+              left: 0; right: 0; bottom: 0; top: 0;
+              margin: auto;
+              font-family: 'Fjalla One';
             }
-            // .description {
-
-            // }
           }
         }
       }
