@@ -2,6 +2,44 @@
   margin: 0;
 }
 
+input::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Montserrat';
+}
+
+input:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Montserrat';
+}
+
+input::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Montserrat';
+}
+
+input::placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Montserrat';
+}
+
+input:-ms-input-placeholder {
+  color: white;
+  font-family: 'Montserrat';
+}
+
+input::-ms-input-placeholder {
+  color: white;
+  font-family: 'Montserrat';
+}
+
+input:focus {
+  outline: none;
+}
+
 html, body {
   margin: 0;
   padding: 0;

@@ -1,10 +1,10 @@
 * {margin: 0;}
 
 input {
-  // &::placeholder { color: white; opacity: 1; font-family: 'Poppins';}
-  // &:-ms-input-placeholder { color: white; font-family: 'Poppins';}
-  // &::-ms-input-placeholder { color: white; font-family: 'Poppins';}
-  // &:focus {outline: none;}
+  &::placeholder { color: white; opacity: 1; font-family: 'Montserrat';}
+  &:-ms-input-placeholder { color: white; font-family: 'Montserrat';}
+  &::-ms-input-placeholder { color: white; font-family: 'Montserrat';}
+  &:focus {outline: none;}
 }
 
 html, body {margin: 0; padding: 0;}
@@ -41,7 +41,6 @@ body {
         height: 400px;
         position: relative;
         display: flex;
-        
       }
     }
   }
