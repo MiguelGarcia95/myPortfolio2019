@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Project from './Project';
+import Skill from './Skill';
 import './styles/style.css';
 
 function App() {
@@ -58,11 +59,17 @@ function App() {
           </div>
         </div>
         <div className="section skills">
+        {/* 
+          Responsive HTML/CSS, SASS, LESS
+          JavaScript (vanilla, React/Redux, jQuery, etc)
+          High-level user experience
+          Animation
+          Git
+          WordPress
+          PHP, NodeJS, laravel, mysql, nosql 
+        */}
           <div className="skill-row">
-            <div className="skill">
-              <div className="skill-icon"></div>
-              <div className="skill-name"></div>
-            </div>
+            <Skill name='' icon='' />
           </div>
         </div>
         <div className="section about">
@@ -81,3 +88,4 @@ function App() {
 }
 
 export default App;
+
