@@ -30,12 +30,29 @@ function App() {
           <div className="row">
             <Project 
               classes='project pf flex-3' 
-              img='https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg' 
+              img='https://proxer.me/media/kunena/attachments/77388/BlueArt.jpg' 
               title='Title Here'
             />
             <Project 
               classes='project pl flex-1' 
-              img='https://files.yande.re/image/3f68443ebd80ed91d6cc080cf9a26f16/yande.re%20286316%20arisato_minato%20headphones%20male%20megaten%20persona%20persona_3%20sogabe_shuuji.jpg' 
+              img='https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg' 
+              title='Title Here'
+            />
+          </div>
+          <div className="row">
+            <Project 
+              classes='project pf flex-1' 
+              img='https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg' 
+              title='Title Here'
+            />
+            <Project 
+              classes='project flex-1' 
+              img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
+              title='Title Here'
+            />
+            <Project 
+              classes='project pl flex-1' 
+              img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
               title='Title Here'
             />
           </div>
