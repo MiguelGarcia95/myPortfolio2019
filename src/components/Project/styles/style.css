@@ -1,0 +1,100 @@
+.project {
+  margin: 0 20px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  cursor: pointer;
+}
+
+.project:hover {
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.project.pf {
+  margin-left: 0px;
+}
+
+.project.pl {
+  margin-right: 0px;
+}
+
+.project.flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: red;
+}
+
+.project.flex-2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: green;
+}
+
+.project.flex-3 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  background-color: black;
+}
+
+.project.flex-4 {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  background-color: blue;
+}
+
+.project .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.project .info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.project .info:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.project .info:hover .title {
+  opacity: 1;
+}
+
+.project .info .title {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  font-family: 'Fjalla One';
+}
+/*# sourceMappingURL=style.css.map */
