@@ -46,48 +46,50 @@ body {
     .skills {
       .skill-row {
         .skill-column {
-          
-        }
-        .skill {
-          width: 250px;
           width: 300px;
-          height: 60px;
           float: left;
-          overflow: hidden;
-          border: 1px solid green;
-          box-sizing: border-box;
-          position: relative;
-          .skill-icon {
-            width: 60px; height: 60px;
+          .skill {
+            width: 250px;
+            width: 300px;
+            height: 60px;
             float: left;
-            position: absolute;
-            img {
-              width: 80%;
-              height: 80%;
-              object-fit: contain;
-              object-position: center;
-            }
-          }
-          .skill-name {
-            height: 40px;
             overflow: hidden;
-            position: absolute;
-            left: 100px;
-            p {
-              line-height: 40px;
-              margin-top: 10px;
-              margin-left: 10px;
-              text-align: left;
-              color: white;
-              color: #909090;
-              font-family: 'Montserrat';
-              text-transform: capitalize;
-              text-transform: uppercase;
-              font-weight: 600;
-
+            border: 1px solid green;
+            box-sizing: border-box;
+            position: relative;
+            .skill-icon {
+              width: 60px; height: 60px;
+              float: left;
+              position: absolute;
+              img {
+                width: 80%;
+                height: 80%;
+                object-fit: contain;
+                object-position: center;
+              }
+            }
+            .skill-name {
+              height: 40px;
+              overflow: hidden;
+              position: absolute;
+              left: 100px;
+              p {
+                line-height: 40px;
+                margin-top: 10px;
+                margin-left: 10px;
+                text-align: left;
+                color: white;
+                color: #909090;
+                font-family: 'Montserrat';
+                text-transform: capitalize;
+                text-transform: uppercase;
+                font-weight: 600;
+  
+              }
             }
           }
         }
+        
       }
     }
   }

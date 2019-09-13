@@ -87,7 +87,12 @@ body {
   display: flex;
 }
 
-.body-wrapper .content .skills .skill-row .skill {
+.body-wrapper .content .skills .skill-row .skill-column {
+  width: 300px;
+  float: left;
+}
+
+.body-wrapper .content .skills .skill-row .skill-column .skill {
   width: 250px;
   width: 300px;
   height: 60px;
@@ -99,14 +104,14 @@ body {
   position: relative;
 }
 
-.body-wrapper .content .skills .skill-row .skill .skill-icon {
+.body-wrapper .content .skills .skill-row .skill-column .skill .skill-icon {
   width: 60px;
   height: 60px;
   float: left;
   position: absolute;
 }
 
-.body-wrapper .content .skills .skill-row .skill .skill-icon img {
+.body-wrapper .content .skills .skill-row .skill-column .skill .skill-icon img {
   width: 80%;
   height: 80%;
   -o-object-fit: contain;
@@ -115,14 +120,14 @@ body {
      object-position: center;
 }
 
-.body-wrapper .content .skills .skill-row .skill .skill-name {
+.body-wrapper .content .skills .skill-row .skill-column .skill .skill-name {
   height: 40px;
   overflow: hidden;
   position: absolute;
   left: 100px;
 }
 
-.body-wrapper .content .skills .skill-row .skill .skill-name p {
+.body-wrapper .content .skills .skill-row .skill-column .skill .skill-name p {
   line-height: 40px;
   margin-top: 10px;
   margin-left: 10px;

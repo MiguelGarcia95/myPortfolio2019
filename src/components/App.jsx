@@ -62,22 +62,24 @@ function App() {
         </div>
         <div className="section skills">
           <div className="skill-row">
-            <div className="skill-column"></div>
-            <Skill name='html' icon={`${ICON_PATH}/html.png`} />
-            <Skill name='css' icon={`${ICON_PATH}/css.png`} />
-            <Skill name='less' icon={`${ICON_PATH}/less.png`} />
-            <Skill name='sass' icon={`${ICON_PATH}/sass.png`} />
-            <Skill name='JS' icon={`${ICON_PATH}/js.png`} />
-            <Skill name='React' icon={`${ICON_PATH}/react.png`} />
-            <Skill name='Redux' icon={`${ICON_PATH}/redux.png`} />
-            <Skill name='jQuery' icon={`${ICON_PATH}/jquery.png`} />
-            {/* <Skill name='Animation - gsap/scrollmagic' icon={`${ICON_PATH}/css.png`} /> */}
-            <Skill name='php' icon={`${ICON_PATH}/php.png`} />
-            <Skill name='laravel' icon={`${ICON_PATH}/laravel.png`} />
-            <Skill name='wordpress' icon={`${ICON_PATH}/wordpress.png`} />
-            <Skill name='nodejs' icon={`${ICON_PATH}/nodejs.png`} />
-            <Skill name='mysql' icon={`${ICON_PATH}/mysql.png`} />
-            <Skill name='mongodb' icon={`${ICON_PATH}/mongodb.png`} />
+            <div className="skill-column">
+              <Skill name='html' icon={`${ICON_PATH}/html.png`} />
+              <Skill name='css' icon={`${ICON_PATH}/css.png`} />
+              <Skill name='less' icon={`${ICON_PATH}/less.png`} />
+              <Skill name='sass' icon={`${ICON_PATH}/sass.png`} />
+              <Skill name='JS' icon={`${ICON_PATH}/js.png`} />
+              <Skill name='jQuery' icon={`${ICON_PATH}/jquery.png`} />
+              <Skill name='React' icon={`${ICON_PATH}/react.png`} />
+              <Skill name='Redux' icon={`${ICON_PATH}/redux.png`} />
+            </div>
+            <div className="skill-column">
+              <Skill name='php' icon={`${ICON_PATH}/php.png`} />
+              <Skill name='laravel' icon={`${ICON_PATH}/laravel.png`} />
+              <Skill name='wordpress' icon={`${ICON_PATH}/wordpress.png`} />
+              <Skill name='nodejs' icon={`${ICON_PATH}/nodejs.png`} />
+              <Skill name='mysql' icon={`${ICON_PATH}/mysql.png`} />
+              <Skill name='mongodb' icon={`${ICON_PATH}/mongodb.png`} />
+            </div>
           </div>
         </div>
         <div className="section about">
