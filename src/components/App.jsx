@@ -59,17 +59,22 @@ function App() {
           </div>
         </div>
         <div className="section skills">
-        {/* 
-          Responsive HTML/CSS, SASS, LESS
-          JavaScript (vanilla, React/Redux, jQuery, etc)
-          High-level user experience
-          Animation
-          Git
-          WordPress
-          PHP, NodeJS, laravel, mysql, nosql 
-        */}
           <div className="skill-row">
-            <Skill name='' icon='' />
+            <Skill name='html' icon='' />
+            <Skill name='css' icon='' />
+            <Skill name='less' icon='' />
+            <Skill name='sass' icon='' />
+            <Skill name='JS' icon='' />
+            <Skill name='React' icon='' />
+            <Skill name='Redux' icon='' />
+            <Skill name='jQuery' icon='' />
+            <Skill name='Animation - gsap/scrollmagic' icon='' />
+            <Skill name='php' icon='' />
+            <Skill name='laravel' icon='' />
+            <Skill name='wordpress' icon='' />
+            <Skill name='nodejs' icon='' />
+            <Skill name='mysql' icon='' />
+            <Skill name='nosql' icon='' />
           </div>
         </div>
         <div className="section about">
