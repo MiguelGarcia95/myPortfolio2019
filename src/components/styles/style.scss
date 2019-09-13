@@ -36,27 +36,40 @@ body {
       padding-top: 50px;
       .row {
         width: 1200px;
-        margin: auto;
         margin-bottom: 40px;
         height: 400px;
+        margin: auto;
         position: relative;
         display: flex;
       }
     }
     .skills {
       .skill-row {
+        width: 1200px;
+        margin: auto;
+        position: relative;
         .skill-column {
-          width: 300px;
+          width: 50%;
           float: left;
+          &.x3 {
+            height: 180px;          
+          }
+          &.x4 {
+            height: 240px;
+          }
           .skill {
-            width: 250px;
-            width: 300px;
+            width: 50%;
             height: 60px;
             float: left;
             overflow: hidden;
             border: 1px solid green;
             box-sizing: border-box;
             position: relative;
+            &:hover {
+              .skill-icon {
+                img {filter: grayscale(0);}
+              }
+            }
             .skill-icon {
               width: 60px; height: 60px;
               float: left;
@@ -66,6 +79,9 @@ body {
                 height: 80%;
                 object-fit: contain;
                 object-position: center;
+                filter: grayscale(1);
+  
+                transition: 0.2s;
               }
             }
             .skill-name {
@@ -79,7 +95,7 @@ body {
                 margin-left: 10px;
                 text-align: left;
                 color: white;
-                color: #909090;
+                color: #232323;
                 font-family: 'Montserrat';
                 text-transform: capitalize;
                 text-transform: uppercase;

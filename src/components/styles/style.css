@@ -78,23 +78,36 @@ body {
 
 .body-wrapper .content .projects .row {
   width: 1200px;
-  margin: auto;
   margin-bottom: 40px;
   height: 400px;
+  margin: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.body-wrapper .content .skills .skill-row {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
 .body-wrapper .content .skills .skill-row .skill-column {
-  width: 300px;
+  width: 50%;
   float: left;
 }
 
+.body-wrapper .content .skills .skill-row .skill-column.x3 {
+  height: 180px;
+}
+
+.body-wrapper .content .skills .skill-row .skill-column.x4 {
+  height: 240px;
+}
+
 .body-wrapper .content .skills .skill-row .skill-column .skill {
-  width: 250px;
-  width: 300px;
+  width: 50%;
   height: 60px;
   float: left;
   overflow: hidden;
@@ -102,6 +115,11 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+}
+
+.body-wrapper .content .skills .skill-row .skill-column .skill:hover .skill-icon img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .body-wrapper .content .skills .skill-row .skill-column .skill .skill-icon {
@@ -118,6 +136,10 @@ body {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .body-wrapper .content .skills .skill-row .skill-column .skill .skill-name {
@@ -133,7 +155,7 @@ body {
   margin-left: 10px;
   text-align: left;
   color: white;
-  color: #909090;
+  color: #232323;
   font-family: 'Montserrat';
   text-transform: capitalize;
   text-transform: uppercase;
