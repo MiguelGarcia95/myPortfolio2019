@@ -62,6 +62,7 @@ function App() {
         </div>
         <div className="section skills">
           <div className="skill-row">
+            <div className="skill-column"></div>
             <Skill name='html' icon={`${ICON_PATH}/html.png`} />
             <Skill name='css' icon={`${ICON_PATH}/css.png`} />
             <Skill name='less' icon={`${ICON_PATH}/less.png`} />
