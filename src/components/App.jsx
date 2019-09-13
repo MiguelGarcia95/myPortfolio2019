@@ -4,6 +4,8 @@ import Project from './Project';
 import Skill from './Skill';
 import './styles/style.css';
 
+const ICON_PATH = './assets/icons';
+
 function App() {
   return (
     <div className="body-wrapper">
@@ -60,21 +62,21 @@ function App() {
         </div>
         <div className="section skills">
           <div className="skill-row">
-            <Skill name='html' icon='' />
-            <Skill name='css' icon='' />
-            <Skill name='less' icon='' />
-            <Skill name='sass' icon='' />
-            <Skill name='JS' icon='' />
-            <Skill name='React' icon='' />
-            <Skill name='Redux' icon='' />
-            <Skill name='jQuery' icon='' />
-            <Skill name='Animation - gsap/scrollmagic' icon='' />
-            <Skill name='php' icon='' />
-            <Skill name='laravel' icon='' />
-            <Skill name='wordpress' icon='' />
-            <Skill name='nodejs' icon='' />
-            <Skill name='mysql' icon='' />
-            <Skill name='nosql' icon='' />
+            <Skill name='html' icon={`${ICON_PATH}/html.png`} />
+            <Skill name='css' icon={`${ICON_PATH}/css.png`} />
+            <Skill name='less' icon={`${ICON_PATH}/less.png`} />
+            <Skill name='sass' icon={`${ICON_PATH}/sass.png`} />
+            <Skill name='JS' icon={`${ICON_PATH}/js.png`} />
+            <Skill name='React' icon={`${ICON_PATH}/react.png`} />
+            <Skill name='Redux' icon={`${ICON_PATH}/redux.png`} />
+            <Skill name='jQuery' icon={`${ICON_PATH}/jquery.png`} />
+            {/* <Skill name='Animation - gsap/scrollmagic' icon={`${ICON_PATH}/css.png`} /> */}
+            <Skill name='php' icon={`${ICON_PATH}/php.png`} />
+            <Skill name='laravel' icon={`${ICON_PATH}/laravel.png`} />
+            <Skill name='wordpress' icon={`${ICON_PATH}/wordpress.png`} />
+            <Skill name='nodejs' icon={`${ICON_PATH}/nodejs.png`} />
+            <Skill name='mysql' icon={`${ICON_PATH}/mysql.png`} />
+            <Skill name='mongodb' icon={`${ICON_PATH}/mongodb.png`} />
           </div>
         </div>
         <div className="section about">
