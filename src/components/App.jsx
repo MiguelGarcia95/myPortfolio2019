@@ -63,6 +63,8 @@ function App() {
         <div className="section skills">
           <div className="skill-row">
             <div className="skill-column">
+              {/* Column Title */}
+              <h1 className='column-title'>Front End</h1>
               <Skill name='html' icon={`${ICON_PATH}/html.png`} />
               <Skill name='css' icon={`${ICON_PATH}/css.png`} />
               <Skill name='less' icon={`${ICON_PATH}/less.png`} />
@@ -73,12 +75,18 @@ function App() {
               <Skill name='Redux' icon={`${ICON_PATH}/redux.png`} />
             </div>
             <div className="skill-column">
+              <h1 className='column-title'>Back End</h1>
               <Skill name='php' icon={`${ICON_PATH}/php.png`} />
               <Skill name='laravel' icon={`${ICON_PATH}/laravel.png`} />
               <Skill name='wordpress' icon={`${ICON_PATH}/wordpress.png`} />
               <Skill name='nodejs' icon={`${ICON_PATH}/nodejs.png`} />
               <Skill name='mysql' icon={`${ICON_PATH}/mysql.png`} />
               <Skill name='mongodb' icon={`${ICON_PATH}/mongodb.png`} />
+            </div>
+          </div>
+          <div className="skill-row">
+            <div className="skill-column">
+            <h1 className='column-title'>Learning</h1>              
             </div>
           </div>
         </div>
