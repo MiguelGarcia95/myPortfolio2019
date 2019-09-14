@@ -76,6 +76,7 @@ body {
   position: absolute;
   text-align: center;
   width: 100px;
+  right: 0;
   height: 100%;
 }
 
@@ -98,10 +99,6 @@ body {
   margin: auto;
 }
 
-.body-wrapper .content .projects .section-name {
-  right: 0;
-}
-
 .body-wrapper .content .projects .row {
   width: 1200px;
   height: 400px;
@@ -119,14 +116,10 @@ body {
 }
 
 .body-wrapper .content .skills .section-name {
-  left: 280px;
   height: 900px;
 }
 
 .body-wrapper .content .skills .section-name h1 {
-  margin-left: 0px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
   height: 120px;
   top: -150px;
 }

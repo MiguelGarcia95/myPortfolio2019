@@ -66,7 +66,6 @@ function App() {
 
           <div className="skill-row">
             <div className="skill-column">
-              {/* Column Title */}
               <h1 className='column-title'>Front End</h1>
               <Skill name='html' icon={`${ICON_PATH}/html.png`} />
               <Skill name='css' icon={`${ICON_PATH}/css.png`} />
@@ -93,13 +92,20 @@ function App() {
               <Skill name='C#' icon={`${ICON_PATH}/csharp.png`} />
               <Skill name='React Native' icon={`${ICON_PATH}/react-native.png`} />
               <Skill name='.NET' icon={`${ICON_PATH}/aspnet.png`} />
+              <Skill name='WordPress theme development' classes='lg' icon={`${ICON_PATH}/wordpress.png`} />
             </div>
           </div>
         </div>
         <div className="section about">
           <div className="about">
             <div className="about-decal"></div>
-            <div className="about-content"></div>
+            <div className="about-content">
+              <p>I'm Miguel Garcia</p>
+              <p>Have worked with React w/ Redux, Firebase, NodeJS, Laravel, WordPress, and CSS Pre-Processors.</p>
+              <p>Also have some working knowledge of Photoshop, and Illustrator.</p>
+
+              <p>I also have an interest in character design and story telling. </p>
+            </div>
           </div>
         </div>
         <div className="section contact">
