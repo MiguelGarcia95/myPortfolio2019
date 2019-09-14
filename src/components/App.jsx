@@ -88,7 +88,7 @@ function App() {
             <div className="skill-column full">
               <h1 className='column-title'>Currently Learning</h1>        
               <Skill name='C#' icon={`${ICON_PATH}/csharp.png`} />
-              <Skill name='React Native' icon={`${ICON_PATH}/laravel.png`} />
+              <Skill name='React Native' icon={`${ICON_PATH}/react-native.png`} />
               <Skill name='.NET' icon={`${ICON_PATH}/aspnet.png`} />
             </div>
           </div>
