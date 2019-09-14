@@ -219,7 +219,6 @@ body {
 
 .body-wrapper .content .about {
   height: 900px;
-  background-color: aqua;
 }
 
 .body-wrapper .content .about .section-name {
@@ -228,6 +227,22 @@ body {
 
 .body-wrapper .content .about .section-name h1 {
   height: 120px;
+}
+
+.body-wrapper .content .about .about-content .about-text {
+  font-family: 'Fjalla One';
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.body-wrapper .content .about .about-content .about-text.about-name {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.body-wrapper .content .about .about-content .about-text.about-extra {
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .body-wrapper .content .contact {

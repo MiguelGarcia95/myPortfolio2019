@@ -153,12 +153,23 @@ body {
     }
     .about {
       height: 900px;
-      background-color: aqua;
       .section-name {
         height: 120px;
-        h1 {
-          height: 120px;
-          // top: unset;
+        h1 {height: 120px;}
+      }
+      .about-content {
+        .about-text {
+          font-family: 'Fjalla One';
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+          &.about-name {
+            font-size: 3rem;
+            margin-bottom: 50px;
+          }
+          &.about-extra {
+            margin-top: 50px;
+            margin-bottom: 0px;
+          }
         }
       }
     }
