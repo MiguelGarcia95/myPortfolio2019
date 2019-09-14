@@ -49,12 +49,12 @@ body {
   overflow-x: hidden;
   width: 100vw;
   max-width: 100%;
+  background-color: #f0f0f0;
 }
 
 .body-wrapper {
   width: 100%;
-  height: 300vh;
-  background-color: #f0f0f0;
+  height: auto;
 }
 
 .body-wrapper .content {
@@ -141,7 +141,7 @@ body {
 
 .body-wrapper .content .skills .skill-row .skill-column.full {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .body-wrapper .content .skills .skill-row .skill-column.full .skill {
@@ -215,27 +215,37 @@ body {
 }
 
 .body-wrapper .content .about {
-  padding-top: 100px;
   height: 900px;
+  position: relative;
+  background-color: aqua;
 }
 
 .body-wrapper .content .about .section-name {
-  height: 900px;
+  height: 120px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 9;
 }
 
 .body-wrapper .content .about .section-name h1 {
   height: 120px;
-  top: -150px;
 }
 
 .body-wrapper .content .contact {
-  padding-top: 100px;
-  min-height: 900px;
-  height: 100vh;
+  height: 900px;
+  position: relative;
 }
 
 .body-wrapper .content .contact .section-name {
-  min-height: 900px;
-  height: 100vh;
+  height: 150px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 9;
+}
+
+.body-wrapper .content .contact .section-name h1 {
+  height: 150px;
 }
 /*# sourceMappingURL=style.css.map */

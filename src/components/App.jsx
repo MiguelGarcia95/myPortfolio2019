@@ -98,14 +98,12 @@ function App() {
         <div className="section about">
           <div className="section-name"><h1>About</h1></div>
 
-          <div className="about">
-            <div className="about-decal"></div>
-            <div className="about-content">
-              <p className='about-text'>I'm Miguel Garcia</p>
-              <p className='about-text'>Have worked with React w/ Redux, Firebase, NodeJS, Laravel, WordPress, and CSS Pre-Processors.</p>
-              <p className='about-text'>Also have some working knowledge of Photoshop, and Illustrator.</p>
-              <p className='about-text about-extra'>I also have an interest in character design and story telling. </p>
-            </div>
+          <div className="about-decal"></div>
+          <div className="about-content">
+            <p className='about-text'>I'm Miguel Garcia</p>
+            <p className='about-text'>Have worked with React w/ Redux, Firebase, NodeJS, Laravel, WordPress, and CSS Pre-Processors.</p>
+            <p className='about-text'>Also have some working knowledge of Photoshop, and Illustrator.</p>
+            <p className='about-text about-extra'>I also have an interest in character design and story telling. </p>
           </div>
         </div>
         <div className="section contact">
