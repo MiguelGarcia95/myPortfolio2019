@@ -13,6 +13,7 @@ function App() {
 
       <div className="content">
         <div className="section projects">
+          <div className="section-name"><h1>Projects</h1></div>
           <div className="row">
             <Project 
               classes='project pf flex-1' 
@@ -61,6 +62,8 @@ function App() {
           </div>
         </div>
         <div className="section skills">
+          <div className="section-name"><h1>Skills</h1></div>
+
           <div className="skill-row">
             <div className="skill-column">
               {/* Column Title */}

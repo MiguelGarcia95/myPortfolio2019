@@ -17,7 +17,7 @@ export default function Sidebar() {
         </div>
       </header>
       <div className="nav-name">
-        <h1>Projects</h1>
+        {/* <h1>Projects</h1> */}
       </div>
     </React.Fragment>
   )

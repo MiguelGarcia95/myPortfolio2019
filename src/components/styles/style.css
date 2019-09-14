@@ -72,6 +72,36 @@ body {
   padding-top: 50px;
 }
 
+.body-wrapper .content .section .section-name {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 100%;
+}
+
+.body-wrapper .content .section .section-name h1 {
+  width: 80px;
+  line-height: 80px;
+  font-size: 3rem;
+  margin-left: 5px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  overflow: hidden;
+  text-align: center;
+  height: 200px;
+  text-orientation: sideways-right;
+  font-family: 'Fjalla One';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+}
+
+.body-wrapper .content .projects .section-name {
+  right: 0;
+}
+
 .body-wrapper .content .projects .row {
   width: 1200px;
   height: 400px;
@@ -85,6 +115,16 @@ body {
 
 .body-wrapper .content .skills {
   padding-top: 100px;
+}
+
+.body-wrapper .content .skills .section-name {
+  left: 300px;
+}
+
+.body-wrapper .content .skills .section-name h1 {
+  margin-left: 0px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .body-wrapper .content .skills .skill-row {

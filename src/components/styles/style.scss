@@ -31,8 +31,40 @@ body {
       box-sizing: border-box;
       padding: 0 50px;
       padding-top: 50px;
+      .section-name {
+        position: absolute;
+        text-align: center;
+        width: 100px;
+        height: 100%;
+        h1 {
+          width: 80px;
+          line-height: 80px;
+          font-size: 3rem;
+          margin-left: 5px;
+          writing-mode: vertical-rl;
+          overflow: hidden;
+          text-align: center;
+          height: 200px;
+          text-orientation: sideways-right;
+          font-family: 'Fjalla One';
+          top: 0; bottom: 0; 
+          position: absolute;
+          margin: auto;
+        }
+      }
     } 
     .projects {
+      .section-name {
+        right: 0;
+        // width: 100px;
+        // height: 100%;
+        h1 {
+          // margin-left: 5px;
+          // writing-mode: vertical-rl;
+          // overflow: hidden;
+          // text-orientation: sideways-right;
+        }
+      }
       .row {
         width: 1200px;
         height: 400px;
@@ -44,6 +76,15 @@ body {
     }
     .skills {
       padding-top: 100px;
+      .section-name {
+        left: 300px;
+        // width: 100px;
+        // height: 100%;
+        h1 {
+          margin-left: 0px;
+          transform: rotate(180deg);
+        }
+      }
       .skill-row {
         width: 1200px;
         margin: auto;
