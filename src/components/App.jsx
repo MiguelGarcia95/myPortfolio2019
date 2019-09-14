@@ -85,8 +85,8 @@ function App() {
             </div>
           </div>
           <div className="skill-row">
-            <div className="skill-column">
-            <h1 className='column-title'>Learning</h1>              
+            <div className="skill-column full">
+            <h1 className='column-title'>Currently Learning</h1>              
             </div>
           </div>
         </div>

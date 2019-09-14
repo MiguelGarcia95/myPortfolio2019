@@ -48,27 +48,31 @@ body {
         margin: auto;
         position: relative;
         clear: both;
+        
         .skill-column {
           width: 50%;
           float: left;
-          &.x3 {
-            height: 180px;          
-          }
-          &.x4 {
-            height: 240px;
+          &.full {width: 100%;}
+          .column-title {
+            font-family: 'Fjalla One';
+            text-align: center;
           }
           .skill {
             width: 50%;
             height: 60px;
             float: left;
             overflow: hidden;
-            // box-sizing: border-box;
+            padding: 15px 0;
             position: relative;
             &:hover {
               .skill-icon {
                 img {filter: grayscale(0);}
               }
+              .skill-name {
+                font-size: 1.1rem;
+              }
             }
+
             .skill-icon {
               width: 60px; height: 60px;
               float: left;
@@ -79,7 +83,6 @@ body {
                 object-fit: contain;
                 object-position: center;
                 filter: grayscale(1);
-  
                 transition: 0.2s;
               }
             }
@@ -93,13 +96,12 @@ body {
                 margin-top: 10px;
                 margin-left: 10px;
                 text-align: left;
-                color: white;
                 color: #232323;
                 font-family: 'Montserrat';
                 text-transform: capitalize;
                 text-transform: uppercase;
+                transition: 0.2s;
                 font-weight: 600;
-  
               }
             }
           }

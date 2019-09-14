@@ -95,12 +95,13 @@ body {
   float: left;
 }
 
-.body-wrapper .content .skills .skill-row .skill-column.x3 {
-  height: 180px;
+.body-wrapper .content .skills .skill-row .skill-column.full {
+  width: 100%;
 }
 
-.body-wrapper .content .skills .skill-row .skill-column.x4 {
-  height: 240px;
+.body-wrapper .content .skills .skill-row .skill-column .column-title {
+  font-family: 'Fjalla One';
+  text-align: center;
 }
 
 .body-wrapper .content .skills .skill-row .skill-column .skill {
@@ -108,12 +109,17 @@ body {
   height: 60px;
   float: left;
   overflow: hidden;
+  padding: 15px 0;
   position: relative;
 }
 
 .body-wrapper .content .skills .skill-row .skill-column .skill:hover .skill-icon img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+}
+
+.body-wrapper .content .skills .skill-row .skill-column .skill:hover .skill-name {
+  font-size: 1.1rem;
 }
 
 .body-wrapper .content .skills .skill-row .skill-column .skill .skill-icon {
@@ -148,11 +154,12 @@ body {
   margin-top: 10px;
   margin-left: 10px;
   text-align: left;
-  color: white;
   color: #232323;
   font-family: 'Montserrat';
   text-transform: capitalize;
   text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
