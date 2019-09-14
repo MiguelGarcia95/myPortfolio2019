@@ -112,11 +112,13 @@ body {
 
 .body-wrapper .content .skills {
   padding-top: 100px;
-  height: 900px;
+  min-height: 900px;
+  height: 100vh;
 }
 
 .body-wrapper .content .skills .section-name {
-  height: 900px;
+  min-height: 900px;
+  height: 100vh;
 }
 
 .body-wrapper .content .skills .section-name h1 {
@@ -210,5 +212,30 @@ body {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-weight: 600;
+}
+
+.body-wrapper .content .about {
+  padding-top: 100px;
+  height: 900px;
+}
+
+.body-wrapper .content .about .section-name {
+  height: 900px;
+}
+
+.body-wrapper .content .about .section-name h1 {
+  height: 120px;
+  top: -150px;
+}
+
+.body-wrapper .content .contact {
+  padding-top: 100px;
+  min-height: 900px;
+  height: 100vh;
+}
+
+.body-wrapper .content .contact .section-name {
+  min-height: 900px;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
