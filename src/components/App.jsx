@@ -63,7 +63,6 @@ function App() {
         </div>
         <div className="section skills">
           <div className="section-name"><h1>Skills</h1></div>
-
           <div className="skill-row">
             <div className="skill-column">
               <h1 className='column-title'>Front End</h1>
@@ -97,6 +96,8 @@ function App() {
           </div>
         </div>
         <div className="section about">
+          <div className="section-name"><h1>About</h1></div>
+
           <div className="about">
             <div className="about-decal"></div>
             <div className="about-content">
@@ -109,6 +110,8 @@ function App() {
           </div>
         </div>
         <div className="section contact">
+          <div className="section-name"><h1>Contact</h1></div>
+
           <div className="contact-title"></div>
           <div className="contact-text"></div>
         </div>
