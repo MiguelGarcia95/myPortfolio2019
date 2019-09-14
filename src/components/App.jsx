@@ -101,17 +101,26 @@ function App() {
           <div className="about">
             <div className="about-decal"></div>
             <div className="about-content">
-              <p>I'm Miguel Garcia</p>
-              <p>Have worked with React w/ Redux, Firebase, NodeJS, Laravel, WordPress, and CSS Pre-Processors.</p>
-              <p>Also have some working knowledge of Photoshop, and Illustrator.</p>
-
-              <p>I also have an interest in character design and story telling. </p>
+              <p className='about-text'>I'm Miguel Garcia</p>
+              <p className='about-text'>Have worked with React w/ Redux, Firebase, NodeJS, Laravel, WordPress, and CSS Pre-Processors.</p>
+              <p className='about-text'>Also have some working knowledge of Photoshop, and Illustrator.</p>
+              <p className='about-text about-extra'>I also have an interest in character design and story telling. </p>
             </div>
           </div>
         </div>
         <div className="section contact">
           <div className="section-name"><h1>Contact</h1></div>
+          <div className="contact-info">
 
+          </div>
+          <div className="contact-form">
+            <form>
+              <input type="text" placeholder='Name'/>
+              <input type="text" placeholder='Subject'/>
+              <input type="text" placeholder='Email'/>
+              <textarea placeholder="What's up?" style={{resize: 'none'}}></textarea>
+            </form>
+          </div>
           <div className="contact-title"></div>
           <div className="contact-text"></div>
         </div>
