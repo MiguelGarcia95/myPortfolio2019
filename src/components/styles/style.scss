@@ -43,6 +43,7 @@ body {
       }
     }
     .skills {
+      padding-top: 100px;
       .skill-row {
         width: 1200px;
         margin: auto;
@@ -52,7 +53,10 @@ body {
         .skill-column {
           width: 50%;
           float: left;
-          &.full {width: 100%; margin-top: 50px;}
+          &.full {
+            width: 100%; margin-top: 50px;
+            .skill {width: 33%;}
+          }
           .column-title {
             font-family: 'Fjalla One';
             text-align: center;
