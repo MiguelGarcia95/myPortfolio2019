@@ -48,14 +48,16 @@ body {
         margin: auto;
         position: relative;
         clear: both;
-        
+        margin-bottom: 50px;
         .skill-column {
           width: 50%;
           float: left;
-          &.full {width: 100%;}
+          &.full {width: 100%; margin-top: 50px;}
           .column-title {
             font-family: 'Fjalla One';
             text-align: center;
+            margin-bottom: 25px;
+            font-size: 2rem;
           }
           .skill {
             width: 50%;
