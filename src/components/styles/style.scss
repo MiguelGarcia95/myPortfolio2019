@@ -30,12 +30,15 @@ body {
       background-color: #f0f0f0;
       width: 100%;
       box-sizing: border-box;
-      padding: 0 50px;
       padding-left: 300px;
       padding-top: 50px;
       position: absolute;
       min-height: 100vh;
       z-index: 9;
+      &.startPos {
+        left: 100vw;
+        left: 100%;
+      }
       .section-name {
         position: fixed;
         text-align: center;
@@ -63,6 +66,7 @@ body {
     } 
 
     .projects {
+      width: 100%;
       .row {
         width: 1200px;
         height: 400px;

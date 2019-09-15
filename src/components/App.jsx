@@ -4,13 +4,17 @@ import Project from './Project';
 import Skill from './Skill';
 import './styles/style.css';
 
-const ICON_PATH = './assets/icons';
-
 class App extends React.Component {
+  state = {
+    currentSection: 'projects',
+    iconPath: './assets/icons',
+  }
+
   render() {
+    const {currentSection, iconPath} = this.state;
     return (
       <div className="body-wrapper">
-        <Sidebar />
+        <Sidebar currentSection={currentSection} />
   
         <div className="content">
           <div className="section projects">
@@ -63,42 +67,42 @@ class App extends React.Component {
             </div>
           </div>
           
-          <div className="section skills">
+          <div className="section skills startPos">
             {/* <div className="section-name"><h1>Skills</h1></div> */}
             <div className="skill-row">
               <div className="skill-column">
                 <h1 className='column-title'>Front End</h1>
-                <Skill name='html' icon={`${ICON_PATH}/html.png`} />
-                <Skill name='css' icon={`${ICON_PATH}/css.png`} />
-                <Skill name='less' icon={`${ICON_PATH}/less.png`} />
-                <Skill name='sass' icon={`${ICON_PATH}/sass.png`} />
-                <Skill name='JS' icon={`${ICON_PATH}/js.png`} />
-                <Skill name='jQuery' icon={`${ICON_PATH}/jquery.png`} />
-                <Skill name='React' icon={`${ICON_PATH}/react.png`} />
-                <Skill name='Redux' icon={`${ICON_PATH}/redux.png`} />
+                <Skill name='html' icon={`${iconPath}/html.png`} />
+                <Skill name='css' icon={`${iconPath}/css.png`} />
+                <Skill name='less' icon={`${iconPath}/less.png`} />
+                <Skill name='sass' icon={`${iconPath}/sass.png`} />
+                <Skill name='JS' icon={`${iconPath}/js.png`} />
+                <Skill name='jQuery' icon={`${iconPath}/jquery.png`} />
+                <Skill name='React' icon={`${iconPath}/react.png`} />
+                <Skill name='Redux' icon={`${iconPath}/redux.png`} />
               </div>
               <div className="skill-column">
                 <h1 className='column-title'>Back End</h1>
-                <Skill name='php' icon={`${ICON_PATH}/php.png`} />
-                <Skill name='laravel' icon={`${ICON_PATH}/laravel.png`} />
-                <Skill name='wordpress' icon={`${ICON_PATH}/wordpress.png`} />
-                <Skill name='nodejs' icon={`${ICON_PATH}/nodejs.png`} />
-                <Skill name='mysql' icon={`${ICON_PATH}/mysql.png`} />
-                <Skill name='mongodb' icon={`${ICON_PATH}/mongodb.png`} />
+                <Skill name='php' icon={`${iconPath}/php.png`} />
+                <Skill name='laravel' icon={`${iconPath}/laravel.png`} />
+                <Skill name='wordpress' icon={`${iconPath}/wordpress.png`} />
+                <Skill name='nodejs' icon={`${iconPath}/nodejs.png`} />
+                <Skill name='mysql' icon={`${iconPath}/mysql.png`} />
+                <Skill name='mongodb' icon={`${iconPath}/mongodb.png`} />
               </div>
             </div>
             <div className="skill-row">
               <div className="skill-column full">
                 <h1 className='column-title'>Currently Learning</h1>        
-                <Skill name='C#' icon={`${ICON_PATH}/csharp.png`} />
-                <Skill name='React Native' icon={`${ICON_PATH}/react-native.png`} />
-                <Skill name='.NET' icon={`${ICON_PATH}/aspnet.png`} />
-                <Skill name='WordPress theme development' classes='lg' icon={`${ICON_PATH}/wordpress.png`} />
+                <Skill name='C#' icon={`${iconPath}/csharp.png`} />
+                <Skill name='React Native' icon={`${iconPath}/react-native.png`} />
+                <Skill name='.NET' icon={`${iconPath}/aspnet.png`} />
+                <Skill name='WordPress theme development' classes='lg' icon={`${iconPath}/wordpress.png`} />
               </div>
             </div>
           </div> 
   
-          <div className="section about">
+          <div className="section about startPos">
             {/* <div className="section-name"><h1>About</h1></div> */}
             <div className="about-content">
               <div className="about-decal"></div>
@@ -109,7 +113,7 @@ class App extends React.Component {
             </div>
           </div>
   
-          <div className="section contact">
+          <div className="section contact startPos">
             {/* <div className="section-name"><h1>Contact</h1></div> */}
             <div className="contact-info">
               <div className="contact-text">
