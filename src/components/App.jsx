@@ -24,7 +24,6 @@ class App extends React.Component {
   
         <div className="content">
           <div className="section projects">
-            {/* <div className="section-name"><h1>Projects</h1></div> */}
             <div className="row">
               <Project 
                 classes='project pf flex-1' 
@@ -74,7 +73,6 @@ class App extends React.Component {
           </div>
           
           <div className="section skills startPos">
-            {/* <div className="section-name"><h1>Skills</h1></div> */}
             <div className="skill-row">
               <div className="skill-column">
                 <h1 className='column-title'>Front End</h1>
@@ -109,7 +107,6 @@ class App extends React.Component {
           </div> 
   
           <div className="section about startPos">
-            {/* <div className="section-name"><h1>About</h1></div> */}
             <div className="about-content">
               <div className="about-decal"></div>
               <p className='about-text about-name'>Miguel Garcia</p>
@@ -120,7 +117,6 @@ class App extends React.Component {
           </div>
   
           <div className="section contact startPos">
-            {/* <div className="section-name"><h1>Contact</h1></div> */}
             <div className="contact-info">
               <div className="contact-text">
                 <h2>Want to talk?</h2>
