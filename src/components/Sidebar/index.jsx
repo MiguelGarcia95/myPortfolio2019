@@ -5,15 +5,35 @@ const isActive = (currentSection, sectionName) => {
   return currentSection === sectionName;
 }
 
-export default function Sidebar({currentSection}) {
+export default function Sidebar({currentSection, setSection}) {
   return (
     <React.Fragment>
       <header className="sidebar">
         <nav>
-          <p className={isActive(currentSection, 'projects') ? 'active' : ''} >Projects</p>
-          <p className={isActive(currentSection, 'skills') ? 'active' : ''} >Skills</p>
-          <p className={isActive(currentSection, 'about') ? 'active' : ''} >About</p>
-          <p className={isActive(currentSection, 'contact') ? 'active' : ''} >Contact</p>
+          <p 
+            className={isActive(currentSection, 'projects') ? 'active' : ''} 
+            onClick={() => {setSection('projects')}} 
+          >
+            Projects
+          </p>
+          <p 
+            className={isActive(currentSection, 'skills') ? 'active' : ''} 
+            onClick={() => setSection('skills')} 
+          >
+            Skills
+          </p>
+          <p 
+            className={isActive(currentSection, 'about') ? 'active' : ''} 
+            onClick={() => setSection('about')} 
+          >
+            About
+          </p>
+          <p 
+            className={isActive(currentSection, 'contact') ? 'active' : ''} 
+            onClick={() => setSection('contact')} 
+          >
+            Contact
+          </p>
         </nav>
         <div className="name">
           <h1>Miguel Garcia</h1>

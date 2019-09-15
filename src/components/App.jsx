@@ -10,11 +10,13 @@ class App extends React.Component {
     iconPath: './assets/icons',
   }
 
+  setSection = sectionName => this.setState({currentSection: sectionName});
+
   render() {
     const {currentSection, iconPath} = this.state;
     return (
       <div className="body-wrapper">
-        <Sidebar currentSection={currentSection} />
+        <Sidebar currentSection={currentSection} setSection={this.setSection} />
   
         <div className="content">
           <div className="section projects">
