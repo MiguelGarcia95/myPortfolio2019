@@ -108,9 +108,10 @@ function App() {
         <div className="section contact">
           <div className="section-name"><h1>Contact</h1></div>
           <div className="contact-info">
-
+            <div className="contact-text"></div>
           </div>
           <div className="contact-form">
+            <div className="contact-title">Contact Me</div>
             <form>
               <input type="text" placeholder='Name'/>
               <input type="text" placeholder='Subject'/>
@@ -118,8 +119,7 @@ function App() {
               <textarea placeholder="What's up?" style={{resize: 'none'}}></textarea>
             </form>
           </div>
-          <div className="contact-title"></div>
-          <div className="contact-text"></div>
+
         </div>
       </div>
     </div>
