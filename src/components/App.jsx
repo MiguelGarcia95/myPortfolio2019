@@ -111,7 +111,18 @@ function App() {
         <div className="section contact">
           <div className="section-name"><h1>Contact</h1></div>
           <div className="contact-info">
-            <div className="contact-text"></div>
+            <div className="contact-text">
+              <h2>Want to talk?</h2>
+              <p>Shoot me a message here, or email me directly.</p>
+            </div>
+            <div className="contact-method">
+              <div className="method">
+                <a href="mailto:miguel@miguelgarcia.co">miguel@miguelgarcia.co</a>
+              </div>
+              <div className="method">
+                <a href="https://github.com/MiguelGarcia95" target="_blank">github</a>
+              </div>
+            </div>
           </div>
           <div className="contact-form">
             <div className="contact-form-ws"></div>
