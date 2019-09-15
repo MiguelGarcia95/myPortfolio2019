@@ -39,30 +39,6 @@ body {
         left: 100vw;
         left: 100%;
       }
-      .section-name {
-        position: fixed;
-        text-align: center;
-        width: 100px;
-        right: 0;
-        bottom: 0; top: 0;
-        margin: auto;
-        z-index: 1;
-        h1 {
-          width: 80px;
-          line-height: 80px;
-          font-size: 3rem;
-          margin-left: 5px;
-          writing-mode: vertical-rl;
-          overflow: hidden;
-          text-align: center;
-          height: 200px;
-          text-orientation: sideways-right;
-          font-family: 'Fjalla One';
-          top: 0; bottom: 0; 
-          position: absolute;
-          margin: auto;
-        }
-      }
     } 
 
     .projects {
@@ -80,13 +56,6 @@ body {
       padding-top: 100px;
       min-height: 900px;
       height: 100vh;
-      .section-name {
-        height: 120px;
-        h1 {
-          height: 120px;
-          top: -150px;
-        }
-      }
       .skill-row {
         width: 1200px;
         margin: auto;
@@ -160,11 +129,9 @@ body {
     }
     .about {
       height: 650px;
-      .section-name {
-        height: 120px;
-        h1 {height: 120px;}
-      }
       .about-content {
+        padding-left: 50px;
+
         .about-text {
           font-family: 'Fjalla One';
           font-size: 1.2rem;
@@ -182,10 +149,6 @@ body {
     }
     .contact {
       height: 550px;
-      .section-name {
-        height: 150px;
-        h1 {height: 150px;}
-      }
       .contact-info {
         width: 500px;
         padding-left: 50px;
@@ -220,7 +183,6 @@ body {
         width: 300px;
         width: 20%;
         overflow: hidden;
-        // right: 80px;
         height: 100%;
         top: 0; bottom: 0; right: 0;
         margin: auto;

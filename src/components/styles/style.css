@@ -80,36 +80,6 @@ body {
   left: 100%;
 }
 
-.body-wrapper .content .section .section-name {
-  position: fixed;
-  text-align: center;
-  width: 100px;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  z-index: 1;
-}
-
-.body-wrapper .content .section .section-name h1 {
-  width: 80px;
-  line-height: 80px;
-  font-size: 3rem;
-  margin-left: 5px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  overflow: hidden;
-  text-align: center;
-  height: 200px;
-  text-orientation: sideways-right;
-  font-family: 'Fjalla One';
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  margin: auto;
-}
-
 .body-wrapper .content .projects {
   width: 100%;
 }
@@ -129,15 +99,6 @@ body {
   padding-top: 100px;
   min-height: 900px;
   height: 100vh;
-}
-
-.body-wrapper .content .skills .section-name {
-  height: 120px;
-}
-
-.body-wrapper .content .skills .section-name h1 {
-  height: 120px;
-  top: -150px;
 }
 
 .body-wrapper .content .skills .skill-row {
@@ -232,12 +193,8 @@ body {
   height: 650px;
 }
 
-.body-wrapper .content .about .section-name {
-  height: 120px;
-}
-
-.body-wrapper .content .about .section-name h1 {
-  height: 120px;
+.body-wrapper .content .about .about-content {
+  padding-left: 50px;
 }
 
 .body-wrapper .content .about .about-content .about-text {
@@ -258,14 +215,6 @@ body {
 
 .body-wrapper .content .contact {
   height: 550px;
-}
-
-.body-wrapper .content .contact .section-name {
-  height: 150px;
-}
-
-.body-wrapper .content .contact .section-name h1 {
-  height: 150px;
 }
 
 .body-wrapper .content .contact .contact-info {
