@@ -183,9 +183,32 @@ body {
         h1 {height: 150px;}
       }
       .contact-info {
-        width: 400px;
-        height: 400px;
-        background-color: red;
+        width: 500px;
+        padding-left: 50px;
+        font-family: 'Fjalla One';
+        .contact-text {
+          h2 {
+            font-size: 5rem;
+            margin-bottom: 50px;
+          }
+          p {
+            font-size: 2rem;
+            margin-bottom: 50px;
+          }
+        }
+        .contact-method {
+          .method {
+            width: 50%;
+            height: 80px;
+            float: left;
+            a {
+              color: #232323;
+              color: black;
+              text-decoration: none;
+              line-height: 80px;              
+            }
+          }
+        }
       }
       .contact-form {
         position: absolute;
