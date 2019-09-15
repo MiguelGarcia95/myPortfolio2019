@@ -116,7 +116,7 @@ function App() {
               <input type="text" placeholder='Name'/>
               <input type="text" placeholder='Subject'/>
               <input type="text" placeholder='Email'/>
-              <textarea placeholder="What's up?" style={{resize: 'none'}}></textarea>
+              <textarea placeholder="What's up?"></textarea>
             </form>
           </div>
 

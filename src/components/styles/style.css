@@ -268,5 +268,34 @@ body {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   font-family: 'Fjalla One';
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.body-wrapper .content .contact .contact-form .contact-title {
+  font-size: 2rem;
+  color: #f0f0f0;
+}
+
+.body-wrapper .content .contact .contact-form input, .body-wrapper .content .contact .contact-form textarea {
+  font-family: 'Fjalla One';
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 25px;
+  background-color: #f0f0f0;
+}
+
+.body-wrapper .content .contact .contact-form input {
+  height: 40px;
+}
+
+.body-wrapper .content .contact .contact-form textarea {
+  height: 150px;
+  resize: none;
 }
 /*# sourceMappingURL=style.css.map */
