@@ -18,7 +18,7 @@ class App extends React.Component {
 
   sectionEnters = sectionName => {
     let tl = new window.TimelineMax();
-    tl.fromTo(`.${sectionName}`, 1, {scale: 0, autoAlpha: 0},  {display: 'none', autoAlpha: 0, scale: 10, ease: window.Elastic.easeInOut.config(1, 0.3)})
+    tl.fromTo(`.${sectionName}`, 1, {scale: 0, autoAlpha: 0, left: '100%'},  {left: 0, autoAlpha: 1, scale: 1, ease: window.Elastic.easeInOut.config(1, 0.3)})
   }
 
   sectionLeaves = sectionName => {
@@ -29,7 +29,7 @@ class App extends React.Component {
     const {currentSection, iconPath} = this.state;
     return (
       <div className="body-wrapper">
-        <Sidebar currentSection={currentSection} setSection={this.setSection} />
+        <Sidebar currentSection={currentSection} setSection={this.setSection} sectionEnters={this.sectionEnters} />
   
         <div className="content">
           <div className="section projects">

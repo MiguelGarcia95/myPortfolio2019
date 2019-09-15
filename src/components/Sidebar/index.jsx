@@ -5,32 +5,37 @@ const isActive = (currentSection, sectionName) => {
   return currentSection === sectionName;
 }
 
-export default function Sidebar({currentSection, setSection}) {
+const onNavClick = (setSection, sectionName, sectionEnters) => {
+  setSection(sectionName);
+  sectionEnters(sectionName);
+}
+
+export default function Sidebar({currentSection, setSection, sectionEnters}) {
   return (
     <React.Fragment>
       <header className="sidebar">
         <nav>
           <p 
             className={isActive(currentSection, 'projects') ? 'active' : ''} 
-            onClick={() => {setSection('projects')}} 
+            onClick={() => {onNavClick(setSection, 'projects', sectionEnters)}} 
           >
             Projects
           </p>
           <p 
             className={isActive(currentSection, 'skills') ? 'active' : ''} 
-            onClick={() => setSection('skills')} 
+            onClick={() => onNavClick(setSection, 'skills', sectionEnters)} 
           >
             Skills
           </p>
           <p 
             className={isActive(currentSection, 'about') ? 'active' : ''} 
-            onClick={() => setSection('about')} 
+            onClick={() => onNavClick(setSection, 'about', sectionEnters)} 
           >
             About
           </p>
           <p 
             className={isActive(currentSection, 'contact') ? 'active' : ''} 
-            onClick={() => setSection('contact')} 
+            onClick={() => onNavClick(setSection, 'contact', sectionEnters)} 
           >
             Contact
           </p>
