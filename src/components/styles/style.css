@@ -272,11 +272,10 @@ body {
   width: 300px;
   width: 20%;
   overflow: hidden;
-  right: 80px;
-  height: 550px;
   height: 100%;
   top: 0;
   bottom: 0;
+  right: 0;
   margin: auto;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
