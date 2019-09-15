@@ -117,10 +117,12 @@ function App() {
               <input type="text" placeholder='Subject'/>
               <input type="text" placeholder='Email'/>
               <textarea placeholder="What's up?"></textarea>
+              <button>Send</button>
             </form>
           </div>
 
         </div>
+        
       </div>
     </div>
   );
