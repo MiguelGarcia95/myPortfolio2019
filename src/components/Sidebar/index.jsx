@@ -7,14 +7,16 @@ class Sidebar extends React.Component {
 
   onNavClick = (sectionName, currentSection) => {
     const {setSection, sectionEnters, sectionLeaves, projectModal, onProjectClick} = this.props;
-    setSection(sectionName);
-    if (projectModal) {
-      sectionLeaves('project-display');
-      onProjectClick('');
-    } else {
-      sectionLeaves(currentSection);
+    if (sectionName !== currentSection) {
+      setSection(sectionName);
+      if (projectModal) {
+        sectionLeaves('project-display');
+        onProjectClick('');
+      } else {
+        sectionLeaves(currentSection);
+      }
+      sectionEnters(sectionName);
     }
-    sectionEnters(sectionName);
   }
 
   render() {
