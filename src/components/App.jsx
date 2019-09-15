@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from './Sidebar';
-import Project from './Project';
+import Projects from './Projects';
 import Skill from './Skill';
 import './styles/style.css';
 import {EMAILJSUSER} from '../keys';
@@ -11,11 +11,77 @@ class App extends React.Component {
   state = {
     currentSection: 'projects',
     iconPath: './assets/icons',
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    nameError: '',
+    emailError: '',
+    subjectError: '',
+    messageError: '',
+    messageSent: '',
   }
 
   componentDidMount() {
     emailjs.init(EMAILJSUSER);
   }
+
+  onChange = e => this.setState({
+    [e.target.name]: e.target.value,
+    [`${e.target.name}Error`]: ''
+  });
+
+  validateForm = () => {
+    let errors = [];
+    if (!this.state.email) {
+      errors.push({})
+      this.setState({emailError: 'Enter an Email'});
+    }
+    if (!this.state.name) {
+      errors.push({})
+      this.setState({nameError: 'Enter an Name'});
+    }
+    if (!this.state.subject) {
+      errors.push({})
+      this.setState({subjectError: 'Enter an Subject'});
+    }
+    if (!this.state.message) {
+      errors.push({})
+      this.setState({messageError: 'Enter an Message'});
+    }
+    return errors.length > 0 ? false : true;
+  }
+
+  sendEmail = e => {
+    e.preventDefault();
+
+    if (this.validateForm()) {
+      let senderName = this.state.name;
+
+      let emailParams = {
+        from_name: `${senderName} (${this.state.email})`,
+        to_name: 'miguel@miguel-garcia.co',
+        subject: this.state.subject,
+        message_html: this.state.message
+      }
+      
+      emailjs.send('sendgrid', 'template_MqjTWjc0', emailParams, EMAILJSUSER).then(() => {
+        this.setState({messageSent: `Message sent`});
+      }).catch(e => console.log(e))
+
+      this.clearForm();
+    }
+  }
+
+  clearForm = () => {
+    this.setState({
+    name: '', email: '', subject: '', message: '', errors: []
+    })
+
+    setInterval(() => {
+      this.setState({messageSent: ''});
+    }, 5000);
+  }; 
 
   setSection = sectionName => this.setState({currentSection: sectionName});
 
@@ -35,59 +101,14 @@ class App extends React.Component {
 
   render() {
     const {currentSection, iconPath} = this.state;
+    const {nameError, emailError, subjectError, messageError, messageSent} = this.state;
+
     return (
       <div className="body-wrapper">
         <Sidebar currentSection={currentSection} setSection={this.setSection} sectionEnters={this.sectionEnters} sectionLeaves={this.sectionLeaves} />
   
         <div className="content">
-          <div className="section projects">
-            <div className="row">
-              <Project 
-                classes='project pf flex-1' 
-                img='https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg' 
-                title='Title Here'
-              />
-              <Project 
-                classes='project flex-1' 
-                img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
-                title='Title Here'
-              />
-              <Project 
-                classes='project pl flex-2' 
-                img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
-                title='Title Here'
-              />
-            </div>
-            <div className="row">
-              <Project 
-                classes='project pf flex-3' 
-                img='https://proxer.me/media/kunena/attachments/77388/BlueArt.jpg' 
-                title='Title Here'
-              />
-              <Project 
-                classes='project pl flex-1' 
-                img='https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg' 
-                title='Title Here'
-              />
-            </div>
-            <div className="row">
-              <Project 
-                classes='project pf flex-1' 
-                img='https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg' 
-                title='Title Here'
-              />
-              <Project 
-                classes='project flex-1' 
-                img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
-                title='Title Here'
-              />
-              <Project 
-                classes='project pl flex-1' 
-                img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
-                title='Title Here'
-              />
-            </div>
-          </div>
+          <Projects />
           
           <div className="section skills startPos">
             <div className="skill-row">
