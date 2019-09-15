@@ -10,12 +10,25 @@ import './styles/style.css';
 
 class App extends React.Component {
   state = {
-    currentSection: 'projects'
+    currentSection: 'projects',
+    projectModal: false,
+    project: ''
   }
 
   setSection = sectionName => this.setState({currentSection: sectionName});
 
   isSectionActive = (currentSection, sectionName) => currentSection === sectionName;
+
+  onProjectClick = project => {
+    if (!this.state.projectModal) {
+      this.sectionEnters('project-display');
+      this.sectionLeaves('skills');
+    }
+    this.setState({
+      project: project,
+      projectModal: !this.state.projectModal
+    });
+  }
 
   sectionEnters = sectionName => {
     let tl = new window.TimelineMax();
@@ -28,15 +41,15 @@ class App extends React.Component {
   }
 
   render() {
-    const {currentSection} = this.state;
+    const {currentSection, projectModal, project} = this.state;
 
     return (
       <div className="body-wrapper">
-        <Sidebar currentSection={currentSection} setSection={this.setSection} sectionEnters={this.sectionEnters} sectionLeaves={this.sectionLeaves} />
+        <Sidebar currentSection={currentSection} setSection={this.setSection} sectionEnters={this.sectionEnters} sectionLeaves={this.sectionLeaves} projectModal={projectModal} />
   
         <div className="content">
-          <Projects />
-          <ProjectDisplay />
+          <Projects onProjectClick={this.onProjectClick} />
+          <ProjectDisplay projectModal={projectModal} project={project} />
           <Skills />
           <About />
           <Contact currentSection={currentSection} />

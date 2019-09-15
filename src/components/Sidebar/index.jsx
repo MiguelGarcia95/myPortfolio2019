@@ -5,38 +5,42 @@ const isActive = (currentSection, sectionName) => {
   return currentSection === sectionName;
 }
 
-const onNavClick = (setSection, sectionName, sectionEnters, sectionLeaves, currentSection) => {
+const onNavClick = (setSection, sectionName, sectionEnters, sectionLeaves, currentSection, projectModal) => {
   setSection(sectionName);
-  sectionLeaves(currentSection);
+  if (projectModal) {
+    sectionLeaves('project-display');
+  } else {
+    sectionLeaves(currentSection);
+  }
   sectionEnters(sectionName);
 }
 
-export default function Sidebar({currentSection, setSection, sectionEnters, sectionLeaves}) {
+export default function Sidebar({currentSection, setSection, sectionEnters, sectionLeaves, projectModal}) {
   return (
     <React.Fragment>
       <header className="sidebar">
         <nav>
           <p 
             className={isActive(currentSection, 'projects') ? 'active' : ''} 
-            onClick={() => {onNavClick(setSection, 'projects', sectionEnters, sectionLeaves, currentSection)}} 
+            onClick={() => onNavClick(setSection, 'projects', sectionEnters, sectionLeaves, currentSection, projectModal)}
           >
             Projects
           </p>
           <p 
             className={isActive(currentSection, 'skills') ? 'active' : ''} 
-            onClick={() => onNavClick(setSection, 'skills', sectionEnters, sectionLeaves, currentSection)} 
+            onClick={() => onNavClick(setSection, 'skills', sectionEnters, sectionLeaves, currentSection, projectModal)} 
           >
             Skills
           </p>
           <p 
             className={isActive(currentSection, 'about') ? 'active' : ''} 
-            onClick={() => onNavClick(setSection, 'about', sectionEnters, sectionLeaves, currentSection)} 
+            onClick={() => onNavClick(setSection, 'about', sectionEnters, sectionLeaves, currentSection, projectModal)} 
           >
             About
           </p>
           <p 
             className={isActive(currentSection, 'contact') ? 'active' : ''} 
-            onClick={() => onNavClick(setSection, 'contact', sectionEnters, sectionLeaves, currentSection)} 
+            onClick={() => onNavClick(setSection, 'contact', sectionEnters, sectionLeaves, currentSection, projectModal)} 
           >
             Contact
           </p>
