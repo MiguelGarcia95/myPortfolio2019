@@ -16,6 +16,15 @@ class App extends React.Component {
     return currentSection === sectionName;
   }
 
+  sectionEnters = sectionName => {
+    let tl = new window.TimelineMax();
+    tl.fromTo(`.${sectionName}`, 1, {scale: 0, autoAlpha: 0},  {display: 'none', autoAlpha: 0, scale: 10, ease: window.Elastic.easeInOut.config(1, 0.3)})
+  }
+
+  sectionLeaves = sectionName => {
+    
+  }
+
   render() {
     const {currentSection, iconPath} = this.state;
     return (
