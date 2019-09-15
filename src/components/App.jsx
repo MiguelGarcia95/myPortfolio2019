@@ -3,11 +3,18 @@ import Sidebar from './Sidebar';
 import Project from './Project';
 import Skill from './Skill';
 import './styles/style.css';
+import {EMAILJSUSER} from '../keys';
+
+const emailjs = window.emailjs;
 
 class App extends React.Component {
   state = {
     currentSection: 'projects',
     iconPath: './assets/icons',
+  }
+
+  componentDidMount() {
+    emailjs.init(EMAILJSUSER);
   }
 
   setSection = sectionName => this.setState({currentSection: sectionName});
