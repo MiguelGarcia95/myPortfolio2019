@@ -36,8 +36,8 @@ body {
       min-height: 100vh;
       z-index: 9;
       &.startPos {
-        left: 100vw;
-        left: 100%;
+        // left: 100%;
+        transform: scale(0);
       }
     } 
 
@@ -53,7 +53,7 @@ body {
       }
     }
     .project-display {
-      
+
     }
     .skills {
       padding-top: 100px;

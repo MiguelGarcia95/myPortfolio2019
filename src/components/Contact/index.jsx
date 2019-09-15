@@ -92,7 +92,7 @@ class Contact extends React.Component {
               <a href="mailto:miguel@miguelgarcia.co">miguel@miguelgarcia.co</a>
             </div>
             <div className="method">
-              <a href="https://github.com/MiguelGarcia95" target="_blank">github</a>
+              <a href="https://github.com/MiguelGarcia95" rel="noopener noreferrer" target="_blank">github</a>
             </div>
           </div>
         </div>

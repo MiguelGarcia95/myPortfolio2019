@@ -22,7 +22,7 @@ class App extends React.Component {
   onProjectClick = project => {
     if (!this.state.projectModal) {
       this.sectionEnters('project-display');
-      this.sectionLeaves('skills');
+      this.sectionLeaves('projects');
     }
     this.setState({
       project: project,
@@ -45,7 +45,7 @@ class App extends React.Component {
 
     return (
       <div className="body-wrapper">
-        <Sidebar currentSection={currentSection} setSection={this.setSection} sectionEnters={this.sectionEnters} sectionLeaves={this.sectionLeaves} projectModal={projectModal} />
+        <Sidebar onProjectClick={this.onProjectClick} currentSection={currentSection} setSection={this.setSection} sectionEnters={this.sectionEnters} sectionLeaves={this.sectionLeaves} projectModal={projectModal} />
   
         <div className="content">
           <Projects onProjectClick={this.onProjectClick} />
