@@ -12,6 +12,10 @@ class App extends React.Component {
 
   setSection = sectionName => this.setState({currentSection: sectionName});
 
+  isSectionActive = (currentSection, sectionName) => {
+    return currentSection === sectionName;
+  }
+
   render() {
     const {currentSection, iconPath} = this.state;
     return (
