@@ -14,18 +14,16 @@ class App extends React.Component {
 
   setSection = sectionName => this.setState({currentSection: sectionName});
 
-  isSectionActive = (currentSection, sectionName) => {
-    return currentSection === sectionName;
-  }
+  isSectionActive = (currentSection, sectionName) => currentSection === sectionName;
 
   sectionEnters = sectionName => {
     let tl = new window.TimelineMax();
-    tl.fromTo(`.${sectionName}`, 1, {scale: 0, autoAlpha: 0, left: '100%'},  {left: 0, autoAlpha: 1, scale: 1, ease: window.Elastic.easeInOut.config(1, 0.3)})
+    tl.fromTo(`.${sectionName}`, 1, {scale: 0, autoAlpha: 0, left: '100%'},  {left: 0, autoAlpha: 1, scale: 1, ease: window.Elastic.easeInOut.config(1, 0.3)}, '+=1')
   }
 
   sectionLeaves = sectionName => {
     let tl = new window.TimelineMax();
-    tl.fromTo(`.${sectionName}`, 1, {scale: 1, autoAlpha: 1, left: 0},  {left: '-100%', autoAlpha: 0, scale: 1, ease: window.Elastic.easeInOut.config(1, 0.3)})
+    tl.fromTo(`.${sectionName}`, 2, {scale: 1, autoAlpha: 1, left: 0},  {left: '-100%', autoAlpha: 0, scale: 2, ease: window.Elastic.easeInOut.config(1, 0.3)})
   }
 
   render() {
@@ -39,7 +37,7 @@ class App extends React.Component {
           <Projects />
           <Skills />
           <About />
-          <Contact />
+          <Contact currentSection={currentSection} />
         </div>
       </div>
     );
