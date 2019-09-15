@@ -37,7 +37,7 @@ body {
       min-height: 100vh;
       z-index: 9;
       .section-name {
-        position: absolute;
+        position: fixed;
         text-align: center;
         width: 100px;
         right: 0;
@@ -191,44 +191,58 @@ body {
         position: absolute;
         background-color: #232323;
         width: 300px;
+        width: 20%;
         overflow: hidden;
         right: 80px;
-        height: 100%;
         height: 550px;
+        height: 100%;
         top: 0;
         bottom: 0;
-        right: 0;
+        // right: 0;
         margin: auto;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
         font-family: 'Fjalla One';
         padding: 20px 30px;
         box-sizing: border-box;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        .contact-form-ws {flex: 1;}
         .contact-title {
           font-size: 2rem;
           color: #f0f0f0;
+          flex: 2;
         }
-        input, textarea, button {
-          font-family: 'Fjalla One';
-          width: 100%;
-          border: none;
-          padding: 5px 10px;
-          box-sizing: border-box;
-          margin-top: 25px;
-          background-color: #f0f0f0;
-          font-size: 1rem;
-        }
-        input {
-          height: 40px;
-        }
-        button {
-          cursor: pointer;
-          letter-spacing: 2px;
-          font-size: 1.5rem;
-        }
-        textarea {
-          height: 150px;
-          resize: none;
+        form {
+          flex: 8; 
+          display: flex; 
+          flex-direction: column;
+          input, textarea, button {
+            font-family: 'Fjalla One';
+            width: 100%;
+            border: none;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            margin-top: 25px;
+            background-color: #f0f0f0;
+            font-size: 1rem;
+          }
+          input {
+            height: 40px;
+            // height: 20%;
+            flex: 1;
+          }
+          button {
+            cursor: pointer;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            flex: 1;
+          }
+          textarea {
+            height: 150px;
+            resize: none;
+            flex: 5;
+          }
         }
       }
     }

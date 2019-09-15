@@ -61,6 +61,7 @@ function App() {
             />
           </div>
         </div>
+        
         <div className="section skills">
           <div className="section-name"><h1>Skills</h1></div>
           <div className="skill-row">
@@ -94,7 +95,8 @@ function App() {
               <Skill name='WordPress theme development' classes='lg' icon={`${ICON_PATH}/wordpress.png`} />
             </div>
           </div>
-        </div>
+        </div> 
+
         <div className="section about">
           <div className="section-name"><h1>About</h1></div>
           <div className="about-content">
@@ -105,12 +107,14 @@ function App() {
             <p className='about-text about-extra'>I also have an interest in character design, story telling and game design/development. </p>
           </div>
         </div>
+
         <div className="section contact">
           <div className="section-name"><h1>Contact</h1></div>
           <div className="contact-info">
             <div className="contact-text"></div>
           </div>
           <div className="contact-form">
+            <div className="contact-form-ws"></div>
             <div className="contact-title">Contact Me</div>
             <form>
               <input type="text" placeholder='Name'/>
@@ -119,8 +123,8 @@ function App() {
               <textarea placeholder="What's up?"></textarea>
               <button>Send</button>
             </form>
+            <div className="contact-form-ws"></div>
           </div>
-
         </div>
         
       </div>
