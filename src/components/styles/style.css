@@ -219,8 +219,13 @@ body {
 
 .body-wrapper .content .contact .contact-info {
   width: 500px;
+  width: 100%;
   padding-left: 50px;
+  padding-right: 450px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Fjalla One';
+  text-align: center;
 }
 
 .body-wrapper .content .contact .contact-info .contact-text h2 {
@@ -249,8 +254,7 @@ body {
 .body-wrapper .content .contact .contact-form {
   position: absolute;
   background-color: #232323;
-  width: 300px;
-  width: 25%;
+  width: 400px;
   overflow: hidden;
   height: 100%;
   top: 0;

@@ -151,8 +151,12 @@ body {
       height: 550px;
       .contact-info {
         width: 500px;
+        width: 100%;
         padding-left: 50px;
+        padding-right: 450px;
+        box-sizing: border-box;
         font-family: 'Fjalla One';
+        text-align: center;
         .contact-text {
           h2 {
             font-size: 5rem;
@@ -180,8 +184,8 @@ body {
       .contact-form {
         position: absolute;
         background-color: #232323;
-        width: 300px;
-        width: 25%;
+        width: 400px;
+        // width: 25%;
         overflow: hidden;
         height: 100%;
         top: 0; bottom: 0; right: 0;
