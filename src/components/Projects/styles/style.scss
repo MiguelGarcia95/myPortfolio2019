@@ -123,7 +123,15 @@ $font: 'Fjalla One';
 @media (max-width: 1050px) {
   .projects {
     .row {
-      @include baseSettings(100%, 300px, relative);
+      @include baseSettings(100%, 250px, relative);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .projects {
+    .row {
+      @include baseSettings(100%, 250px, relative);
       .project {
         // &.pf {margin-left: 0px;}
         // &.pl {margin-right: 0px;}
