@@ -6,7 +6,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 50px;
@@ -30,14 +30,14 @@
 }
 
 .sidebar nav p:hover {
-  color: white;
-  text-shadow: 0px 0px 5px white;
+  color: #f0f0f0;
+  text-shadow: 0px 0px 5px #f0f0f0;
   margin-left: 5px;
 }
 
 .sidebar nav p.active {
-  color: white;
-  text-shadow: 0px 0px 5px white;
+  color: #f0f0f0;
+  text-shadow: 0px 0px 5px #f0f0f0;
   margin-left: 5px;
   font-size: 2rem;
 }

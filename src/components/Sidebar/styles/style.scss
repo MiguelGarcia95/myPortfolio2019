@@ -1,13 +1,17 @@
+$font: 'Fjalla One';
+$white: #f0f0f0;
+$background: #232323;
+
 .sidebar {
   width: 300px;
   height: 100vh;
-  background-color: #232323;
+  background-color: $background;
   position: fixed;
   flex: 1;
-  font-family: 'Fjalla One';
+  font-family: $font;
   box-sizing: border-box;
   padding-left: 50px;
-  color: #f0f0f0;
+  color: $white;
   z-index: 10;
   nav {
     width: 100%;
@@ -20,13 +24,13 @@
       cursor: pointer;
       transition: 0.2s;
       &:hover {
-        color: white;
-        text-shadow: 0px 0px 5px white;
+        color: $white;
+        text-shadow: 0px 0px 5px $white;
         margin-left: 5px;
       }
       &.active {
-        color: white;
-        text-shadow: 0px 0px 5px white;
+        color: $white;
+        text-shadow: 0px 0px 5px $white;
         margin-left: 5px;
         font-size: 2rem;
       }
@@ -48,6 +52,47 @@
     h2 {
       font-size: 1rem;
       letter-spacing: 5px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    // width: 300px;
+    // height: 100vh;
+    // flex: 1;
+    // padding-left: 50px;
+    nav {
+      // width: 100%;
+      // height: 240px; 
+      p {
+        // width: 100%;
+        // line-height: 60px;
+        // font-size: 1.5rem;
+        // transition: 0.2s;
+        &:hover {
+          // margin-left: 5px;
+        }
+        &.active {
+          // text-shadow: 0px 0px 5px $white;
+          // margin-left: 5px;
+          // font-size: 2rem;
+        }
+      }
+    }
+    .name {
+      // bottom: 0;
+      // width: 100%;
+      // padding-bottom: 50px;
+      // padding-right: 50px;
+      h1 {
+        // font-size: 2.2rem;
+        // line-height: 50px;
+      }
+      h2 {
+        // font-size: 1rem;
+        // letter-spacing: 5px;
+      }
     }
   }
 }
