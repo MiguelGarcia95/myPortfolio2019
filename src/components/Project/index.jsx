@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles/style.css';
 
 export default function Project({img, title, classes, onProjectClick}) {
   return (
