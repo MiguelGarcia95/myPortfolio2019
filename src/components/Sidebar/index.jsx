@@ -2,8 +2,13 @@ import React from 'react'
 import './styles/style.css';
 
 class Sidebar extends React.Component {
+  state = {
+    opened: false
+  }
 
   isActive = (currentSection, sectionName) => currentSection === sectionName;
+
+  onNavToggle = () => this.setState({opened: !this.state.opened});
 
   onNavClick = (sectionName, currentSection) => {
     const {setSection, sectionEnters, sectionLeaves, projectModal, onProjectClick} = this.props;
@@ -21,6 +26,7 @@ class Sidebar extends React.Component {
 
   render() {
     const {currentSection} = this.props;
+    const {opened} = this.state;
     return (
       <header className="sidebar">
         <nav>
@@ -52,7 +58,7 @@ class Sidebar extends React.Component {
         <div className="mobile-name">
           <h1>M</h1>
         </div>
-        <div className="mobile-toggle opened">
+        <div className={`mobile-toggle ${opened ? 'opened' : ''}`} onClick={this.onNavToggle}>
           <div className="bar bar_01"></div>
           <div className="bar bar_02"></div>
           <div className="bar bar_03"></div>

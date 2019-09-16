@@ -59,6 +59,12 @@
   top: 10px;
   position: absolute;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar .mobile-toggle.opened {
+  left: 14px;
 }
 
 .sidebar .mobile-toggle.opened .bar.bar_01 {
@@ -85,6 +91,8 @@
   height: 4px;
   background-color: #f0f0f0;
   position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sidebar .mobile-toggle .bar.bar_01 {

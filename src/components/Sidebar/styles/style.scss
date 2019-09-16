@@ -50,7 +50,9 @@ $background: #232323;
     left: 10px; top: 10px;
     position: absolute;
     cursor: pointer;
+    transition: 0.5s;
     &.opened {
+      left: 14px;
       .bar {
         &.bar_01 {
           top: 5px;
@@ -69,6 +71,7 @@ $background: #232323;
       height: 4px;
       background-color: $white;
       position: absolute;
+      transition: 0.5s;
       
       &.bar_01 {
         top: 0;
