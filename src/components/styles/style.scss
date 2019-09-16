@@ -37,7 +37,6 @@ body {
       min-height: 100vh;
       z-index: 9;
       &.startPos {
-        // left: 100%;
         transform: scale(0);
       }
     } 
@@ -54,18 +53,21 @@ body {
       }
     }
     .project-display {
-
+      width: 100%;
     }
     .skills {
-      padding-top: 100px;
-      min-height: 900px;
+      // min-height: 900px;
       height: 100vh;
+      display: flex;
+      flex-direction: column;
       .skill-row {
-        width: 1200px;
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
         margin: auto;
+        height: auto;
         position: relative;
         clear: both;
-        margin-bottom: 50px;
         .skill-column {
           width: 50%;
           float: left;
@@ -81,27 +83,25 @@ body {
           }
           .skill {
             width: 50%;
-            height: 60px;
+            height: 50px;
             float: left;
-            overflow: hidden;
             padding: 15px 0;
             position: relative;
+            text-align: center;
             &:hover {
               .skill-icon {
                 img {filter: grayscale(0);}
               }
-              .skill-name {
-                font-size: 1.1rem;
-              }
             }
 
             .skill-icon {
-              width: 60px; height: 60px;
+              width: 20%;
+              height: 50px;
               float: left;
-              position: absolute;
               img {
                 width: 80%;
-                height: 80%;
+                height: 100%;
+                float: left;
                 object-fit: contain;
                 object-position: center;
                 filter: grayscale(1);
@@ -110,13 +110,11 @@ body {
             }
             .skill-name {
               height: 40px;
+              width: 80%;
               overflow: hidden;
-              position: absolute;
-              left: 100px;
               p {
                 line-height: 40px;
-                margin-top: 10px;
-                margin-left: 10px;
+                margin-top: 5px;
                 text-align: left;
                 color: #232323;
                 font-family: 'Montserrat';
@@ -124,6 +122,9 @@ body {
                 text-transform: uppercase;
                 transition: 0.2s;
                 font-weight: 600;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
               }
             }
           }
@@ -223,7 +224,6 @@ body {
           }
           input {
             height: 40px;
-            // height: 20%;
             flex: 1;
           }
           button {
