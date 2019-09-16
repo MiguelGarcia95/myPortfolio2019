@@ -37,6 +37,51 @@ $background: #232323;
       }
     }
   }
+  .mobile-name {
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  .mobile-toggle {
+    width: 30px;
+    height: 30px;
+    left: 10px; top: 10px;
+    position: absolute;
+    cursor: pointer;
+    &.opened {
+      .bar {
+        &.bar_01 {
+          top: 5px;
+          transform: rotate(45deg);
+          transform-origin: left top;
+        }
+        &.bar_02 {opacity: 0;}
+        &.bar_03 {
+          transform: rotate(-45deg);
+          transform-origin: left bottom;
+        }
+      }
+    }
+    .bar {
+      width: 100%;
+      height: 4px;
+      background-color: $white;
+      position: absolute;
+      
+      &.bar_01 {
+        top: 0;
+      }
+      &.bar_02 {
+        top: 0; bottom: 0;
+        margin: auto;
+      }
+      &.bar_03 {
+        bottom: 0;
+      }
+    }
+  }
   .name {
     position: absolute;
     bottom: 0;
@@ -74,14 +119,14 @@ $background: #232323;
 
 
 
-@media (max-width: 950px) {
+@media (max-width: 800px) {
   .sidebar {
-    // width: 300px;
-    width: 200px;
+    width: 50px;
     // height: 100vh;
     // flex: 1;
     // padding-left: 25px;
     nav {
+      padding-left: 50px;      
       // width: 100%;
       // height: 240px; 
       p {
@@ -100,6 +145,8 @@ $background: #232323;
       }
     }
     .name {
+      padding-left: 50px;      
+
       // bottom: 0;
       // width: 100%;
       // padding-bottom: 50px;

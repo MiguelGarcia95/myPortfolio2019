@@ -94,9 +94,9 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
   .body-wrapper .content .section {
-    padding-left: 250px;
+    padding-left: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */

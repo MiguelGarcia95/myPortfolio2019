@@ -43,6 +43,64 @@
   font-size: 2rem;
 }
 
+.sidebar .mobile-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.sidebar .mobile-toggle {
+  width: 30px;
+  height: 30px;
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.sidebar .mobile-toggle.opened .bar.bar_01 {
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.sidebar .mobile-toggle.opened .bar.bar_02 {
+  opacity: 0;
+}
+
+.sidebar .mobile-toggle.opened .bar.bar_03 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+
+.sidebar .mobile-toggle .bar {
+  width: 100%;
+  height: 4px;
+  background-color: #f0f0f0;
+  position: absolute;
+}
+
+.sidebar .mobile-toggle .bar.bar_01 {
+  top: 0;
+}
+
+.sidebar .mobile-toggle .bar.bar_02 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.sidebar .mobile-toggle .bar.bar_03 {
+  bottom: 0;
+}
+
 .sidebar .name {
   position: absolute;
   bottom: 0;
@@ -85,9 +143,15 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 800px) {
   .sidebar {
-    width: 200px;
+    width: 50px;
+  }
+  .sidebar nav {
+    padding-left: 50px;
+  }
+  .sidebar .name {
+    padding-left: 50px;
   }
   .sidebar .name h1 {
     font-size: 2rem;

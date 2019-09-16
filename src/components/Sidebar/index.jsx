@@ -49,6 +49,14 @@ class Sidebar extends React.Component {
             Contact
           </p>
         </nav>
+        <div className="mobile-name">
+          <h1>M</h1>
+        </div>
+        <div className="mobile-toggle opened">
+          <div className="bar bar_01"></div>
+          <div className="bar bar_02"></div>
+          <div className="bar bar_03"></div>
+        </div>
         <div className="name">
           <h1>Miguel Garcia</h1>
           <h2>Web Developer</h2>
