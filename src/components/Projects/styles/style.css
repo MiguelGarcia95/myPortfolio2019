@@ -3,7 +3,10 @@
 }
 
 .projects .row {
-  width: 1200px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 50px;
   height: 400px;
   margin: auto;
   margin-bottom: 40px;

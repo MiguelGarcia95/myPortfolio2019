@@ -22,7 +22,9 @@ body {
 }
 
 .body-wrapper {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
   height: auto;
   .content {
     width: 100%;

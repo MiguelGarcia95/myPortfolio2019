@@ -3,19 +3,20 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 0 !important;
   .skill-row {
     width: 100%;
     padding: 0 50px;
     box-sizing: border-box;
-    margin: auto;
-    height: auto;
-    position: relative;
-    clear: both;
+    display: flex;
+    &:first-of-type {flex: 5; padding-top: 50px;}
+    &:last-of-type {flex: 4;}
     .skill-column {
       width: 50%;
       float: left;
+      flex: 1;
       &.full {
-        width: 100%; margin-top: 100px;
+        width: 100%;
         .skill {width: 33%;}
       }
       .column-title {

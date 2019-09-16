@@ -63,31 +63,4 @@
   font-size: 1rem;
   letter-spacing: 5px;
 }
-
-.nav-name {
-  position: fixed;
-  right: 0;
-  text-align: center;
-  width: 100px;
-  height: 100vh;
-}
-
-.nav-name h1 {
-  width: 80px;
-  line-height: 80px;
-  font-size: 3rem;
-  margin-left: 5px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  overflow: hidden;
-  text-align: center;
-  height: 200px;
-  text-orientation: sideways-right;
-  font-family: 'Fjalla One';
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  margin: auto;
-}
 /*# sourceMappingURL=style.css.map */
