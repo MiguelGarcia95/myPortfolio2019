@@ -75,20 +75,20 @@
           flex: 4;
 }
 
-.projects .row .project .background, .projects .row .project .info {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
 .projects .row .project .background {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .projects .row .project .info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.5s;
   transition: 0.5s;

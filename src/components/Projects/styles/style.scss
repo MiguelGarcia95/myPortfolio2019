@@ -53,14 +53,13 @@ $font: 'Fjalla One';
       &.flex-4 {
         flex: 4;
       }
-      .background, .info {
-        @include baseSettings(100%, 100%, absolute);
-      }
       .background {
         object-fit: cover;
         object-position: top;
+        @include baseSettings(100%, 100%, absolute);
       }
       .info {
+        @include baseSettings(100%, 100%, absolute);
         background-color: rgba(0,0,0,0.5);
         transition: $transition;
         &:hover {
