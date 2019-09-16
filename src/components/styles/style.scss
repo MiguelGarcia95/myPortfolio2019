@@ -14,10 +14,11 @@ body {
   width: 100vw;
   max-width: 100%;
   background-color: #f0f0f0;
-
-  // height: 100vh;
-  // scrollbar-width: none;
-  // -ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .body-wrapper {

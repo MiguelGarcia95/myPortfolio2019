@@ -38,6 +38,7 @@ class App extends React.Component {
   sectionLeaves = sectionName => {
     let tl = new window.TimelineMax();
     tl.fromTo(`.${sectionName}`, 2, {scale: 1, autoAlpha: 1, left: 0},  {left: '-100%', autoAlpha: 0, scale: 2, ease: window.Elastic.easeInOut.config(1, 0.3)})
+    tl.to(`.${sectionName}`, 0, {scale: 1})
   }
 
   render() {
@@ -45,11 +46,18 @@ class App extends React.Component {
 
     return (
       <div className="body-wrapper">
-        <Sidebar onProjectClick={this.onProjectClick} currentSection={currentSection} setSection={this.setSection} sectionEnters={this.sectionEnters} sectionLeaves={this.sectionLeaves} projectModal={projectModal} />
+        <Sidebar 
+          onProjectClick={this.onProjectClick} 
+          currentSection={currentSection} 
+          setSection={this.setSection} 
+          sectionEnters={this.sectionEnters} 
+          sectionLeaves={this.sectionLeaves} 
+          projectModal={projectModal} 
+        />
   
         <div className="content">
           <Projects onProjectClick={this.onProjectClick} />
-          <ProjectDisplay projectModal={projectModal} project={project} />
+          <ProjectDisplay project={project} sectionLeaves={this.sectionLeaves} sectionEnters={this.sectionEnters}  />
           <Skills />
           <About />
           <Contact currentSection={currentSection} />
