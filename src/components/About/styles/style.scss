@@ -1,0 +1,20 @@
+.about {
+  height: 650px;
+  .about-content {
+    padding-left: 50px;
+
+    .about-text {
+      font-family: 'Fjalla One';
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      &.about-name {
+        font-size: 3rem;
+        margin-bottom: 50px;
+      }
+      &.about-extra {
+        margin-top: 50px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

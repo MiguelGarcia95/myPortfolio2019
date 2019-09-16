@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '../Project';
+import './styles/style.css';
 
 export default function Projects({onProjectClick}) {
   return (

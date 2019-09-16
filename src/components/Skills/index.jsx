@@ -1,5 +1,6 @@
 import React from 'react';
 import Skill from '../Skill';
+import './styles/style.css';
 
 const ICON_PATH = './assets/icons';
 

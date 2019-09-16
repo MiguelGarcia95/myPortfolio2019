@@ -1,1 +1,99 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.skills {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .skill-row {
+  width: 100%;
+  padding: 0 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  height: auto;
+  position: relative;
+  clear: both;
+}
+
+.skills .skill-row .skill-column {
+  width: 50%;
+  float: left;
+}
+
+.skills .skill-row .skill-column.full {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.skills .skill-row .skill-column.full .skill {
+  width: 33%;
+}
+
+.skills .skill-row .skill-column .column-title {
+  font-family: 'Fjalla One';
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.skills .skill-row .skill-column .skill {
+  width: 50%;
+  height: 50px;
+  float: left;
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+}
+
+.skills .skill-row .skill-column .skill:hover .skill-icon img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.skills .skill-row .skill-column .skill .skill-icon {
+  width: 20%;
+  height: 50px;
+  float: left;
+}
+
+.skills .skill-row .skill-column .skill .skill-icon img {
+  width: 80%;
+  height: 100%;
+  float: left;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.skills .skill-row .skill-column .skill .skill-name {
+  height: 40px;
+  width: 80%;
+  overflow: hidden;
+}
+
+.skills .skill-row .skill-column .skill .skill-name p {
+  line-height: 40px;
+  margin-top: 5px;
+  text-align: left;
+  color: #232323;
+  font-family: 'Montserrat';
+  text-transform: capitalize;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=style.css.map */

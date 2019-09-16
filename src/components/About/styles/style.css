@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.about {
+  height: 650px;
+}
+
+.about .about-content {
+  padding-left: 50px;
+}
+
+.about .about-content .about-text {
+  font-family: 'Fjalla One';
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about .about-content .about-text.about-name {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.about .about-content .about-text.about-extra {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+/*# sourceMappingURL=style.css.map */
