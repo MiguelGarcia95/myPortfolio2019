@@ -63,4 +63,11 @@
   font-size: 1rem;
   letter-spacing: 5px;
 }
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 250px;
+    padding-left: 25px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

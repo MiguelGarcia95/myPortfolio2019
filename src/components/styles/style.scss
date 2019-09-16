@@ -44,3 +44,24 @@ body {
     } 
   }
 }
+
+@media (max-width: 1200px) {
+  .body-wrapper {
+    .content {
+      .section {padding-left: 250px;} 
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .body-wrapper {
+    .content {
+      .section {
+        padding-left: 250px;
+        // padding-top: 50px;
+        // position: absolute;
+        // min-height: 100vh;
+      } 
+    }
+  }
+}

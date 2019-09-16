@@ -87,4 +87,16 @@ body {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
+
+@media (max-width: 1200px) {
+  .body-wrapper .content .section {
+    padding-left: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .body-wrapper .content .section {
+    padding-left: 250px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
