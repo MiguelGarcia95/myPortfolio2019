@@ -205,89 +205,89 @@ $black: #232323;
 }
 
 
-@media (max-width: 50px) {
+// @media (max-width: 50px) {
   
-  .contact {
-    height: auto;
-    &.opened {
-      .contact-form {
-        width: 350px;
-        padding: 20px 30px;
-        // height: 100%;
-        // top: 0; bottom: 0; right: 0;
-        // margin: auto;
-        // box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-      }
-    }
-    .contact-info {
-      // width: 100%;
-      // padding-left: 50px;
+//   .contact {
+//     height: auto;
+//     &.opened {
+//       .contact-form {
+//         width: 350px;
+//         padding: 20px 30px;
+//         // height: 100%;
+//         // top: 0; bottom: 0; right: 0;
+//         // margin: auto;
+//         // box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+//       }
+//     }
+//     .contact-info {
+//       // width: 100%;
+//       // padding-left: 50px;
      
-      padding-right: 100px;
-      .contact-text {
-        h2 {
-          font-size: 4rem;
-          // margin-bottom: 50px;
-        }
-        p {
-          font-size: 1.5rem;
-          // margin-bottom: 50px;
-        }
-      }
-      .contact-method {
-        .method {
-          // width: 50%;
-          // height: 80px;
-          a {
-            // color: black;
-            // line-height: 80px;              
-          }
-        }
-      }
-    }
-    .contact-form {
-      width: 50px;
-      padding: 20px 0px;
-      padding-left: 50px;
+//       padding-right: 100px;
+//       .contact-text {
+//         h2 {
+//           font-size: 4rem;
+//           // margin-bottom: 50px;
+//         }
+//         p {
+//           font-size: 1.5rem;
+//           // margin-bottom: 50px;
+//         }
+//       }
+//       .contact-method {
+//         .method {
+//           // width: 50%;
+//           // height: 80px;
+//           a {
+//             // color: black;
+//             // line-height: 80px;              
+//           }
+//         }
+//       }
+//     }
+//     .contact-form {
+//       width: 50px;
+//       padding: 20px 0px;
+//       padding-left: 50px;
       
-      .toggle {
-        opacity: 1;
-        display: inline;
-      }
-      // padding-left: 50px !important;
-      // height: 100%;
-      // top: 0; bottom: 0; right: 0;
-      // margin: auto;
-      // box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-      // padding: 20px 30px;
-      overflow: hidden;
-      .contact-form-ws {flex: 1;}
-      .contact-title {
-        font-size: 2.5rem;
-        // flex: 2;
-      }
-      form {
-        // flex: 8; 
-        input, textarea, button {
-          // width: 100%;
-          // padding: 5px 10px;
-          // margin-top: 25px;
-          // font-size: 1rem;
-        }
-        input {
-          // height: 40px;
-          // flex: 1;
-        }
-        button {
-          // letter-spacing: 2px;
-          // font-size: 1.5rem;
-          // flex: 1;
-        }
-        textarea {
-          // height: 150px;
-          // flex: 5;
-        }
-      }
-    }
-  }
-}
+//       .toggle {
+//         opacity: 1;
+//         display: inline;
+//       }
+//       // padding-left: 50px !important;
+//       // height: 100%;
+//       // top: 0; bottom: 0; right: 0;
+//       // margin: auto;
+//       // box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+//       // padding: 20px 30px;
+//       overflow: hidden;
+//       .contact-form-ws {flex: 1;}
+//       .contact-title {
+//         font-size: 2.5rem;
+//         // flex: 2;
+//       }
+//       form {
+//         // flex: 8; 
+//         input, textarea, button {
+//           // width: 100%;
+//           // padding: 5px 10px;
+//           // margin-top: 25px;
+//           // font-size: 1rem;
+//         }
+//         input {
+//           // height: 40px;
+//           // flex: 1;
+//         }
+//         button {
+//           // letter-spacing: 2px;
+//           // font-size: 1.5rem;
+//           // flex: 1;
+//         }
+//         textarea {
+//           // height: 150px;
+//           // flex: 5;
+//         }
+//       }
+//     }
+//   }
+// }
