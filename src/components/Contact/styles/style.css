@@ -9,8 +9,9 @@
   padding-right: 450px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
   text-align: center;
+  color: #232323;
 }
 
 .contact .contact-info .contact-text h2 {
@@ -31,7 +32,6 @@
 
 .contact .contact-info .contact-method .method a {
   color: #232323;
-  color: black;
   text-decoration: none;
   line-height: 80px;
 }
@@ -48,7 +48,7 @@
   margin: auto;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
   padding: 20px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -90,7 +90,7 @@
 }
 
 .contact .contact-form form input, .contact .contact-form form textarea, .contact .contact-form form button {
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
   width: 100%;
   border: none;
   padding: 5px 10px;
@@ -123,5 +123,16 @@
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
+}
+
+@media (max-width: 1300px) {
+  .contact .contact-form {
+    width: 400px;
+  }
+  .contact .contact-form .contact-form-ws {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

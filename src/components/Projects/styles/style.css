@@ -162,11 +162,20 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 750px) {
+  .projects .row .project .info .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 60px) {
   .projects .row {
     width: 100%;
     height: 250px;
     position: relative;
+  }
+  .projects .row .project .info .title {
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

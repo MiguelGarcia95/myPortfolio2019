@@ -1,3 +1,7 @@
+$font: 'Fjalla One';
+$white: #f0f0f0;
+$black: #232323;
+
 .contact {
   height: 550px;
   .contact-info {
@@ -6,8 +10,9 @@
     padding-left: 50px;
     padding-right: 450px;
     box-sizing: border-box;
-    font-family: 'Fjalla One';
+    font-family: $font;
     text-align: center;
+    color: $black;
     .contact-text {
       h2 {
         font-size: 5rem;
@@ -24,8 +29,8 @@
         height: 80px;
         float: left;
         a {
-          color: #232323;
-          color: black;
+          color: $black;
+          // color: black;
           text-decoration: none;
           line-height: 80px;              
         }
@@ -34,7 +39,7 @@
   }
   .contact-form {
     position: absolute;
-    background-color: #232323;
+    background-color: $black;
     width: 400px;
     // width: 25%;
     overflow: hidden;
@@ -42,7 +47,7 @@
     top: 0; bottom: 0; right: 0;
     margin: auto;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-    font-family: 'Fjalla One';
+    font-family: $font;
     padding: 20px 30px;
     box-sizing: border-box;
     text-align: center;
@@ -51,7 +56,7 @@
     .contact-form-ws {flex: 1;}
     .contact-title {
       font-size: 3rem;
-      color: #f0f0f0;
+      color: $white;
       flex: 2;
     }
     form {
@@ -59,13 +64,13 @@
       display: flex; 
       flex-direction: column;
       input, textarea, button {
-        font-family: 'Fjalla One';
+        font-family: $font;
         width: 100%;
         border: none;
         padding: 5px 10px;
         box-sizing: border-box;
         margin-top: 25px;
-        background-color: #f0f0f0;
+        background-color: $white;
         font-size: 1rem;
       }
       input {
@@ -82,6 +87,72 @@
         height: 150px;
         resize: none;
         flex: 5;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .contact {
+    // height: 550px;
+    .contact-info {
+      // width: 100%;
+      // padding-left: 50px;
+      // padding-right: 450px;
+      .contact-text {
+        h2 {
+          // font-size: 5rem;
+          // margin-bottom: 50px;
+        }
+        p {
+          // font-size: 2rem;
+          // margin-bottom: 50px;
+        }
+      }
+      .contact-method {
+        .method {
+          // width: 50%;
+          // height: 80px;
+          a {
+            // color: black;
+            // line-height: 80px;              
+          }
+        }
+      }
+    }
+    .contact-form {
+      width: 400px;
+      // height: 100%;
+      // top: 0; bottom: 0; right: 0;
+      // margin: auto;
+      // box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      // padding: 20px 30px;
+      .contact-form-ws {flex: 1;}
+      .contact-title {
+        // font-size: 3rem;
+        // flex: 2;
+      }
+      form {
+        // flex: 8; 
+        input, textarea, button {
+          // width: 100%;
+          // padding: 5px 10px;
+          // margin-top: 25px;
+          // font-size: 1rem;
+        }
+        input {
+          // height: 40px;
+          // flex: 1;
+        }
+        button {
+          // letter-spacing: 2px;
+          // font-size: 1.5rem;
+          // flex: 1;
+        }
+        textarea {
+          // height: 150px;
+          // flex: 5;
+        }
       }
     }
   }

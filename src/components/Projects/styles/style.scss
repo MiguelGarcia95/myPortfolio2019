@@ -128,7 +128,19 @@ $font: 'Fjalla One';
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 750px) {
+  .projects {
+    .row {
+      .project {
+        .info {
+          .title {font-size: 1.8rem;}
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 60px) {
   .projects {
     .row {
       @include baseSettings(100%, 250px, relative);
@@ -167,7 +179,7 @@ $font: 'Fjalla One';
             // @include baseSettings(100%, 30px, absolute);
             // line-height: 30px;
             // padding: 10px 0;
-            // font-size: 2rem;
+            font-size: 1.8rem;
           }
         }
       }
