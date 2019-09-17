@@ -212,45 +212,17 @@
 
 @media (max-width: 450px) {
   .skills .skill-row {
-    width: 100%;
-    display: block;
-  }
-  .skills .skill-row:first-of-type .skill-column:last-of-type {
-    padding-top: 50px;
-  }
-  .skills .skill-row:last-of-type {
-    padding-top: 15px;
-  }
-  .skills .skill-row .skill-column {
-    width: 100%;
-    float: left;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
-  .skills .skill-row .skill-column.full {
-    padding-top: 25px;
+    padding: 0 25px;
   }
   .skills .skill-row .skill-column .column-title {
-    margin-bottom: 0px;
-    font-size: 1.5rem;
-  }
-  .skills .skill-row .skill-column .skill {
-    width: 100% !important;
-    height: 40px;
-    padding: 15px 0;
-  }
-  .skills .skill-row .skill-column .skill .skill-icon img {
-    width: 100%;
-    float: right;
+    font-size: 1.4rem;
   }
   .skills .skill-row .skill-column .skill .skill-name {
     width: 85%;
   }
   .skills .skill-row .skill-column .skill .skill-name p {
-    margin-left: 0px;
-    font-size: 1rem;
-    text-align: center;
+    margin-left: 10px;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
