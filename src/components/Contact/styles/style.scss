@@ -53,6 +53,8 @@ $black: #232323;
     text-align: center;
     display: flex;
     flex-direction: column;
+    transition: 0.5s;
+
     &.opened {
       .toggle {
         .arrow-head {
@@ -84,11 +86,14 @@ $black: #232323;
       .arrow-head {
         width: 100%;
         padding-top: 10px;
+        
+
         .top, .bottom {
           background-color: $white;
           width: 50%;
           height: 2px;
           position: absolute;
+          transition: 1s;
         }
         .top {
           transform: rotate(-30deg);
@@ -187,7 +192,7 @@ $black: #232323;
       // width: 100%;
       // padding-left: 50px;
      
-      padding-right: 300px;
+      padding-right: 50px;
       .contact-text {
         h2 {
           font-size: 4rem;
