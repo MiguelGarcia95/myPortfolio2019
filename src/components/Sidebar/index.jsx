@@ -21,6 +21,7 @@ class Sidebar extends React.Component {
         sectionLeaves(currentSection);
       }
       sectionEnters(sectionName);
+      this.onNavToggle();
     }
   }
 

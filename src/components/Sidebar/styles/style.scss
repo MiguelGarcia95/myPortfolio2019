@@ -130,6 +130,24 @@ $transition: 0.5s;
 @media (max-width: 800px) {
   .sidebar {
     width: 50px;
+    &.opened {width: 250px;}
+    .mobile-toggle {opacity: 1;}
+    .mobile-name {opacity: 1;}
+    nav {padding-left: 50px;}
+    .name {
+      padding-left: 50px;      
+      h1 {
+        font-size: 2rem;
+        line-height: 40px;
+      }
+      h2 {margin-top: 20px;}
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 50px;
     &.opened {
       width: 250px;
     }
