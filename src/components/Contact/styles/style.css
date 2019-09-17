@@ -230,7 +230,39 @@
     padding: 20px 30px;
   }
   .contact .contact-info {
-    padding-right: 50px;
+    padding-right: 100px;
+  }
+  .contact .contact-info .contact-text h2 {
+    font-size: 4rem;
+  }
+  .contact .contact-info .contact-text p {
+    font-size: 1.5rem;
+  }
+  .contact .contact-form {
+    width: 50px;
+    padding: 20px 0px;
+    padding-left: 50px;
+    overflow: hidden;
+  }
+  .contact .contact-form .toggle {
+    opacity: 1;
+    display: inline;
+  }
+  .contact .contact-form .contact-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 50px) {
+  .contact {
+    height: auto;
+  }
+  .contact.opened .contact-form {
+    width: 350px;
+    padding: 20px 30px;
+  }
+  .contact .contact-info {
+    padding-right: 100px;
   }
   .contact .contact-info .contact-text h2 {
     font-size: 4rem;

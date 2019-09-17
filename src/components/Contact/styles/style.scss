@@ -175,6 +175,37 @@ $black: #232323;
 
 
 @media (max-width: 1050px) {
+  .contact {
+    height: auto;
+    &.opened {
+      .contact-form {
+        width: 350px;
+        padding: 20px 30px;
+      }
+    }
+    .contact-info {
+      padding-right: 100px;
+      .contact-text {
+        h2 {font-size: 4rem;}
+        p {font-size: 1.5rem;}
+      }
+    }
+    .contact-form {
+      width: 50px;
+      padding: 20px 0px;
+      padding-left: 50px;
+      .toggle {
+        opacity: 1;
+        display: inline;
+      }
+      overflow: hidden;
+      .contact-title {font-size: 2.5rem;}
+    }
+  }
+}
+
+
+@media (max-width: 50px) {
   
   .contact {
     height: auto;
@@ -192,7 +223,7 @@ $black: #232323;
       // width: 100%;
       // padding-left: 50px;
      
-      padding-right: 50px;
+      padding-right: 100px;
       .contact-text {
         h2 {
           font-size: 4rem;
