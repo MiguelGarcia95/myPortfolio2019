@@ -170,6 +170,7 @@
 
 @media (max-width: 600px) {
   .projects .row {
+    padding: 0 25px;
     display: block;
     height: 850px;
   }
