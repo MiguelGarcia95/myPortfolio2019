@@ -28,7 +28,7 @@ class Sidebar extends React.Component {
     const {currentSection} = this.props;
     const {opened} = this.state;
     return (
-      <header className="sidebar">
+      <header className={`sidebar ${opened ? 'opened' : ''}`}>
         <nav>
           <p 
             className={this.isActive(currentSection, 'projects') ? 'active' : ''} 
