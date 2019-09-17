@@ -179,13 +179,21 @@
     height: 100%;
     width: 100%;
     margin: auto 0px;
+    margin-bottom: 50px;
   }
   .projects .row .project .info {
     width: 100%;
     height: 100%;
   }
+}
+
+@media (max-width: 400px) {
+  .projects .row .project .info {
+    width: 100%;
+    height: 100%;
+  }
   .projects .row .project .info .title {
-    font-size: 1.8rem;
+    font-size: 1.5rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
