@@ -163,7 +163,7 @@
     width: 50px;
   }
   .sidebar.opened {
-    width: 250px;
+    width: 215px;
   }
   .sidebar .mobile-toggle {
     opacity: 1;
@@ -173,25 +173,32 @@
   }
   .sidebar nav {
     padding-left: 50px;
+    padding-top: 0px;
+    height: 200px;
+  }
+  .sidebar nav p {
+    line-height: 50px;
+    font-size: 1.3rem;
+  }
+  .sidebar nav p:hover {
+    margin-left: 0px;
+  }
+  .sidebar nav p.active {
+    margin-left: 0px;
+    font-size: 1.7rem;
   }
   .sidebar .name {
     padding-left: 50px;
-  }
-  .sidebar .name h1 {
-    font-size: 2rem;
-    line-height: 40px;
-  }
-  .sidebar .name h2 {
-    margin-top: 20px;
+    padding-bottom: 13px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 0px) {
   .sidebar {
     width: 50px;
   }
   .sidebar.opened {
-    width: 250px;
+    width: 215px;
   }
   .sidebar .mobile-toggle {
     opacity: 1;
@@ -201,16 +208,19 @@
   }
   .sidebar nav {
     padding-left: 50px;
+    padding-top: 0px;
+    height: 200px;
   }
-  .sidebar .name {
-    padding-left: 50px;
+  .sidebar nav p {
+    line-height: 50px;
+    font-size: 1.3rem;
   }
-  .sidebar .name h1 {
-    font-size: 2rem;
-    line-height: 40px;
+  .sidebar nav p:hover {
+    margin-left: 0px;
   }
-  .sidebar .name h2 {
-    margin-top: 20px;
+  .sidebar nav p.active {
+    margin-left: 0px;
+    font-size: 1.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
