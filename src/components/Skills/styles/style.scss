@@ -134,7 +134,6 @@
             }
           }
           .skill-name {
-            width: 85%;
             p {font-size: 0.8rem; text-align: center;}
           }
         }
@@ -143,28 +142,83 @@
   }
 }
 
-
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .skills {
     .skill-row {
-      // width: 100%;
-      // padding: 0 50px;
-      &:first-of-type {flex: 5; padding-top: 25px;}
-      &:last-of-type {flex: 4; padding-top: 15px;}
+      width: 100%;
+      display: block;
+      &:first-of-type { 
+        .skill-column:last-of-type {
+        padding-top: 50px;
+        }
+      }
+      &:last-of-type {padding-top: 15px;}
       .skill-column {
-        // width: 50%;
-        // float: left;
-        // flex: 1;
+        width: 100%;
+        float: left;
+        flex: none;
         &.full {
-          // width: 100%;
-          // .skill {width: 33%;}
+        padding-top: 25px;
         }
         .column-title {
           margin-bottom: 0px;
           font-size: 1.5rem;
         }
         .skill {
-          width: 100%;
+          width: 100% !important;
+          height: 40px;
+          padding: 15px 0;
+  
+          .skill-icon {
+            img {
+              width: 100%;
+              float: right;
+            }
+          }
+          .skill-name {
+            width: 85%;
+            p {
+              margin-left: 0px;
+              font-size: 1rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .skills {
+    .skill-row {
+      width: 100%;
+      // padding: 0 50px;
+      display: block;
+      &:first-of-type { 
+        .skill-column:last-of-type {
+        padding-top: 50px;
+        }
+      }
+      &:last-of-type {padding-top: 15px;}
+      .skill-column {
+        width: 100%;
+        float: left;
+        // flex: 1;
+        flex: none;
+        &.full {
+        padding-top: 25px;
+
+          // width: 100%;
+          // .skill {width: 33%;}
+
+        }
+        .column-title {
+          margin-bottom: 0px;
+          font-size: 1.5rem;
+        }
+        .skill {
+          width: 100% !important;
           height: 40px;
           // float: left;
           padding: 15px 0;
@@ -185,8 +239,8 @@
             // height: 40px;
             width: 85%;
             p {
-              // margin-left: 10px;
-              font-size: 0.8rem;
+              margin-left: 0px;
+              font-size: 1rem;
               // line-height: 40px;
               // margin-top: 5px;
               text-align: center;
