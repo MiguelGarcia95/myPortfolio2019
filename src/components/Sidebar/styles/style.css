@@ -46,6 +46,29 @@
   font-size: 2rem;
 }
 
+.sidebar .mobile-section {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 50px;
+  overflow: hidden;
+  height: 150px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar .mobile-section h2 {
+  line-height: 50px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: sideways;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  text-transform: uppercase;
+}
+
 .sidebar .mobile-name {
   position: absolute;
   left: 0;
@@ -166,6 +189,9 @@
     width: 215px;
   }
   .sidebar .mobile-toggle {
+    opacity: 1;
+  }
+  .sidebar .mobile-section {
     opacity: 1;
   }
   .sidebar .mobile-name {

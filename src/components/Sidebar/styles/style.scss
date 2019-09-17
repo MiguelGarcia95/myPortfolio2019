@@ -40,6 +40,22 @@ $transition: 0.5s;
       }
     }
   }
+  .mobile-section {
+    position: absolute;
+    left: 0; top: 100px;
+    width: 50px;
+    overflow: hidden;
+    height: 150px;
+    opacity: 0;
+    transition: $transition;
+    h2 {
+      line-height: 50px;
+      writing-mode: vertical-rl;
+      text-orientation: sideways;
+      transform: rotate(-180deg);
+      text-transform: uppercase;
+    }    
+  }
   .mobile-name {
     position: absolute;
     left: 0; bottom: 0;
@@ -130,6 +146,7 @@ $transition: 0.5s;
     width: 50px;
     &.opened {width: 215px;}
     .mobile-toggle {opacity: 1;}
+    .mobile-section {opacity: 1;}
     .mobile-name {opacity: 1;}
     nav {
       padding-left: 50px;      

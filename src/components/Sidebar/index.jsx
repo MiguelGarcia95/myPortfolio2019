@@ -59,6 +59,9 @@ class Sidebar extends React.Component {
         <div className="mobile-name">
           <h1>M</h1>
         </div>
+        <div className="mobile-section">
+          <h2>{currentSection}</h2>
+        </div>
         <div className={`mobile-toggle ${opened ? 'opened' : ''}`} onClick={this.onNavToggle}>
           <div className="bar bar_01"></div>
           <div className="bar bar_02"></div>
