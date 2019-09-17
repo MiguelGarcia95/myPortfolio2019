@@ -92,13 +92,21 @@ $black: #232323;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
+  .contact {
+    .contact-info {padding-right: 350px;}
+    .contact-form {width: 300px;}
+  }
+}
+
+
+@media (max-width: 1200px) {
   .contact {
     // height: 550px;
     .contact-info {
       // width: 100%;
       // padding-left: 50px;
-      // padding-right: 450px;
+      padding-right: 350px;
       .contact-text {
         h2 {
           // font-size: 5rem;
@@ -121,7 +129,7 @@ $black: #232323;
       }
     }
     .contact-form {
-      width: 400px;
+      width: 300px;
       // height: 100%;
       // top: 0; bottom: 0; right: 0;
       // margin: auto;

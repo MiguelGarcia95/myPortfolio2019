@@ -125,9 +125,21 @@
           flex: 5;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
+  .contact .contact-info {
+    padding-right: 350px;
+  }
   .contact .contact-form {
-    width: 400px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact .contact-info {
+    padding-right: 350px;
+  }
+  .contact .contact-form {
+    width: 300px;
   }
   .contact .contact-form .contact-form-ws {
     -webkit-box-flex: 1;
