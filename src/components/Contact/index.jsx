@@ -6,6 +6,7 @@ const emailjs = window.emailjs;
 
 class Contact extends React.Component {
   state = {
+    opened: false,
     name: '',
     email: '',
     subject: '',
@@ -20,6 +21,8 @@ class Contact extends React.Component {
   componentDidMount() {
     emailjs.init(EMAILJSUSER);
   }
+
+  onContactToggle = () => this.setState({opened: !this.state.opened});
 
   onChange = e => this.setState({
     [e.target.name]: e.target.value,
@@ -79,10 +82,9 @@ class Contact extends React.Component {
   }; 
 
   render() {
-    const {nameError, emailError, subjectError, messageError, messageSent} = this.state;
-    const {} = this.props;
+    const {nameError, emailError, subjectError, messageError, messageSent, opened} = this.state;
     return (
-      <div className="section contact startPos">
+      <div className={`section contact startPos ${opened ? 'opened' : ''}`}>
         <div className="contact-info">
           <div className="contact-text">
             <h2>Want to talk?</h2>
@@ -97,7 +99,14 @@ class Contact extends React.Component {
             </div>
           </div>
         </div>
-        <div className="contact-form">
+        <div className={`contact-form ${opened ? 'opened' : ''}`}>
+          <div className="toggle" onClick={this.onContactToggle}>
+            <div className="arrow-head">
+              <div className="top"></div>
+              <div className="bottom"></div>
+            </div>
+            <div className="arrow"></div>
+          </div>
           <div className="contact-form-ws"></div>
           <div className="contact-title">Contact Me</div>
           <form>

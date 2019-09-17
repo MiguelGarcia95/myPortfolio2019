@@ -60,7 +60,7 @@ class App extends React.Component {
           <ProjectDisplay project={project} sectionLeaves={this.sectionLeaves} sectionEnters={this.sectionEnters}  />
           <Skills />
           <About />
-          <Contact currentSection={currentSection} />
+          <Contact />
         </div>
       </div>
     );
