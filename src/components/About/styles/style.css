@@ -1,9 +1,10 @@
 .about {
-  height: 650px;
+  height: auto;
 }
 
 .about .about-content {
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 .about .about-content .about-text {
@@ -20,5 +21,30 @@
 .about .about-content .about-text.about-extra {
   margin-top: 50px;
   margin-bottom: 0px;
+}
+
+@media (max-width: 812px) {
+  .about {
+    padding-top: 25px !important;
+  }
+  .about .about-content .about-text.about-name {
+    margin-bottom: 30px;
+  }
+  .about .about-content .about-text.about-extra {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about .about-content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .about .about-content .about-text {
+    font-size: 1rem;
+  }
+  .about .about-content .about-text.about-name {
+    font-size: 2.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
