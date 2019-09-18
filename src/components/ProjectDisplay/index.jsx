@@ -23,7 +23,7 @@ export default function ProjectDisplay({project}) {
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum molestias ullam dolores sunt explicabo labore aspernatur quam ipsa consequatur doloribus omnis vitae veritatis, beatae fugiat autem vel est enim ratione.</p>
         </div>
         <div className="used">
-          <p></p>
+          <p className='tech'></p>
         </div>
       </div>
       {project}
