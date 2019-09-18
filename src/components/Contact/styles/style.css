@@ -288,9 +288,6 @@
     padding-left: 25px;
     padding-right: 75px;
   }
-  .contact .contact-info.opened .contact-form {
-    width: 100%;
-  }
   .contact .contact-info .contact-text h2 {
     font-size: 3rem;
   }
@@ -307,6 +304,13 @@
   .contact .contact-info .contact-method .method a {
     font-size: 0.9rem;
     line-height: 60px;
+  }
+  .contact.opened .contact-form {
+    width: 100%;
+  }
+  .contact.opened .contact-form .toggle {
+    right: 10px;
+    left: unset;
   }
 }
 /*# sourceMappingURL=style.css.map */
