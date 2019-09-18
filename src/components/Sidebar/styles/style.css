@@ -225,4 +225,14 @@
     margin-top: 10px;
   }
 }
+
+@media (max-width: 620px) {
+  .sidebar .name h1 {
+    font-size: 1.2rem;
+  }
+  .sidebar .name h2 {
+    margin-top: 5px;
+    font-size: 0.8em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
