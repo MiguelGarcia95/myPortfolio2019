@@ -1,3 +1,19 @@
 .project-display {
   width: 100%;
+  .project-images {
+    .project-image {
+      &.first-image {}
+      &.second-image {}
+      &.third-image {}
+      &.fourth-image {}
+    }
+  }
+  .project-content {
+    .description {
+
+    }
+    .used {
+      
+    }
+  }
 }
