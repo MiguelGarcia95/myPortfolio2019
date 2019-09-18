@@ -222,16 +222,26 @@ $black: #232323;
 
 @media (max-width: 550px) {
   .contact {
+    padding-top: 25px !important;
     .contact-info {
+      padding-left: 25px;
+      padding-right: 75px;
+      &.opened {
+        .contact-form {
+          width: 100%;
+          // padding: 20px 30px;
+        }
+      }
       .contact-text {
-        h2 {font-size: 3.5rem;}
+        h2 {font-size: 3rem;}
         p {font-size: 1.3rem;}
       }
       .contact-method {
-        height: 160px;
+        height: 120px;
         .method {
           width: 100%;
-          a {font-size: 0.9rem;}
+          height: 60px;
+          a {font-size: 0.9rem; line-height: 60px;}
         }
       }
     }

@@ -281,20 +281,32 @@
 }
 
 @media (max-width: 550px) {
+  .contact {
+    padding-top: 25px !important;
+  }
+  .contact .contact-info {
+    padding-left: 25px;
+    padding-right: 75px;
+  }
+  .contact .contact-info.opened .contact-form {
+    width: 100%;
+  }
   .contact .contact-info .contact-text h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .contact .contact-info .contact-text p {
     font-size: 1.3rem;
   }
   .contact .contact-info .contact-method {
-    height: 160px;
+    height: 120px;
   }
   .contact .contact-info .contact-method .method {
     width: 100%;
+    height: 60px;
   }
   .contact .contact-info .contact-method .method a {
     font-size: 0.9rem;
+    line-height: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
