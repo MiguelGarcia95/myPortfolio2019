@@ -1,4 +1,5 @@
 import React from 'react'
+import ImageSlider from '../ImageSlider';
 import './styles/style.css';
 
 const onReturnClick = (sectionLeaves, sectionEnters) => {
@@ -16,16 +17,6 @@ const IMAGES = {
   ]
 }
 
-const displayImages = () => {
-  return IMAGES.images.map((image, i) => {
-    return (
-      <div className="project-image first-image" key={i}>
-        <img src={image} alt={image}/>
-      </div>
-    )
-  })
-}
-
 export default function ProjectDisplay({project, sectionLeaves, sectionEnters}) {
   return (
     <div className='section project-display startPos'>
@@ -37,9 +28,8 @@ export default function ProjectDisplay({project, sectionLeaves, sectionEnters}) 
           <a href="/" target="_blank">Visit</a>
         </div>
       </div>
-      <div className="project-images">
-        {displayImages()}
-      </div>
+      <ImageSlider images={IMAGES} />
+
       <div className="project-content">
         <div className="project-name">
           <h1>Project Name</h1>
