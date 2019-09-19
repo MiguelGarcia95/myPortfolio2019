@@ -7,10 +7,22 @@ class ImageSlider extends React.Component {
     return images.images.map(image => {
       return (
         <div className={`project-image ${image.class}`} key={image.id}>
-          <img src={image.url} alt={image.id} onClick={() => this.imageSlideOut(image.class)}/>
+          <div className="slider-controller">
+            <div className="slide-left" onClick={() => this.onClickLeft(image.class)} ></div>
+            <div className="slide-right" onClick={() => this.onClickRight(image.class)} ></div>
+          </div>
+          <img src={image.url} alt={image.id}/>
         </div>
       )
     })
+  }
+
+  onClickLeft = imageName => {
+    console.log('left', this.props.images.imageCount)
+  }
+
+  onClickRight = imageName => {
+    console.log('right', this.props.images.imageCount)
   }
 
   imageSlideIn = imageName => {
