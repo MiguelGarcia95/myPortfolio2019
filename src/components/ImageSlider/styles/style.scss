@@ -5,6 +5,7 @@
   margin-top: 50px;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
   .project-image {
     height: 100%;
     width: 100%;
@@ -19,7 +20,7 @@
     }
     &.image-startPos {
       width: 100%;
-      left: '-100%';
+      left: -100%;
       img {
       }
     }

@@ -7,7 +7,7 @@ class ImageSlider extends React.Component {
     return images.images.map(image => {
       return (
         <div className={`project-image ${image.class}`} key={image.id}>
-          <img src={image.url} alt={image.id} onClick={() => this.imageSlideIn(image.class)}/>
+          <img src={image.url} alt={image.id} onClick={() => this.imageSlideOut(image.class)}/>
         </div>
       )
     })
