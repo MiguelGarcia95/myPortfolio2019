@@ -11,6 +11,7 @@ $black: #232323;
     .goback, .go-link {
       position: absolute;
       top: -15px;
+      cursor: pointer;
       p, a {font-family: $font; color: $black; font-size: 1.5rem;}
     }
     .goback {
@@ -35,6 +36,8 @@ $black: #232323;
     position: relative;
     .project-image {
       height: 100%;
+      width: 100%;
+      overflow: hidden;
       box-sizing: border-box;
       position: absolute;
       img {

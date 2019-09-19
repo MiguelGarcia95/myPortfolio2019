@@ -11,6 +11,7 @@
 .project-display .header .goback, .project-display .header .go-link {
   position: absolute;
   top: -15px;
+  cursor: pointer;
 }
 
 .project-display .header .goback p, .project-display .header .goback a, .project-display .header .go-link p, .project-display .header .go-link a {
@@ -43,6 +44,8 @@
 
 .project-display .project-images .project-image {
   height: 100%;
+  width: 100%;
+  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
