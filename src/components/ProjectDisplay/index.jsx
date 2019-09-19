@@ -1,12 +1,17 @@
 import React from 'react'
 import './styles/style.css';
 
-export default function ProjectDisplay({project}) {
+const onReturnClick = (sectionLeaves, sectionEnters) => {
+  sectionLeaves('project-display');
+  sectionEnters('projects');
+}
+
+export default function ProjectDisplay({project, sectionLeaves, sectionEnters}) {
   return (
     <div className='section project-display startPos'>
       <div className="header">
         <div className="goback">
-          <p>Return</p>
+          <p onClick={() => onReturnClick(sectionLeaves, sectionEnters)}>Return</p>
         </div>
         <div className="go-link">
           <a href="/" target="_blank">Visit</a>
