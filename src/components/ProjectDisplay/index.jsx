@@ -26,10 +26,24 @@ export default function ProjectDisplay({project}) {
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum molestias ullam dolores sunt explicabo labore aspernatur quam ipsa consequatur doloribus omnis vitae veritatis, beatae fugiat autem vel est enim ratione.</p>
         </div>
         <div className="used">
-          <p className='tech'></p>
+          <div className="used-title">
+            <h1>Tech Used</h1>
+          </div>
+          <p className='tech'>html</p>
+          <p className='tech'>css/less</p>
+          <p className='tech'>JS</p>
+          <p className='tech'>ReactJS</p>
+          <p className='tech'>Photoshop</p>
+        </div>
+        <div className="meta">
+          <div className="meta-title">
+            <h1>Links</h1>
+          </div>
+          <div className="links">
+            <a className="link" href='/'>Checkout Website</a>
+          </div>
         </div>
       </div>
-      {project}
     </div>
   )
 }
