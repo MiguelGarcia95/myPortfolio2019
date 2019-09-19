@@ -6,6 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 }
 
 .project-images .project-image {
@@ -24,6 +25,6 @@
 
 .project-images .project-image.image-startPos {
   width: 100%;
-  left: '-100%';
+  left: -100%;
 }
 /*# sourceMappingURL=style.css.map */
