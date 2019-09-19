@@ -12,13 +12,15 @@ $black: #232323;
       position: absolute;
       top: -15px;
       cursor: pointer;
-      p, a {font-family: $font; color: $black; font-size: 1.5rem;}
+      p, a {
+        font-family: $font; color: $black; font-size: 1.5rem;
+        &:hover {
+          font-weight: 600;
+        }
+      }
     }
     .goback {
       left: 0;
-      p {
-        
-      }
     }
     .go-link {
       right: 0;
@@ -45,10 +47,10 @@ $black: #232323;
         width: 100%;
         // object-fit: contain;
       }
-      &.first-image {}
-      &.second-image {}
-      &.third-image {}
-      &.fourth-image {}
+      // &.first-image {}
+      // &.second-image {}
+      // &.third-image {}
+      // &.fourth-image {}
     }
   }
   .project-content {
