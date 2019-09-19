@@ -13,22 +13,22 @@ const IMAGES = {
     {
       url: 'https://gameranx.com/wp-content/uploads/2016/09/Nier-Automata-1080P-Wallpaper-1.jpg',
       id: 1,
-      class: 'project-image image-1' 
+      class: 'image-1' 
     },
     {
       url: 'https://i.redd.it/1dbjwhvpoia11.jpg',
       id: 2,
-      class: 'project-image image-2 image-startPos' 
+      class: 'image-2 image-startPos' 
     },
     {
       url: 'https://i.pinimg.com/736x/bf/b4/ec/bfb4ec55cd5f515f267b918b36b18b47.jpg',
       id: 3,
-      class: 'project-image image-3 image-startPos' 
+      class: 'image-3 image-startPos' 
     },
     {
       url: 'https://www.pcgamesn.com/wp-content/uploads/2018/08/Cyberpunk-2077-screenshot1.jpg',
       id: 4,
-      class: 'project-image image-4 image-startPos' 
+      class: 'image-4 image-startPos' 
     },
   ]
 }
