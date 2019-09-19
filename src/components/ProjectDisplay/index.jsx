@@ -19,6 +19,9 @@ export default function ProjectDisplay({project}) {
         </div>
       </div>
       <div className="project-content">
+        <div className="project-name">
+          <h1>Project Name</h1>
+        </div>
         <div className="description">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum molestias ullam dolores sunt explicabo labore aspernatur quam ipsa consequatur doloribus omnis vitae veritatis, beatae fugiat autem vel est enim ratione.</p>
         </div>
