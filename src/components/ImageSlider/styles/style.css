@@ -38,6 +38,7 @@
   width: 50%;
   height: 100%;
   float: left;
+  cursor: pointer;
 }
 
 .project-images .project-image .slider-controller .slide-left:hover {
@@ -49,6 +50,7 @@
   width: 50%;
   height: 100%;
   float: right;
+  cursor: pointer;
 }
 
 .project-images .project-image .slider-controller .slide-right:hover {
