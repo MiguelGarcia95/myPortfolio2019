@@ -8,8 +8,8 @@ class ImageSlider extends React.Component {
       return (
         <div className={`project-image ${image.class}`} key={image.id}>
           <div className="slider-controller">
-            <div className="slide-left" onClick={() => this.onClickLeft(image, images)} ></div>
-            <div className="slide-right" onClick={() => this.onClickRight(image, images)} ></div>
+            <div className="slide slide-left" onClick={() => this.onClickLeft(image, images)} ></div>
+            <div className="slide slide-right" onClick={() => this.onClickRight(image, images)} ></div>
           </div>
           <img src={image.url} alt={image.id}/>
         </div>

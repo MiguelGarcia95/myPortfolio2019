@@ -21,6 +21,10 @@
 .project-images .project-image img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .project-images .project-image.image-startPos {
@@ -34,27 +38,20 @@
   position: absolute;
 }
 
-.project-images .project-image .slider-controller .slide-left {
+.project-images .project-image .slider-controller .slide {
   width: 50%;
   height: 100%;
-  float: left;
   cursor: pointer;
+  float: left;
 }
 
 .project-images .project-image .slider-controller .slide-left:hover {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-}
-
-.project-images .project-image .slider-controller .slide-right {
-  width: 50%;
-  height: 100%;
-  float: right;
-  cursor: pointer;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 
 .project-images .project-image .slider-controller .slide-right:hover {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 /*# sourceMappingURL=style.css.map */
