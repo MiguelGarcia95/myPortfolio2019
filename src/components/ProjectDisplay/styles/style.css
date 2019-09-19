@@ -36,30 +36,6 @@
   text-decoration: none;
 }
 
-.project-display .project-images {
-  height: 500px;
-  width: 1000px;
-  margin: auto;
-  margin-top: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-}
-
-.project-display .project-images .project-image {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-}
-
-.project-display .project-images .project-image img {
-  height: 100%;
-  width: 100%;
-}
-
 .project-display .project-content {
   width: 1000px;
   margin: auto;

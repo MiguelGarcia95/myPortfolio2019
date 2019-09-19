@@ -29,30 +29,6 @@ $black: #232323;
       }
     }
   }
-  .project-images {
-    height: 500px;
-    width: 1000px;
-    margin: auto;
-    margin-top: 50px;
-    box-sizing: border-box;
-    position: relative;
-    .project-image {
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      box-sizing: border-box;
-      position: absolute;
-      img {
-        height: 100%;
-        width: 100%;
-        // object-fit: contain;
-      }
-      // &.first-image {}
-      // &.second-image {}
-      // &.third-image {}
-      // &.fourth-image {}
-    }
-  }
   .project-content {
     width: 1000px;
     margin: auto;
