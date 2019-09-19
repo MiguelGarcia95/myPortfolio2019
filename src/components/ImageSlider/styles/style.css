@@ -21,4 +21,9 @@
   height: 100%;
   width: 100%;
 }
+
+.project-images .project-image.image-startPos {
+  width: 100%;
+  left: '-100%';
+}
 /*# sourceMappingURL=style.css.map */
