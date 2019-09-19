@@ -47,14 +47,14 @@ export default function ProjectDisplay({project, sectionLeaves, sectionEnters}) 
       <ImageSlider images={IMAGES} />
 
       <div className="project-content">
-        <div className="project-name">
+        <div className="section-name">
           <h1>Project Name</h1>
         </div>
         <div className="description">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum molestias ullam dolores sunt explicabo labore aspernatur quam ipsa consequatur doloribus omnis vitae veritatis, beatae fugiat autem vel est enim ratione.</p>
         </div>
         <div className="used">
-          <div className="used-title">
+          <div className="section-name">
             <h1>Tech Used</h1>
           </div>
           <p className='tech'>html</p>
@@ -64,7 +64,7 @@ export default function ProjectDisplay({project, sectionLeaves, sectionEnters}) 
           <p className='tech'>Photoshop</p>
         </div>
         <div className="meta">
-          <div className="meta-title">
+          <div className="section-name">
             <h1>Links</h1>
           </div>
           <div className="links">

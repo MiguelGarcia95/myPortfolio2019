@@ -53,4 +53,10 @@
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
+
+@media (max-width: 1400px) {
+  .project-images {
+    width: 900px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

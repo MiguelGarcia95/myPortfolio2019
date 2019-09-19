@@ -36,6 +36,16 @@
   text-decoration: none;
 }
 
+.project-display .section-name {
+  margin: 25px 0;
+  height: 80px;
+}
+
+.project-display .section-name h1 {
+  font-size: 3rem;
+  line-height: 80px;
+}
+
 .project-display .project-content {
   width: 1000px;
   margin: auto;
@@ -46,32 +56,12 @@
   color: #232323;
 }
 
-.project-display .project-content .project-name {
-  margin: 25px 0;
-  height: 80px;
-}
-
-.project-display .project-content .project-name h1 {
-  font-size: 3rem;
-  line-height: 80px;
-}
-
 .project-display .project-content .description {
   margin-bottom: 25px;
 }
 
 .project-display .project-content .description p {
   font-size: 1.5rem;
-}
-
-.project-display .project-content .used .used-title {
-  height: 80px;
-  margin: 25px 0;
-}
-
-.project-display .project-content .used .used-title h1 {
-  font-size: 3rem;
-  line-height: 80px;
 }
 
 .project-display .project-content .used .tech {
@@ -81,16 +71,6 @@
 
 .project-display .project-content .meta {
   margin-bottom: 50px;
-}
-
-.project-display .project-content .meta .meta-title {
-  height: 80px;
-  margin: 25px 0;
-}
-
-.project-display .project-content .meta .meta-title h1 {
-  font-size: 3rem;
-  line-height: 80px;
 }
 
 .project-display .project-content .meta .links .link {

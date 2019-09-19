@@ -29,6 +29,15 @@ $black: #232323;
       }
     }
   }
+  .section-name {
+    margin: 25px 0;
+    
+    height: 80px;
+    h1 {
+      font-size: 3rem;
+      line-height: 80px;
+    }
+  }
   .project-content {
     width: 1000px;
     margin: auto;
@@ -36,49 +45,20 @@ $black: #232323;
     position: relative;
     font-family: $font;
     color: $black;
-    .project-name {
-      margin: 25px 0;
-      
-      height: 80px;
-      h1 {
-        font-size: 3rem;
-        line-height: 80px;
-      }
-    }
     .description {
-      
-
       margin-bottom: 25px;
       p {
         font-size: 1.5rem;
       }
     }
     .used {
-      
-      .used-title {
-        height: 80px;
-        margin: 25px 0;
-        h1 {
-          font-size: 3rem;
-          line-height: 80px;
-        }
-      }
       .tech {
         font-size: 1.5rem;
         line-height: 50px;
       }
     }
     .meta {
-      
       margin-bottom: 50px;
-      .meta-title {
-        height: 80px;
-        margin: 25px 0;
-        h1 {
-          font-size: 3rem;
-          line-height: 80px;
-        }
-      }
       .links {
         .link {
           color: $black;
