@@ -4,17 +4,36 @@ $black: #232323;
 
 .project-display {
   width: 100%;
-  .goback {
-
+  .header {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    .goback, .go-link {
+      position: absolute;
+      top: -15px;
+      p, a {font-family: $font; color: $black; font-size: 1.5rem;}
+    }
+    .goback {
+      left: 0;
+      p {
+        
+      }
+    }
+    .go-link {
+      right: 0;
+      a {
+        text-decoration: none;
+      }
+    }
   }
   .project-images {
     height: 500px;
     width: 1000px;
     margin: auto;
+    margin-top: 50px;
     box-sizing: border-box;
     position: relative;
     .project-image {
-      // width: 100%;
       height: 100%;
       box-sizing: border-box;
       position: absolute;
@@ -38,7 +57,7 @@ $black: #232323;
     color: $black;
     .project-name {
       margin: 25px 0;
-      margin-left: 25px;
+      
       height: 80px;
       h1 {
         font-size: 3rem;
@@ -46,7 +65,7 @@ $black: #232323;
       }
     }
     .description {
-      margin-left: 25px;
+      
 
       margin-bottom: 25px;
       p {
@@ -54,7 +73,7 @@ $black: #232323;
       }
     }
     .used {
-      margin-left: 25px;
+      
       .used-title {
         height: 80px;
         margin: 25px 0;
@@ -69,7 +88,7 @@ $black: #232323;
       }
     }
     .meta {
-      margin-left: 25px;
+      
       margin-bottom: 50px;
       .meta-title {
         height: 80px;

@@ -4,6 +4,14 @@ import './styles/style.css';
 export default function ProjectDisplay({project}) {
   return (
     <div className='section project-display startPos'>
+      <div className="header">
+        <div className="goback">
+          <p>Return</p>
+        </div>
+        <div className="go-link">
+          <a href="/" target="_blank">Visit</a>
+        </div>
+      </div>
       <div className="project-images">
         <div className="project-image first-image">
           <img src="https://gameranx.com/wp-content/uploads/2016/09/Nier-Automata-1080P-Wallpaper-1.jpg" alt=""/>
@@ -40,7 +48,7 @@ export default function ProjectDisplay({project}) {
             <h1>Links</h1>
           </div>
           <div className="links">
-            <a className="link" href='/'>Checkout Website</a>
+            <a className="link" href='/' target="_blank">Checkout Website</a>
           </div>
         </div>
       </div>
