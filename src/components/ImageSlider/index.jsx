@@ -18,20 +18,22 @@ class ImageSlider extends React.Component {
   }
 
   onClickLeft = (image, images) => {
-    console.log('left', images.imageCount)
-    console.log('imageId', image.id)
     if (image.id === 1) {
       this.imageSlideOut('image-1');
       this.imageSlideIn(`image-${images.imageCount}`);
+    } else {
+      this.imageSlideOut(`image-${image.id}`);
+      this.imageSlideIn(`image-${image.id - 1}`);
     }
   }
 
   onClickRight = (image, images) => {
-    console.log('right', images.imageCount)
-    console.log('imageId', image.id)
     if (image.id === images.imageCount) {
       this.imageSlideOut('image-4');
       this.imageSlideIn(`image-1`);
+    } else {
+      this.imageSlideOut(`image-${image.id}`);
+      this.imageSlideIn(`image-${image.id + 1}`);
     }
   }
 
@@ -43,7 +45,6 @@ class ImageSlider extends React.Component {
   imageSlideOut = imageName => {
     let tl = new window.TimelineMax();
     tl.fromTo(`.${imageName}`, 2, {scale: 1, autoAlpha: 1, left: 0},  {left: '-100%', autoAlpha: 0, scale: 2, ease: window.Elastic.easeInOut.config(1, 0.3)})
-    // tl.to(`.${imageName}`, 0, {scale: 1})
   }
 
 
