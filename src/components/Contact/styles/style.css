@@ -177,6 +177,10 @@
           flex: 1;
 }
 
+.contact .contact-form form input.error {
+  background-color: #d4b8b8;
+}
+
 .contact .contact-form form button {
   cursor: pointer;
   letter-spacing: 2px;
@@ -192,6 +196,10 @@
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
+}
+
+.contact .contact-form form textarea.error {
+  background-color: #d4b8b8;
 }
 
 @media (max-width: 1400px) {

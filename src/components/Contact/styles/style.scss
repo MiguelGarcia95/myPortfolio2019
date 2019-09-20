@@ -132,6 +132,7 @@ $black: #232323;
       input {
         height: 40px;
         flex: 1;
+        &.error {background-color: rgb(212, 184, 184);}
       }
       button {
         cursor: pointer;
@@ -143,6 +144,7 @@ $black: #232323;
         height: 150px;
         resize: none;
         flex: 5;
+        &.error {background-color: rgb(212, 184, 184);}
       }
     }
   }
