@@ -11,8 +11,11 @@ export default [
       }
     ],
     used: [
-      'html', 
-      'css'
+      'HTML/CSS', 
+      'Javascript',
+      'NodeJS',
+      'Express',
+      'Heroku'
     ],
     url: 'https://young-thicket-81676.herokuapp.com',
   },
@@ -28,8 +31,12 @@ export default [
       }
     ],
     used: [
-      'html', 
-      'css'
+      'HTML/CSS', 
+      'Javascript',
+      'ReactJS',
+      'NodeJS',
+      'Express',
+      'Heroku'
     ],
     url: 'https://react-draggable-planner.herokuapp.com/#/',
   },
