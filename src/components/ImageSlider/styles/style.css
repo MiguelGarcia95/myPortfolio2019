@@ -82,8 +82,15 @@
 
 @media (max-width: 650px) {
   .project-images {
-    height: 350px;
-    width: 500px;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-images {
+    height: 300px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

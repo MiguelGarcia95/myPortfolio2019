@@ -76,9 +76,18 @@ $width: 1000px;
 
 
 @media (max-width: 650px) {
-  $width: 500px;
+  $width: 100%;
   .project-images {
-    height: 350px;
+    height: 300px;
+    width: $width;
+  }
+}
+
+
+@media (max-width: 650px) {
+  $width: 100%;
+  .project-images {
+    height: 300px;
     width: $width;
     // margin-top: 50px;
     .project-image {
