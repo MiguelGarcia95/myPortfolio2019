@@ -64,7 +64,6 @@ $width: 1000px;
   }
 }
 
-
 @media (max-width: 900px) {
   $width: 500px;
   .project-images {
@@ -73,8 +72,6 @@ $width: 1000px;
   }
 }
 
-
-
 @media (max-width: 650px) {
   $width: 100%;
   .project-images {
@@ -82,7 +79,6 @@ $width: 1000px;
     width: $width;
   }
 }
-
 
 @media (max-width: 550px) {
   .project-images {margin-top: 25px;}
