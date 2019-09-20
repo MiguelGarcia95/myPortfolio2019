@@ -1,6 +1,8 @@
+$width: 1000px;
+
 .project-images {
   height: 500px;
-  width: 1000px;
+  width: $width;
   margin: auto;
   margin-top: 50px;
   box-sizing: border-box;
@@ -45,9 +47,39 @@
 }
 
 @media (max-width: 1400px) {
+  $width: 800px;
+  .project-images {width: $width;}
+}
+
+@media (max-width: 1150px) {
+  $width: 700px;
+  .project-images {width: $width;}
+}
+
+@media (max-width: 1050px) {
+  $width: 600px;
   .project-images {
-    // height: 500px;
-    width: 900px;
+    height: 400px;
+    width: $width;
+  }
+}
+
+
+@media (max-width: 900px) {
+  $width: 500px;
+  .project-images {
+    height: 350px;
+    width: $width;
+  }
+}
+
+
+
+@media (max-width: 650px) {
+  $width: 500px;
+  .project-images {
+    height: 350px;
+    width: $width;
     // margin-top: 50px;
     .project-image {
       // height: 100%;

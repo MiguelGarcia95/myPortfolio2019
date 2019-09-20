@@ -78,4 +78,95 @@
   text-decoration: none;
   font-size: 1.3rem;
 }
+
+@media (max-width: 1400px) {
+  .project-display .header {
+    width: 800px;
+  }
+  .project-display .project-content {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .project-display .header {
+    width: 700px;
+  }
+  .project-display .project-content {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .project-display .header {
+    width: 600px;
+  }
+  .project-display .project-content {
+    width: 600px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-display .header {
+    width: 500px;
+  }
+  .project-display .header .goback, .project-display .header .go-link {
+    top: 0px;
+  }
+  .project-display .header .goback p, .project-display .header .goback a, .project-display .header .go-link p, .project-display .header .go-link a {
+    font-size: 1.3rem;
+  }
+  .project-display .section-name {
+    height: 60px;
+  }
+  .project-display .section-name h1 {
+    font-size: 2.5rem;
+    line-height: 60px;
+  }
+  .project-display .project-content {
+    width: 500px;
+  }
+  .project-display .project-content .description p {
+    font-size: 1.2rem;
+  }
+  .project-display .project-content .used .tech {
+    font-size: 1.2rem;
+    line-height: 40px;
+  }
+  .project-display .project-content .meta .links .link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-display .header {
+    width: 500px;
+  }
+  .project-display .header .goback, .project-display .header .go-link {
+    top: 0px;
+  }
+  .project-display .header .goback p, .project-display .header .goback a, .project-display .header .go-link p, .project-display .header .go-link a {
+    font-size: 1.3rem;
+  }
+  .project-display .section-name {
+    height: 60px;
+  }
+  .project-display .section-name h1 {
+    font-size: 2.5rem;
+    line-height: 60px;
+  }
+  .project-display .project-content {
+    width: 500px;
+  }
+  .project-display .project-content .description p {
+    font-size: 1.2rem;
+  }
+  .project-display .project-content .used .tech {
+    font-size: 1.2rem;
+    line-height: 40px;
+  }
+  .project-display .project-content .meta .links .link {
+    font-size: 1.2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,12 @@
 $font: 'Fjalla One';
 $white: #f0f0f0;
 $black: #232323;
+$width: 1000px;
 
 .project-display {
   width: 100%;
   .header {
-    width: 1000px;
+    width: $width;
     margin: auto;
     position: relative;
     .goback, .go-link {
@@ -31,7 +32,6 @@ $black: #232323;
   }
   .section-name {
     margin: 25px 0;
-    
     height: 80px;
     h1 {
       font-size: 3rem;
@@ -39,7 +39,7 @@ $black: #232323;
     }
   }
   .project-content {
-    width: 1000px;
+    width: $width;
     margin: auto;
     box-sizing: border-box;
     position: relative;
@@ -64,6 +64,116 @@ $black: #232323;
           color: $black;
           text-decoration: none;
           font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1400px) {
+  $width: 800px;
+  .project-display {
+    .header {width: $width;}
+    .project-content {width: $width;}
+  }
+}
+
+@media(max-width: 1150px) {
+  $width: 700px;
+  .project-display {
+    .header {width: $width;}
+    .project-content {width: $width;}
+  }
+}
+
+
+@media(max-width: 1050px) {
+  $width: 600px;
+  .project-display {
+    .header {width: $width;}
+    .project-content {width: $width;}
+  }
+}
+
+@media(max-width: 900px) {
+  $width: 500px;
+  .project-display {
+    .header {
+      width: $width;
+      .goback, .go-link {
+        top: 0px;
+        p, a {font-size: 1.3rem;}
+      }
+    }
+    .section-name {
+      height: 60px;
+      h1 {
+        font-size: 2.5rem;
+        line-height: 60px;
+      }
+    }
+    .project-content {
+      width: $width;
+      .description {
+        p {font-size: 1.2rem;}
+      }
+      .used {
+        .tech {
+          font-size: 1.2rem;
+          line-height: 40px;
+        }
+      }
+      .meta {
+        .links {
+          .link {font-size: 1.2rem;}
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 650px) {
+  $width: 500px;
+  .project-display {
+    .header {
+      width: $width;
+      .goback, .go-link {
+        top: 0px;
+        p, a {
+          font-size: 1.3rem;
+          // &:hover {font-weight: 600;}
+        }
+      }
+    }
+    .section-name {
+      // margin: 25px 0;
+      height: 60px;
+      h1 {
+        font-size: 2.5rem;
+        line-height: 60px;
+      }
+    }
+    .project-content {
+      width: $width;
+      .description {
+        // margin-bottom: 25px;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .used {
+        .tech {
+          font-size: 1.2rem;
+          line-height: 40px;
+        }
+      }
+      .meta {
+        // margin-bottom: 50px;
+        .links {
+          .link {
+            font-size: 1.2rem;
+          }
         }
       }
     }

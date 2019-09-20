@@ -56,7 +56,34 @@
 
 @media (max-width: 1400px) {
   .project-images {
-    width: 900px;
+    width: 800px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .project-images {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .project-images {
+    height: 400px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-images {
+    height: 350px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-images {
+    height: 350px;
+    width: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
