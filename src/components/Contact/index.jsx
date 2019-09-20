@@ -99,6 +99,7 @@ class Contact extends React.Component {
             </div>
           </div>
         </div>
+
         <div className={`contact-form ${opened ? 'opened' : ''}`}>
           <div className="toggle" onClick={this.onContactToggle}>
             <div className="arrow-head">
@@ -109,15 +110,16 @@ class Contact extends React.Component {
           </div>
           <div className="contact-form-ws"></div>
           <div className="contact-title">Contact Me</div>
-          <form>
-            <input type="text" placeholder='Name' name='name' value={name} />
-            <input type="text" placeholder='Subject' name='subject' value={subject} />
-            <input type="email" placeholder='Email' name='email' value={email} />
-            <textarea placeholder="What's up?" name='message' value={message} ></textarea>
+          <form onSubmit={this.sendEmail} >
+            <input type="text" placeholder='Name' name='name' value={name} onChange={this.onChange} className={nameError ? 'error' : ''} />
+            <input type="text" placeholder='Subject' name='subject' value={subject} onChange={this.onChange} className={subjectError ? 'error' : ''} />
+            <input type="email" placeholder='Email' name='email' value={email} onChange={this.onChange} className={emailError ? 'error' : ''} />
+            <textarea placeholder="What's up?" name='message' value={message} onChange={this.onChange} className={messageError ? 'error' : ''} ></textarea>
             <button>Send</button>
           </form>
           <div className="contact-form-ws"></div>
         </div>
+
       </div>
     )
   }
