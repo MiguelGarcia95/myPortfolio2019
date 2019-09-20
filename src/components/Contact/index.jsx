@@ -109,6 +109,7 @@ class Contact extends React.Component {
             <div className="arrow"></div>
           </div>
           <div className="contact-form-ws"></div>
+          {messageSent && <div className="contact-message"><p>{messageSent}</p></div> }
           <div className="contact-title">Contact Me</div>
           <form onSubmit={this.sendEmail} >
             <input type="text" placeholder='Name' name='name' value={name} onChange={this.onChange} className={nameError ? 'error' : ''} />

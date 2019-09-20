@@ -64,6 +64,24 @@
   transition: 0.5s;
 }
 
+.contact .contact-form .contact-message {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 300px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.contact .contact-form .contact-message p {
+  line-height: 50px;
+  font-size: 2rem;
+  color: #f0f0f0;
+  font-family: "Fjalla One";
+}
+
 .contact .contact-form.opened .toggle .arrow-head .top, .contact .contact-form.opened .toggle .arrow-head .bottom {
   right: 0;
 }
@@ -188,6 +206,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  outline: none;
 }
 
 .contact .contact-form form textarea {
