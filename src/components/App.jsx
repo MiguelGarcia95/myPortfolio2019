@@ -7,6 +7,7 @@ import Skills from './Skills';
 import Contact from './Contact';
 import './styles/style.css';
 
+import projectData from '../projectData';
 
 class App extends React.Component {
   state = {
@@ -31,7 +32,6 @@ class App extends React.Component {
   }
 
   // Replace ease
-
   sectionEnters = sectionName => {
     let tl = new window.TimelineMax();
     tl.fromTo(`.${sectionName}`, 1, {scale: 0, autoAlpha: 0, left: '100%'},  {left: 0, autoAlpha: 1, scale: 1, ease: window.Elastic.easeInOut.config(1, 0.3)}, '+=0.3')
@@ -45,7 +45,6 @@ class App extends React.Component {
 
   render() {
     const {currentSection, projectModal, project} = this.state;
-
     return (
       <div className="body-wrapper">
         <Sidebar 
