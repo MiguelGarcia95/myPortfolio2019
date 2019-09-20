@@ -110,10 +110,10 @@ class Contact extends React.Component {
           <div className="contact-form-ws"></div>
           <div className="contact-title">Contact Me</div>
           <form>
-            <input type="text" placeholder='Name' name='name' />
-            <input type="text" placeholder='Subject' name='subject' />
-            <input type="email" placeholder='Email' name='email' />
-            <textarea placeholder="What's up?" name='message'></textarea>
+            <input type="text" placeholder='Name' name='name' value={name} />
+            <input type="text" placeholder='Subject' name='subject' value={subject} />
+            <input type="email" placeholder='Email' name='email' value={email} />
+            <textarea placeholder="What's up?" name='message' value={message} ></textarea>
             <button>Send</button>
           </form>
           <div className="contact-form-ws"></div>
