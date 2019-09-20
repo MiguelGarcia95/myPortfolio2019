@@ -82,7 +82,7 @@ class Contact extends React.Component {
   }; 
 
   render() {
-    const {nameError, emailError, subjectError, messageError, messageSent, opened} = this.state;
+    const {name, email, subject, message, nameError, emailError, subjectError, messageError, messageSent, opened} = this.state;
     return (
       <div className={`section contact startPos ${opened ? 'opened' : ''}`}>
         <div className="contact-info">
@@ -110,10 +110,10 @@ class Contact extends React.Component {
           <div className="contact-form-ws"></div>
           <div className="contact-title">Contact Me</div>
           <form>
-            <input type="text" placeholder='Name'/>
-            <input type="text" placeholder='Subject'/>
-            <input type="text" placeholder='Email'/>
-            <textarea placeholder="What's up?"></textarea>
+            <input type="text" placeholder='Name' name='name' />
+            <input type="text" placeholder='Subject' name='subject' />
+            <input type="email" placeholder='Email' name='email' />
+            <textarea placeholder="What's up?" name='message'></textarea>
             <button>Send</button>
           </form>
           <div className="contact-form-ws"></div>
