@@ -8,6 +8,7 @@ class ProjectDisplay extends React.Component {
   }
 
   scrollToTop = () => {
+    window.TweenMax.to(window, 0.5, {scrollTo:{y:'#scrollToTop'}})
   }
 
   displayTags = tags => {

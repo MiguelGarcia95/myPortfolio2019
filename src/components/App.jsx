@@ -46,6 +46,7 @@ class App extends React.Component {
   }
 
   scrollToTop = () => {
+    window.TweenMax.to(window, 0.5, {scrollTo:{y:'#scrollToTop'}})
   }
 
   render() {
@@ -62,6 +63,7 @@ class App extends React.Component {
         />
   
         <div className="content">
+          <div id="scrollToTop"></div>
           <Projects onProjectClick={this.onProjectClick} />
           <ProjectDisplay project={project} sectionLeaves={this.sectionLeaves} sectionEnters={this.sectionEnters}  />
           <Skills />
