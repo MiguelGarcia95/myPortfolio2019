@@ -15,7 +15,7 @@ export default function Projects({onProjectClick}) {
         />
         <Project 
           classes='project flex-1' 
-          project={projectData[1]}
+          project={projectData[5]}
           onProjectClick={onProjectClick}
         />
         <Project 
@@ -39,7 +39,7 @@ export default function Projects({onProjectClick}) {
         />
         <Project 
          classes='project flex-1' 
-          project={projectData[5]}
+          project={projectData[1]}
           onProjectClick={onProjectClick}
         />
         <Project 
