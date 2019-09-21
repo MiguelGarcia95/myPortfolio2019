@@ -14,6 +14,10 @@ class App extends React.Component {
     project: ''
   }
 
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    this.scrollToTop();
+  }
+
   setSection = sectionName => this.setState({currentSection: sectionName});
 
   isSectionActive = (currentSection, sectionName) => currentSection === sectionName;
@@ -41,8 +45,7 @@ class App extends React.Component {
     tl.to(`.${sectionName}`, 0, {scale: 1})
   }
 
-  scrollToBTop = () => {
-    this.pageTop.scrollIntoView({behavior: 'smooth'});
+  scrollToTop = () => {
   }
 
   render() {
@@ -59,7 +62,6 @@ class App extends React.Component {
         />
   
         <div className="content">
-          <div ref={node => this.pageTop = node}></div>
           <Projects onProjectClick={this.onProjectClick} />
           <ProjectDisplay project={project} sectionLeaves={this.sectionLeaves} sectionEnters={this.sectionEnters}  />
           <Skills />

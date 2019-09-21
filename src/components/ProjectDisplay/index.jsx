@@ -3,8 +3,11 @@ import ImageSlider from '../ImageSlider';
 import './styles/style.css';
 
 class ProjectDisplay extends React.Component {
-  scrollToBTop = () => {
-    this.pageTop.scrollIntoView({behavior: 'smooth'});
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    this.scrollToTop();
+  }
+
+  scrollToTop = () => {
   }
 
   displayTags = tags => {
@@ -22,7 +25,6 @@ class ProjectDisplay extends React.Component {
       <div className='section project-display startPos'>
         {project && (
           <React.Fragment>
-            <div ref={node => this.pageTop = node}></div>
             <div className="header">
               <div className="goback">
                 <p onClick={() => this.onReturnClick(sectionLeaves, sectionEnters)}>Return</p>
