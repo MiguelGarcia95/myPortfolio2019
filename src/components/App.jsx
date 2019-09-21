@@ -41,6 +41,10 @@ class App extends React.Component {
     tl.to(`.${sectionName}`, 0, {scale: 1})
   }
 
+  scrollToBTop = () => {
+    this.pageTop.scrollIntoView({behavior: 'smooth'});
+  }
+
   render() {
     const {currentSection, projectModal, project} = this.state;
     return (
@@ -55,6 +59,7 @@ class App extends React.Component {
         />
   
         <div className="content">
+          <div ref={node => this.pageTop = node}></div>
           <Projects onProjectClick={this.onProjectClick} />
           <ProjectDisplay project={project} sectionLeaves={this.sectionLeaves} sectionEnters={this.sectionEnters}  />
           <Skills />

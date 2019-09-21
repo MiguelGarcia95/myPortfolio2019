@@ -2,54 +2,64 @@ import React from 'react'
 import ImageSlider from '../ImageSlider';
 import './styles/style.css';
 
-const onReturnClick = (sectionLeaves, sectionEnters) => {
-  sectionLeaves('project-display');
-  sectionEnters('projects');
-}
+class ProjectDisplay extends React.Component {
+  scrollToBTop = () => {
+    this.pageTop.scrollIntoView({behavior: 'smooth'});
+  }
 
-const displayTags = tags => {
-  return tags.map(tag => <p className='tech' key={tag}>{tag}</p>)
-}
+  displayTags = tags => {
+    return tags.map(tag => <p className='tech' key={tag}>{tag}</p>)
+  }
 
-export default function ProjectDisplay({project, sectionLeaves, sectionEnters}) {
-  return (
-    <div className='section project-display startPos'>
-      {project && (
-        <React.Fragment>
-          <div className="header">
-            <div className="goback">
-              <p onClick={() => onReturnClick(sectionLeaves, sectionEnters)}>Return</p>
-            </div>
-            <div className="go-link">
-              <a href={project.url} target="_blank">Visit</a>
-            </div>
-          </div>
-          <ImageSlider images={project.images} imageCount={project.imageCount}/>
+  onReturnClick = (sectionLeaves, sectionEnters) => {
+    sectionLeaves('project-display');
+    sectionEnters('projects');
+  }
 
-          <div className="project-content">
-            <div className="section-name">
-              <h1>{project.name}</h1>
+  render() {
+    const {project, sectionLeaves, sectionEnters} = this.props;
+    return (
+      <div className='section project-display startPos'>
+        {project && (
+          <React.Fragment>
+            <div ref={node => this.pageTop = node}></div>
+            <div className="header">
+              <div className="goback">
+                <p onClick={() => this.onReturnClick(sectionLeaves, sectionEnters)}>Return</p>
+              </div>
+              <div className="go-link">
+                <a href={project.url} target="_blank">Visit</a>
+              </div>
             </div>
-            <div className="description">
-              <p>{project.description}</p>
-            </div>
-            <div className="used">
+            <ImageSlider images={project.images} imageCount={project.imageCount}/>
+  
+            <div className="project-content">
               <div className="section-name">
-                <h1>Tech Used</h1>
+                <h1>{project.name}</h1>
               </div>
-              {displayTags(project.used)}
+              <div className="description">
+                <p>{project.description}</p>
+              </div>
+              <div className="used">
+                <div className="section-name">
+                  <h1>Tech Used</h1>
+                </div>
+                {this.displayTags(project.used)}
+              </div>
+              <div className="meta">
+                <div className="section-name">
+                  <h1>Links</h1>
+                </div>
+                <div className="links">
+                  <a className="link" href={project.url} target="_blank">Checkout Website</a>
+                </div>
+              </div>
             </div>
-            <div className="meta">
-              <div className="section-name">
-                <h1>Links</h1>
-              </div>
-              <div className="links">
-                <a className="link" href={project.url} target="_blank">Checkout Website</a>
-              </div>
-            </div>
-          </div>
-        </React.Fragment>
-      )}      
-    </div>
-  )
+          </React.Fragment>
+        )}      
+      </div>
+    )
+  }
 }
+
+export default ProjectDisplay;
