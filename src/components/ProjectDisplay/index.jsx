@@ -26,6 +26,7 @@ class ProjectDisplay extends React.Component {
       <div className='section project-display startPos'>
         {project && (
           <React.Fragment>
+            <div id="scrollToTop"></div>
             <div className="header">
               <div className="goback">
                 <p onClick={() => this.onReturnClick(sectionLeaves, sectionEnters)}>Return</p>
