@@ -105,7 +105,7 @@ export default [
   },
   {
     name: 'Nike Shoe Display',
-    description: "Animated Shoe Display Website made using Gsap",
+    description: "Animated Shoe Display Website made using Gsap. My main focus was the color transition on the shoe page.",
     imageCount: 3,
     images: [
       {
@@ -134,7 +134,7 @@ export default [
   },
   {
     name: 'Chamber of Nature - Book Promotion Site',
-    description: "A Book Promotion website. ",
+    description: "A Book Promotion website for a made up fantasy book.",
     imageCount: 3,
     images: [
       {
@@ -193,7 +193,7 @@ export default [
   },
   {
     name: 'Game View v2',
-    description: "A game database website. It includes games, game reviews, game franchises and game characters. It contains over 15,000 games. All powered by the giant bomb API, along with React JS and Redux.",
+    description: "Another version of the initial game view site. This one works mostly the same, just that I don't use a back end for calling the GiantBomb API.",
     imageCount: 4,
     images: [
       {
