@@ -164,13 +164,23 @@ export default [
   },
   {
     name: 'Kanz | Digital Agency',
-    description: "Moview Website made with moviedb",
-    imageCount: 1,
+    description: "Kanz, a digital agency site made using Gsap and Scrollmagic.",
+    imageCount: 3,
     images: [
       {
         id: 1,
         url: '',
         class: 'image-1',
+      },
+      {
+        id: 2,
+        url: '',
+        class: 'image-2',
+      },
+      {
+        id: 3,
+        url: '',
+        class: 'image-3',
       }
     ],
     used: [
