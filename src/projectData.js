@@ -6,22 +6,22 @@ export default [
     images: [
       {
         id: 1,
-        url: '',
+        url: './assets/projects/game-view-01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '',
+        url: './assets/projects/game-view-02.png',
         class: 'image-2',
       },
       {
         id: 3,
-        url: '',
+        url: './assets/projects/game-view-03.png',
         class: 'image-3',
       },
       {
         id: 4,
-        url: '',
+        url: './assets/projects/game-view-04.png',
         class: 'image-4',
       }
     ],
@@ -41,17 +41,17 @@ export default [
     images: [
       {
         id: 1,
-        url: '',
+        url: './assets/projects/planner_01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '',
+        url: './assets/projects/planner_02.png',
         class: 'image-2',
       },
       {
         id: 3,
-        url: '',
+        url: './assets/projects/planner_03.png',
         class: 'image-3',
       }
     ],
@@ -74,22 +74,22 @@ export default [
     images: [
       {
         id: 1,
-        url: '',
+        url: './assets/projects/movie_01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '',
+        url: './assets/projects/movie_02.png',
         class: 'image-2',
       },
       {
         id: 3,
-        url: '',
+        url: './assets/projects/movie_03.png',
         class: 'image-3',
       },
       {
         id: 4,
-        url: '',
+        url: './assets/projects/movie_04.png',
         class: 'image-4',
       }
     ],
@@ -110,17 +110,17 @@ export default [
     images: [
       {
         id: 1,
-        url: '',
+        url: './assets/projects/shoe_01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '',
+        url: './assets/projects/shoe_02.png',
         class: 'image-2',
       },
       {
         id: 3,
-        url: '',
+        url: './assets/projects/shoe_03.png',
         class: 'image-3',
       }
     ],
@@ -139,17 +139,17 @@ export default [
     images: [
       {
         id: 1,
-        url: '',
+        url: './assets/projects/book_01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '',
+        url: './assets/projects/book_02.png',
         class: 'image-2',
       },
       {
         id: 3,
-        url: '',
+        url: './assets/projects/book_03.png',
         class: 'image-3',
       }
     ],
@@ -169,17 +169,17 @@ export default [
     images: [
       {
         id: 1,
-        url: '',
+        url: './assets/projects/kanz_01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '',
+        url: './assets/projects/kanz_02.png',
         class: 'image-2',
       },
       {
         id: 3,
-        url: '',
+        url: './assets/projects/kanz_03.png',
         class: 'image-3',
       }
     ],
@@ -198,22 +198,22 @@ export default [
     images: [
       {
         id: 1,
-        url: '',
+        url: './assets/projects/game-view-2-01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '',
+        url: './assets/projects/game-view-2-02.png',
         class: 'image-2',
       },
       {
         id: 3,
-        url: '',
+        url: './assets/projects/game-view-2-03.png',
         class: 'image-3',
       },
       {
         id: 4,
-        url: '',
+        url: './assets/projects/game-view-2-04.png',
         class: 'image-4',
       }
     ],
