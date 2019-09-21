@@ -194,12 +194,27 @@ export default [
   {
     name: 'Game View v2',
     description: "A game database website. It includes games, game reviews, game franchises and game characters. It contains over 15,000 games. All powered by the giant bomb API, along with React JS and Redux.",
-    imageCount: 1,
+    imageCount: 4,
     images: [
       {
         id: 1,
         url: '',
         class: 'image-1',
+      },
+      {
+        id: 2,
+        url: '',
+        class: 'image-2',
+      },
+      {
+        id: 3,
+        url: '',
+        class: 'image-3',
+      },
+      {
+        id: 4,
+        url: '',
+        class: 'image-4',
       }
     ],
     used: [
