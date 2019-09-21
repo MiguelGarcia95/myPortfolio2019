@@ -7,8 +7,6 @@ import Skills from './Skills';
 import Contact from './Contact';
 import './styles/style.css';
 
-import projectData from '../projectData';
-
 class App extends React.Component {
   state = {
     currentSection: 'projects',
