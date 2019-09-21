@@ -13,53 +13,41 @@ export default function Projects({onProjectClick}) {
           project={projectData[0]}
           onProjectClick={onProjectClick}
         />
-        {/* <Project 
+        <Project 
           classes='project flex-1' 
-          img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
-          title='Title Here'
+          project={projectData[1]}
           onProjectClick={onProjectClick}
         />
         <Project 
-          classes='project pl flex-2' 
-          img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
-          title='Title Here'
+         classes='project pl flex-2' 
+          project={projectData[2]}
           onProjectClick={onProjectClick}
-        /> */}
+        />
       </div>
-      {/* <div className="row">
+      <div className="row">
         <Project 
-          classes='project pf flex-3' 
-          img='https://proxer.me/media/kunena/attachments/77388/BlueArt.jpg' 
-          title='Title Here'
-          onProjectClick={onProjectClick}
-        />
-        <Project 
-          classes='project pl flex-1' 
-          img='https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg' 
-          title='Title Here'
+          classes='project pf pl flex-3' 
+          project={projectData[3]}
           onProjectClick={onProjectClick}
         />
       </div>
       <div className="row">
         <Project 
           classes='project pf flex-1' 
-          img='https://www.cssauthor.com/wp-content/uploads/2014/08/Boarding-pass-app-ui-psd.jpg' 
-          title='Title Here'
+          project={projectData[4]}
           onProjectClick={onProjectClick}
         />
         <Project 
-          classes='project flex-1' 
-          img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
-          title='Title Here'
+         classes='project flex-1' 
+          project={projectData[5]}
           onProjectClick={onProjectClick}
         />
         <Project 
           classes='project pl flex-1' 
-          img='https://appsamurai.com/wp-content/uploads/2017/08/2-2.png' 
-          title='Title Here'
+          project={projectData[6]}
           onProjectClick={onProjectClick}
         />
-      </div> */}
+      </div>
     </div>
   )
 }
