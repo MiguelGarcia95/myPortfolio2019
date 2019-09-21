@@ -1,7 +1,7 @@
 export default [
   {
     name: 'Game View',
-    description: "A game database website. It includes games, game reviews, game franchises and game characters. It contains over 15,000 games. All powered by the giant bomb API.",
+    description: "A game database website. It includes games, game reviews, game franchises and game characters. It contains over 15,000 games. All powered by the giant bomb API, and a NodeJS backend for api calls.",
     imageCount: 4,
     images: [
       {
@@ -36,7 +36,7 @@ export default [
   },
   {
     name: 'Draggable Planner (Trello Clone)',
-    description: "A Trello Clone made using ReactJS, NodeJS and Redux.",
+    description: "A Trello Clone made using ReactJS, NodeJS and Redux. The Planner App lets you drag and drop tasks across lists as well as reordering lists. App is hosted on Heroku. Try out with: email: admin@admin.com & password: password123",
     imageCount: 3,
     images: [
       {
@@ -69,7 +69,7 @@ export default [
   },
   {
     name: 'Movie Search Base',
-    description: "This project is a movie search App made using react, redux, and the TMDB API.",
+    description: "This project is a Movie Search App made using react, redux, and the TMDB API. It uses O-Auth to login using your TMDB account.",
     imageCount: 4,
     images: [
       {
