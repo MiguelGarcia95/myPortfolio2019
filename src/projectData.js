@@ -12,17 +12,17 @@ export default [
       {
         id: 2,
         url: '/assets/projects/game-view-02.png',
-        class: 'image-2',
+        class: 'image-2 image-startPos',
       },
       {
         id: 3,
         url: '/assets/projects/game-view-03.png',
-        class: 'image-3',
+        class: 'image-3 image-startPos',
       },
       {
         id: 4,
         url: '/assets/projects/game-view-04.png',
-        class: 'image-4',
+        class: 'image-4 image-startPos',
       }
     ],
     used: [
@@ -47,12 +47,12 @@ export default [
       {
         id: 2,
         url: '/assets/projects/planner_02.png',
-        class: 'image-2',
+        class: 'image-2 image-startPos',
       },
       {
         id: 3,
         url: '/assets/projects/planner_03.png',
-        class: 'image-3',
+        class: 'image-3 image-startPos',
       }
     ],
     used: [
@@ -80,17 +80,17 @@ export default [
       {
         id: 2,
         url: '/assets/projects/movie_02.png',
-        class: 'image-2',
+        class: 'image-2 image-startPos',
       },
       {
         id: 3,
         url: '/assets/projects/movie_03.png',
-        class: 'image-3',
+        class: 'image-3 image-startPos',
       },
       {
         id: 4,
         url: '/assets/projects/movie_04.png',
-        class: 'image-4',
+        class: 'image-4 image-startPos',
       }
     ],
     used: [
@@ -116,12 +116,12 @@ export default [
       {
         id: 2,
         url: '/assets/projects/shoe_02.png',
-        class: 'image-2',
+        class: 'image-2 image-startPos',
       },
       {
         id: 3,
         url: '/assets/projects/shoe_03.png',
-        class: 'image-3',
+        class: 'image-3 image-startPos',
       }
     ],
     used: [
@@ -145,12 +145,12 @@ export default [
       {
         id: 2,
         url: '/assets/projects/book_02.png',
-        class: 'image-2',
+        class: 'image-2 image-startPos',
       },
       {
         id: 3,
         url: '/assets/projects/book_03.png',
-        class: 'image-3',
+        class: 'image-3 image-startPos',
       }
     ],
     used: [
@@ -175,12 +175,12 @@ export default [
       {
         id: 2,
         url: '/assets/projects/kanz_02.png',
-        class: 'image-2',
+        class: 'image-2 image-startPos',
       },
       {
         id: 3,
         url: '/assets/projects/kanz_03.png',
-        class: 'image-3',
+        class: 'image-3 image-startPos',
       }
     ],
     used: [
@@ -204,17 +204,17 @@ export default [
       {
         id: 2,
         url: '/assets/projects/game-view-2-02.png',
-        class: 'image-2',
+        class: 'image-2 image-startPos',
       },
       {
         id: 3,
         url: '/assets/projects/game-view-2-03.png',
-        class: 'image-3',
+        class: 'image-3 image-startPos',
       },
       {
         id: 4,
         url: '/assets/projects/game-view-2-04.png',
-        class: 'image-4',
+        class: 'image-4 image-startPos',
       }
     ],
     used: [

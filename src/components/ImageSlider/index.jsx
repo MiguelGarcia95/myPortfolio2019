@@ -4,12 +4,12 @@ import './styles/style.css';
 class ImageSlider extends React.Component {
 
   displayImages = images => {
-    return images.images.map(image => {
+    return images.map(image => {
       return (
         <div className={`project-image ${image.class}`} key={image.id}>
           <div className="slider-controller">
-            <div className="slide slide-left" onClick={() => this.onClickLeft(image, images)} ></div>
-            <div className="slide slide-right" onClick={() => this.onClickRight(image, images)} ></div>
+            <div className="slide slide-left" onClick={() => this.onClickLeft(image)} ></div>
+            <div className="slide slide-right" onClick={() => this.onClickRight(image)} ></div>
           </div>
           <img src={image.url} alt={image.id}/>
         </div>
@@ -17,19 +17,19 @@ class ImageSlider extends React.Component {
     })
   }
 
-  onClickLeft = (image, images) => {
+  onClickLeft = image => {
     if (image.id === 1) {
       this.imageSlideOut('image-1');
-      this.imageSlideIn(`image-${images.imageCount}`);
+      this.imageSlideIn(`image-${this.props.imageCount}`);
     } else {
       this.imageSlideOut(`image-${image.id}`);
       this.imageSlideIn(`image-${image.id - 1}`);
     }
   }
 
-  onClickRight = (image, images) => {
-    if (image.id === images.imageCount) {
-      this.imageSlideOut('image-4');
+  onClickRight = image => {
+    if (image.id === this.props.imageCount) {
+      this.imageSlideOut(`image-${this.props.imageCount}`);
       this.imageSlideIn(`image-1`);
     } else {
       this.imageSlideOut(`image-${image.id}`);
