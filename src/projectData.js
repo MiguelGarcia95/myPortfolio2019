@@ -63,6 +63,7 @@ export default [
       'Ajax',
       'NodeJS',
       'Express',
+      'Mongodb',
       'Heroku'
     ],
     url: 'https://react-draggable-planner.herokuapp.com/#/',
@@ -250,8 +251,10 @@ export default [
     used: [
       'HTML/CSS', 
       'Javascript',
-      'ReactJS',
-      'Redux',
+      'Node Js',
+      'Express',
+      'Mongoose',
+      'Mongodb',
       'Ajax',
     ],
     url: 'https://miguelgarcia95.github.io/Game-View/#/',
