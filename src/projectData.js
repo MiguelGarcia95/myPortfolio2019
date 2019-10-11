@@ -228,23 +228,23 @@ export default [
     url: 'https://miguelgarcia95.github.io/Game-View/#/',
   },
   {
-    name: 'Node CMS',
-    description: "Another version of the initial game view site. This one works mostly the same, just that I don't use a back end for calling the GiantBomb API.",
+    name: 'Node CMS Blog',
+    description: "A CMS blog. It was made using Nodejs, Express and Mongodb. It lets users create categories, posts, and edit/delete anything they have created. It also contains admin features.",
     imageCount: 3,
     images: [
       {
         id: 1,
-        url: '/assets/projects/game-view-2-01.png',
+        url: '/assets/projects/cms-kai-01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '/assets/projects/game-view-2-02.png',
+        url: '/assets/projects/cms-kai-02.png',
         class: 'image-2 image-startPos',
       },
       {
         id: 3,
-        url: '/assets/projects/game-view-2-03.png',
+        url: '/assets/projects/cms-kai-03.png',
         class: 'image-3 image-startPos',
       },
     ],
@@ -252,11 +252,12 @@ export default [
       'HTML/CSS', 
       'Javascript',
       'Node Js',
+      'Heroku',
       'Express',
       'Mongoose',
       'Mongodb',
       'Ajax',
     ],
-    url: 'https://miguelgarcia95.github.io/Game-View/#/',
+    url: 'https://kai2b.herokuapp.com',
   },
 ]
