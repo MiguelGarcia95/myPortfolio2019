@@ -226,4 +226,34 @@ export default [
     ],
     url: 'https://miguelgarcia95.github.io/Game-View/#/',
   },
+  {
+    name: 'Node CMS',
+    description: "Another version of the initial game view site. This one works mostly the same, just that I don't use a back end for calling the GiantBomb API.",
+    imageCount: 3,
+    images: [
+      {
+        id: 1,
+        url: '/assets/projects/game-view-2-01.png',
+        class: 'image-1',
+      },
+      {
+        id: 2,
+        url: '/assets/projects/game-view-2-02.png',
+        class: 'image-2 image-startPos',
+      },
+      {
+        id: 3,
+        url: '/assets/projects/game-view-2-03.png',
+        class: 'image-3 image-startPos',
+      },
+    ],
+    used: [
+      'HTML/CSS', 
+      'Javascript',
+      'ReactJS',
+      'Redux',
+      'Ajax',
+    ],
+    url: 'https://miguelgarcia95.github.io/Game-View/#/',
+  },
 ]
