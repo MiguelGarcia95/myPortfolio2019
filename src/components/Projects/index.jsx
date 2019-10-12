@@ -26,7 +26,12 @@ export default function Projects({onProjectClick}) {
       </div>
       <div className="row">
         <Project 
-          classes='project pf pl flex-3' 
+          classes='project pf flex-3' 
+          project={projectData[3]}
+          onProjectClick={onProjectClick}
+        />
+        <Project 
+          classes='project pl flex-2' 
           project={projectData[3]}
           onProjectClick={onProjectClick}
         />
