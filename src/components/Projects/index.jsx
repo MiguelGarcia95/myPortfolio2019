@@ -32,7 +32,7 @@ export default function Projects({onProjectClick}) {
         />
         <Project 
           classes='project pl flex-2' 
-          project={projectData[3]}
+          project={projectData[7]}
           onProjectClick={onProjectClick}
         />
       </div>
