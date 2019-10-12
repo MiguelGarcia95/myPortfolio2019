@@ -234,17 +234,17 @@ export default [
     images: [
       {
         id: 1,
-        url: '/assets/projects/cms-kai-01.png',
+        url: '/assets/projects/cms-01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '/assets/projects/cms-kai-02.png',
+        url: '/assets/projects/cms-02.png',
         class: 'image-2 image-startPos',
       },
       {
         id: 3,
-        url: '/assets/projects/cms-kai-03.png',
+        url: '/assets/projects/cms-03.png',
         class: 'image-3 image-startPos',
       },
     ],
