@@ -193,29 +193,24 @@ export default [
     url: 'https://miguelgarcia95.github.io/Design-Site/',
   },
   {
-    name: 'Game View v2',
-    description: "Another version of the initial game view site. This one works mostly the same, just that I don't use a back end for calling the GiantBomb API.",
-    imageCount: 4,
+    name: 'Orbit-Chat',
+    description: "This project is a Discord like app with similar functionality. It was made using React, Redux, and Firebase. Try out: Email: email@email.com | Password: password1234",
+    imageCount: 3,
     images: [
       {
         id: 1,
-        url: '/assets/projects/game-view-2-01.png',
+        url: '/assets/projects/chat_01.png',
         class: 'image-1',
       },
       {
         id: 2,
-        url: '/assets/projects/game-view-2-02.png',
+        url: '/assets/projects/chat_02.png',
         class: 'image-2 image-startPos',
       },
       {
         id: 3,
-        url: '/assets/projects/game-view-2-03.png',
+        url: '/assets/projects/chat_03.png',
         class: 'image-3 image-startPos',
-      },
-      {
-        id: 4,
-        url: '/assets/projects/game-view-2-04.png',
-        class: 'image-4 image-startPos',
       }
     ],
     used: [
@@ -223,9 +218,9 @@ export default [
       'Javascript',
       'ReactJS',
       'Redux',
-      'Ajax',
+      'Firebase',
     ],
-    url: 'https://miguelgarcia95.github.io/Game-View/#/',
+    url: 'https://orbit-chat-v2.firebaseapp.com/app',
   },
   {
     name: 'Node CMS Blog',
