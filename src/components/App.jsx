@@ -53,22 +53,22 @@ class App extends React.Component {
     const {currentSection, projectModal, project} = this.state;
     return (
       <div className="body-wrapper">
-        <Sidebar 
+        {/* <Sidebar 
           onProjectClick={this.onProjectClick} 
           currentSection={currentSection} 
           setSection={this.setSection} 
           sectionEnters={this.sectionEnters} 
           sectionLeaves={this.sectionLeaves} 
           projectModal={projectModal} 
-        />
+        /> */}
   
         <div className="content">
           <div id="scrollToTop"></div>
-          <Projects onProjectClick={this.onProjectClick} />
+          {/* <Projects onProjectClick={this.onProjectClick} />
           <ProjectDisplay project={project} sectionLeaves={this.sectionLeaves} sectionEnters={this.sectionEnters}  />
           <Skills />
           <About />
-          <Contact />
+          <Contact /> */}
         </div>
       </div>
     );
