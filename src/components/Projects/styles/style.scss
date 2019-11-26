@@ -63,13 +63,13 @@ $font: 'Fjalla One';
         background-color: rgba(0,0,0,0.5);
         transition: $transition;
         &:hover {
+          // .title {opacity: 1;}         
           background-color: rgba(0,0,0,0.1);     
-          .title {opacity: 1;}         
         }
         .title {
           @include baseSettings(100%, 30px, absolute);
           transition: $transition;
-          opacity: 0;
+          opacity: 1;
           line-height: 30px;
           padding: 10px 0;
           text-align: center;
