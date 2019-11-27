@@ -5,6 +5,7 @@ import ProjectDisplay from './ProjectDisplay';
 import About from './About';
 import Skills from './Skills';
 import Contact from './Contact';
+import Navbar from './Navbar';
 import './styles/style.css';
 
 class App extends React.Component {
@@ -53,6 +54,7 @@ class App extends React.Component {
     const {currentSection, projectModal, project} = this.state;
     return (
       <div className="body-wrapper">
+        <Navbar />
         {/* <Sidebar 
           onProjectClick={this.onProjectClick} 
           currentSection={currentSection} 
