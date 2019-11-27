@@ -59,10 +59,28 @@ $lgHeight: 55px;
 }
 
 @media(max-width: 1000px) {
+  $tSize: 1.5rem;
+  $stSize: 0.7rem;
+  $bWidth: 150px;
+  
+  .navbar {
+    .branding {
+      width: $bWidth;
+      .title {font-size: $tSize;}
+      .subtitle {
+        font-size: $stSize;
+        margin-top: -10px;
+      }
+    }
+  
+  }
+}
+
+@media(max-width: 1000px) {
   $nHeight: 80px;
-  $tSize: 2rem;
-  $stSize: 0.9rem;
-  $bWidth: 200px;
+  $tSize: 1.5rem;
+  $stSize: 0.7rem;
+  $bWidth: 150px;
   $mWidth: 400px;
   $smHeight: 30px;
   $lgHeight: 55px;
@@ -76,16 +94,16 @@ $lgHeight: 55px;
     .branding {
       width: $bWidth;
       .title {
-        // font-size: $tSize;
+        font-size: $tSize;
         // line-height: $lgHeight;
         // height: $lgHeight;
       }
   
       .subtitle {
-        // font-size: $stSize;
+        font-size: $stSize;
         // line-height: $smHeight;
         // height: $smHeight;
-        // margin-top: -5px;
+        margin-top: -10px;
       }
     }
   
