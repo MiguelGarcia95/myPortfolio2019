@@ -10,10 +10,10 @@ function Navbar({scrollTo}) {
           <p className="subtitle">Web Developer</p>
         </div>
         <div className="menu">
-          <p className="menu-item">Projects</p>        
-          <p className="menu-item">Skills</p>        
-          <p className="menu-item">About</p>        
           <p className="menu-item">Contact</p>        
+          <p className="menu-item">About</p>        
+          <p className="menu-item">Skills</p>        
+          <p className="menu-item">Projects</p>        
         </div>
       </div>
     </div>
