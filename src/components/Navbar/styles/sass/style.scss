@@ -2,56 +2,102 @@ $font: 'Montserrat';
 $bFont: 'Fjalla One';
 $fColor: black;
 $nHeight: 80px;
+$tSize: 2rem;
+$stSize: 0.9rem;
+$bWidth: 200px;
+$mWidth: 400px;
+$smHeight: 30px;
+$lgHeight: 55px;
 
 .navbar {
   width: 100%;
   height: $nHeight;
   font-family: $font;
   
+  .branding, .menu {
+    text-align: center;
+    color: $fColor;
+    float: left;
+  }
+  
   .branding {
     font-family: $bFont;
-    color: $fColor;
-    width: 200px;
+    width: $bWidth;
     overflow: hidden;
-    text-align: center;
-    float: left;
+    .title, .subtitle {text-transform: uppercase;}
     .title {
       font-weight: 800;
-      font-size: 2rem;
+      font-size: $tSize;
       letter-spacing: -1px;
-      text-transform: uppercase;
-      line-height: 55px;
-      height: 55px;
+      line-height: $lgHeight;
+      height: $lgHeight;
     }
 
     .subtitle {
-      text-transform: uppercase;
       letter-spacing: 2px;
-      font-size: .9rem;
-      line-height: 30px;
-      height: 30px;
+      font-size: $stSize;
+      line-height: $smHeight;
+      height: $smHeight;
       margin-top: -5px;
     }
   }
 
   .menu {
-    width: 400px;
+    width: $mWidth;
     float: right;
-    height: 30px;
+    height: $smHeight;
     margin-top: 25px;
-    text-align: center;
     .menu-item {
-      font-size: 0.9rem;
-      color: $fColor;
+      font-size: $stSize;
       cursor: pointer;
       float: left;
       margin: 0 25px;
       font-weight: bold;
-      line-height: 30px;
+      line-height: $smHeight;
     }
   }
 }
 
 @media(max-width: 1000px) {
+  $nHeight: 80px;
+  $tSize: 2rem;
+  $stSize: 0.9rem;
+  $bWidth: 200px;
+  $mWidth: 400px;
+  $smHeight: 30px;
+  $lgHeight: 55px;
   
+  .navbar {
+    // height: $nHeight;
+    .branding, .menu {
+      // float: left;
+    }
+    
+    .branding {
+      width: $bWidth;
+      .title {
+        // font-size: $tSize;
+        // line-height: $lgHeight;
+        // height: $lgHeight;
+      }
+  
+      .subtitle {
+        // font-size: $stSize;
+        // line-height: $smHeight;
+        // height: $smHeight;
+        // margin-top: -5px;
+      }
+    }
+  
+    .menu {
+      // width: $mWidth;
+      // height: $smHeight;
+      // margin-top: 25px;
+      .menu-item {
+        // font-size: $stSize;
+        // margin: 0 25px;
+        // line-height: $smHeight;
+      }
+    }
+  }
 }
