@@ -1,18 +1,20 @@
 $font: 'Montserrat';
-$brandingFont: 'Fjalla One';
+$bFont: 'Fjalla One';
+$fColor: black;
+$nHeight: 80px;
 
 .navbar {
-  background: red;
   width: 100%;
-  height: 80px;
+  height: $nHeight;
   font-family: $font;
   
   .branding {
-    font-family: $brandingFont;
-    color: white;
+    font-family: $bFont;
+    color: $fColor;
     width: 200px;
     overflow: hidden;
     text-align: center;
+    float: left;
     .title {
       font-weight: 800;
       font-size: 2rem;
@@ -33,8 +35,23 @@ $brandingFont: 'Fjalla One';
   }
 
   .menu {
+    width: 400px;
+    float: right;
+    height: 30px;
+    margin-top: 25px;
+    text-align: center;
     .menu-item {
-      color: green;
+      font-size: 0.9rem;
+      color: $fColor;
+      cursor: pointer;
+      float: left;
+      margin: 0 25px;
+      font-weight: bold;
+      line-height: 30px;
     }
   }
+}
+
+@media(max-width: 1000px) {
+  
 }

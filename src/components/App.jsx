@@ -6,7 +6,7 @@ import About from './About';
 import Skills from './Skills';
 import Contact from './Contact';
 import Navbar from './Navbar';
-import './styles/style.css';
+import './styles/css/style.min.css';
 
 class App extends React.Component {
   state = {

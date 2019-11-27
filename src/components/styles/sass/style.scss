@@ -21,6 +21,46 @@ body {
   display: none;
 }
 
+// new
+$pageContainer: 1400px;
+.page-container {
+  width: $pageContainer;
+  margin: auto;
+}
+
+
+@media(max-width: 1600px) {
+  $pageContainer: 1200px;
+  .page-container {width: $pageContainer;}
+}
+
+@media(max-width: 1400px) {
+  $pageContainer: 1100px;
+  .page-container {width: $pageContainer;}
+}
+
+@media(max-width: 1200px) {
+  $pageContainer: 900px;
+  .page-container {width: $pageContainer;}
+}
+
+@media(max-width: 1000px) {
+  $pageContainer: 800px;
+  .page-container {width: $pageContainer;}
+}
+
+@media(max-width: 850px) {
+  $pageContainer: 700px;
+  .page-container {width: $pageContainer;}
+}
+
+@media(max-width: 750px) {
+  $pageContainer: 600px;
+  .page-container {width: $pageContainer;}
+}
+
+
+// old
 .body-wrapper {
   width: 100vw;
   max-width: 100%;
