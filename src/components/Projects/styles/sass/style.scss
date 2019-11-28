@@ -101,67 +101,17 @@ $imageHeight: 200px;
 }
 
 @media (max-width: 1400px) {
-  $headerHeight: 200px;
-  
   $titleOffset: -25px;
-
-  $bgTitleSize: 10rem;
-  $titleSize: 4rem;
-  // $projectWidth: 22%;
-  $projectWidth: 30%;
-  $projectHeight: 240px;
-  $projectMargin: 2.5%;
-  $imageHeight: 200px;
   .projects {
-    // padding-top: 120px;
     .content {
       .title-content {
-        // height: $headerHeight;
-        // font-family: $bFont;
-        .background-title {
-          left: $titleOffset;
-          // font-size: $bgTitleSize;
-          // letter-spacing: 10px;
-        }
-        .title {
-          // font-size: $titleSize;
-          // line-height: $headerHeight;
-        }
-      }
-
-      .projects-display {
-        // padding-top: 50px;
-        .project {
-          // width: $projectWidth;
-          // height: $projectHeight;
-          // margin: 25px $projectMargin;
-
-          // &:nth-of-type(4n + 1) {margin-left: 2.5%;}
-          // &:nth-of-type(4n + 4) {margin-right: 2.5%;}
-
-          &:nth-of-type(3n + 1) {
-            // margin-left: 0;
-          }
-          &:nth-of-type(3n + 3) {
-            // margin-right: 0;
-          }
-
-          .image {
-            // height: $imageHeight;
-          }
-          .name {
-            // padding: 0 10px;
-            // line-height: 40px;
-            // height: 40px;
-            // font-size: 1.1rem;
-          }
-        }
+        .background-title {left: $titleOffset;}
       }
     }
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 850px) {
   $headerHeight: 200px;
   
   $titleOffset: -25px;
