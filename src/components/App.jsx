@@ -6,6 +6,7 @@ import About from './About';
 import Skills from './Skills';
 import Contact from './Contact';
 import Navbar from './Navbar';
+import Section from './Section';
 import './styles/css/style.min.css';
 
 class App extends React.Component {
@@ -55,9 +56,18 @@ class App extends React.Component {
 
   render() {
     const {currentSection, projectModal, project, navbar} = this.state;
+    const projectSection = {
+      title: 'projects'
+    }
     return (
       <div className="body-wrapper">
         <Navbar toggle={this.toggleNavbar} opened={navbar} />
+        <Section title='projects' data={projectSection} />
+
+        {/* <Section title='skills' data={projectSection} />
+        <Section title='about' data={projectSection} />
+        <Section title='contact' data={projectSection} /> */}
+
         {/* <Sidebar 
           onProjectClick={this.onProjectClick} 
           currentSection={currentSection} 
@@ -67,14 +77,14 @@ class App extends React.Component {
           projectModal={projectModal} 
         /> */}
   
-        <div className="content">
-          <div id="scrollToTop"></div>
+        {/* <div id="scrollToTop"></div> */}
+        {/* <div className="content"> */}
           {/* <Projects onProjectClick={this.onProjectClick} />
           <ProjectDisplay project={project} sectionLeaves={this.sectionLeaves} sectionEnters={this.sectionEnters}  />
           <Skills />
           <About />
           <Contact /> */}
-        </div>
+        {/* </div> */}
       </div>
     );
   }
