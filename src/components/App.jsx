@@ -12,7 +12,8 @@ class App extends React.Component {
   state = {
     currentSection: 'projects',
     projectModal: false,
-    project: ''
+    project: '',
+    navbar: false,
   }
 
   UNSAFE_componentWillReceiveProps(nextProps) {
@@ -22,6 +23,8 @@ class App extends React.Component {
   setSection = sectionName => this.setState({currentSection: sectionName});
 
   isSectionActive = (currentSection, sectionName) => currentSection === sectionName;
+
+  toggleNavbar = () => this.setState({navbar: !this.state.navbar})
 
   onProjectClick = project => {
     if (!this.state.projectModal) {
@@ -35,26 +38,26 @@ class App extends React.Component {
   }
 
   // Replace ease
-  sectionEnters = sectionName => {
-    let tl = new window.TimelineMax();
-    tl.fromTo(`.${sectionName}`, 1, {scale: 0, autoAlpha: 0, left: '100%'},  {left: 0, autoAlpha: 1, scale: 1, ease: window.Elastic.easeInOut.config(1, 0.3)}, '+=0.3')
-  }
+  // sectionEnters = sectionName => {
+  //   let tl = new window.TimelineMax();
+  //   tl.fromTo(`.${sectionName}`, 1, {scale: 0, autoAlpha: 0, left: '100%'},  {left: 0, autoAlpha: 1, scale: 1, ease: window.Elastic.easeInOut.config(1, 0.3)}, '+=0.3')
+  // }
 
-  sectionLeaves = sectionName => {
-    let tl = new window.TimelineMax();
-    tl.fromTo(`.${sectionName}`, 2, {scale: 1, autoAlpha: 1, left: 0},  {left: '-100%', autoAlpha: 0, scale: 2, ease: window.Elastic.easeInOut.config(1, 0.3)})
-    tl.to(`.${sectionName}`, 0, {scale: 1})
-  }
+  // sectionLeaves = sectionName => {
+  //   let tl = new window.TimelineMax();
+  //   tl.fromTo(`.${sectionName}`, 2, {scale: 1, autoAlpha: 1, left: 0},  {left: '-100%', autoAlpha: 0, scale: 2, ease: window.Elastic.easeInOut.config(1, 0.3)})
+  //   tl.to(`.${sectionName}`, 0, {scale: 1})
+  // }
 
   scrollToTop = () => {
     window.TweenMax.to(window, 0.5, {scrollTo:{y:'#scrollToTop'}})
   }
 
   render() {
-    const {currentSection, projectModal, project} = this.state;
+    const {currentSection, projectModal, project, navbar} = this.state;
     return (
       <div className="body-wrapper">
-        <Navbar />
+        <Navbar toggle={this.toggleNavbar} opened={navbar} />
         {/* <Sidebar 
           onProjectClick={this.onProjectClick} 
           currentSection={currentSection} 

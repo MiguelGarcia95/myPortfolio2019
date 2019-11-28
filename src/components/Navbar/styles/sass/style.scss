@@ -24,6 +24,8 @@ $lgHeight: 55px;
     font-family: $bFont;
     width: $bWidth;
     overflow: hidden;
+    position: relative;
+    z-index: 2;
     .title, .subtitle {text-transform: uppercase;}
     .title {
       font-weight: 800;
@@ -53,6 +55,7 @@ $lgHeight: 55px;
       overflow: hidden;
       position: absolute;
       right: 25px; top: 22.5px;
+      z-index: 1;
       .bar {
         width: 100%;
         height: 4px;
@@ -64,7 +67,22 @@ $lgHeight: 55px;
       }
     }
     .menu-list {
-      display: block;
+      display: none;
+      width: 100%;
+      height: 0px;
+      transition: 0.3s;
+      background: #f0f0f0;
+      overflow: hidden;
+      position: fixed;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      .item {
+        color: black;
+        font-size: 1.5rem;
+        line-height: 50px;
+        font-weight: bold;
+      }
     } 
     .menu-item {
       font-size: $stSize;
@@ -171,6 +189,10 @@ $lgHeight: 55px;
       }
       .menu-list {
         display: block;
+        &.opened {
+          height: 100%;
+          padding-top: 70px;
+        }
       }
       .menu-item {
         display: none;
