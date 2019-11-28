@@ -112,6 +112,27 @@ $imageHeight: 200px;
 }
 
 @media (max-width: 850px) {
+  $projectWidth: 47.5%;
+  $projectHeight: 240px;
+  $projectMargin: 2.5%;
+  .projects {
+    .content {
+      .projects-display {
+        .project {
+          width: $projectWidth;
+          height: $projectHeight;
+          margin: 25px $projectMargin;
+          &:nth-of-type(3n + 1) {margin-left: $projectMargin;}
+          &:nth-of-type(3n + 3) {margin-right: $projectMargin;}
+          &:nth-of-type(2n + 1) {margin-left: 0;}
+          &:nth-of-type(2n + 2) {margin-right: 0;}
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
   $headerHeight: 200px;
   
   $titleOffset: -25px;
@@ -119,7 +140,7 @@ $imageHeight: 200px;
   $bgTitleSize: 10rem;
   $titleSize: 4rem;
   // $projectWidth: 22%;
-  $projectWidth: 30%;
+  $projectWidth: 47.5%;
   $projectHeight: 240px;
   $projectMargin: 2.5%;
   $imageHeight: 200px;
@@ -143,19 +164,18 @@ $imageHeight: 200px;
       .projects-display {
         // padding-top: 50px;
         .project {
-          // width: $projectWidth;
-          // height: $projectHeight;
-          // margin: 25px $projectMargin;
+          width: $projectWidth;
+          height: $projectHeight;
+          margin: 25px $projectMargin;
 
-          // &:nth-of-type(4n + 1) {margin-left: 2.5%;}
-          // &:nth-of-type(4n + 4) {margin-right: 2.5%;}
+          // &:nth-of-type(4n + 1) {margin-left: 0;}
+          // &:nth-of-type(4n + 4) {margin-right: 0;}
 
-          &:nth-of-type(3n + 1) {
-            // margin-left: 0;
-          }
-          &:nth-of-type(3n + 3) {
-            // margin-right: 0;
-          }
+          &:nth-of-type(3n + 1) {margin-left: $projectMargin;}
+          &:nth-of-type(3n + 3) {margin-right: $projectMargin;}
+          
+          &:nth-of-type(2n + 1) {margin-left: 0;}
+          &:nth-of-type(2n + 2) {margin-right: 0;}
 
           .image {
             // height: $imageHeight;
