@@ -5,7 +5,7 @@ import './styles/css/style.min.css';
 import projectData from '../../projectData';
 
 function Projects() {
-  const displayProjects = () => projectData.map(project => <Project id={project.id} data={project} />);
+  const displayProjects = () => projectData.map(project => <Project id={project.id} project={project} />);
 
   return (
     <div className='section projects'>
