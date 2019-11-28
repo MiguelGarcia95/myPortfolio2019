@@ -1,12 +1,12 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import Projects from './Projects';
-import ProjectDisplay from './ProjectDisplay';
-import About from './About';
-import Skills from './Skills';
-import Contact from './Contact';
+// import Sidebar from './Sidebar';
+// import Projects from './Projects';
+// import ProjectDisplay from './ProjectDisplay';
+// import About from './About';
+// import Skills from './Skills';
+// import Contact from './Contact';
 import Navbar from './Navbar';
-import Section from './Section';
+import Projects from './Projects';
 import './styles/css/style.min.css';
 
 class App extends React.Component {
@@ -56,17 +56,10 @@ class App extends React.Component {
 
   render() {
     const {currentSection, projectModal, project, navbar} = this.state;
-    const projectSection = {
-      title: 'projects'
-    }
     return (
       <div className="body-wrapper">
         <Navbar toggle={this.toggleNavbar} opened={navbar} />
-        <Section title='projects' data={projectSection} />
-
-        {/* <Section title='skills' data={projectSection} />
-        <Section title='about' data={projectSection} />
-        <Section title='contact' data={projectSection} /> */}
+        <Projects />
 
         {/* <Sidebar 
           onProjectClick={this.onProjectClick} 
