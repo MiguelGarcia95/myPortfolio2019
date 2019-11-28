@@ -13,7 +13,7 @@ $lgHeight: 55px;
   width: 100%;
   height: $nHeight;
   font-family: $font;
-  
+  position: fixed;
   .branding, .menu {
     text-align: center;
     color: $fColor;
