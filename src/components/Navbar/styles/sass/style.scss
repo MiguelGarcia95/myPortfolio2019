@@ -54,7 +54,7 @@ $lgHeight: 55px;
       height: 0px;
       overflow: hidden;
       position: absolute;
-      right: 25px; top: 22.5px;
+      right: 50px; top: 22.5px;
       z-index: 1;
       cursor: pointer;
       .bar {
@@ -161,63 +161,15 @@ $lgHeight: 55px;
 }
 
 @media(max-width: 400px) {
-  $nHeight: 70px;
-  $tSize: 1.5rem;
-  $stSize: 0.7rem;
-  $bWidth: 130px;
-
-  $mWidth: 350px;
-
-  $smHeight: 25px;
-  $lgHeight: 50px;
-  
+  $tSize: 1.3rem;
+  $bWidth: 110px;
   .navbar {
-    // height: $nHeight;
-
-
-    .branding, .menu {
-      // float: left;
-    }
-    
     .branding {
-      // width: $bWidth;
-
-
-      .title {
-        // font-size: $tSize;
-        // line-height: $lgHeight;
-        // height: $lgHeight;
-      }
-  
-      .subtitle {
-        // font-size: $stSize;
-        // line-height: $smHeight;
-        // height: $smHeight;
-        // margin-top: -15px;
-      }
+      width: $bWidth;
+      .title {font-size: $tSize;}
     }
-  
     .menu {
-      // width: $mWidth;
-      // height: $smHeight;
-      
-      // margin-top: 20px;
-      .menu-ham {
-        height: 25px;
-      }
-      .menu-list {
-        display: block;
-        &.opened {
-          height: 100%;
-          padding-top: 70px;
-        }
-      }
-      .menu-item {
-        display: none;
-        // font-size: $stSize;
-        // margin: 0 15px;
-        // line-height: $smHeight;
-      }
+      .menu-ham {right: 25px;}
     }
   }
 }

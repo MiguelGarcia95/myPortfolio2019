@@ -68,6 +68,10 @@ $pageContainer: 1400px;
   }
 }
 
+@media(max-width: 400px) {
+  .page-container {padding: 0 25px;}
+}
+
 
 // old
 .body-wrapper {
