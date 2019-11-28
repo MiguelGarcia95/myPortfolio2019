@@ -59,6 +59,9 @@ class App extends React.Component {
     return (
       <div className="body-wrapper">
         <Navbar toggle={this.toggleNavbar} opened={navbar} />
+        <div className="header">
+          <p className="name">Miguel Garcia</p>
+        </div>
         <Projects />
 
         {/* <Sidebar 

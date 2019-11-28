@@ -10,9 +10,6 @@ function Projects() {
   return (
     <div className='section projects'>
       <div className="page-container">
-        <div className="header">
-          <p className="name">Miguel Garcia</p>
-        </div>
         <div className="content">
           <div className="header">
             <h1 className="background-title">Projects</h1>
