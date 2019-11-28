@@ -26,6 +26,7 @@ $pageContainer: 1400px;
 .page-container {
   width: $pageContainer;
   margin: auto;
+  box-sizing: border-box;
 }
 
 
@@ -57,6 +58,14 @@ $pageContainer: 1400px;
 @media(max-width: 750px) {
   $pageContainer: 600px;
   .page-container {width: $pageContainer;}
+}
+
+@media(max-width: 650px) {
+  $pageContainer: 100%;
+  .page-container {
+    width: $pageContainer;
+    padding: 0 50px;
+  }
 }
 
 

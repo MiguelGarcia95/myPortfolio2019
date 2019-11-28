@@ -47,6 +47,25 @@ $lgHeight: 55px;
     float: right;
     height: $smHeight;
     margin-top: 25px;
+    .menu-ham {
+      width: 40px;
+      height: 0px;
+      overflow: hidden;
+      position: absolute;
+      right: 25px; top: 22.5px;
+      .bar {
+        width: 100%;
+        height: 4px;
+        background: black;
+        position: absolute;
+        &:first-of-type {top: 0;}
+        &:nth-of-type(2) {top: 0; bottom: 0; margin: auto;}
+        &:last-of-type {bottom: 0;}
+      }
+    }
+    .menu-list {
+      display: block;
+    } 
     .menu-item {
       font-size: $stSize;
       cursor: pointer;
@@ -95,23 +114,39 @@ $lgHeight: 55px;
   }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 750px) {
+  $mWidth: 350px;
+  .navbar {
+    .menu {
+      width: $mWidth;
+      .menu-item {margin: 0 15px;}
+    }
+  }
+}
+
+@media(max-width: 650px) {
   $nHeight: 70px;
   $tSize: 1.5rem;
   $stSize: 0.7rem;
   $bWidth: 130px;
-  $mWidth: 380px;
+
+  $mWidth: 350px;
+
   $smHeight: 25px;
   $lgHeight: 50px;
   
   .navbar {
-    height: $nHeight;
+    // height: $nHeight;
+
+
     .branding, .menu {
       // float: left;
     }
     
     .branding {
-      width: $bWidth;
+      // width: $bWidth;
+
+
       .title {
         // font-size: $tSize;
         // line-height: $lgHeight;
@@ -122,17 +157,25 @@ $lgHeight: 55px;
         // font-size: $stSize;
         // line-height: $smHeight;
         // height: $smHeight;
-        margin-top: -15px;
+        // margin-top: -15px;
       }
     }
   
     .menu {
       width: $mWidth;
       // height: $smHeight;
-      margin-top: 20px;
+      
+      // margin-top: 20px;
+      .menu-ham {
+        height: 25px;
+      }
+      .menu-list {
+        display: block;
+      }
       .menu-item {
+        display: none;
         // font-size: $stSize;
-        margin: 0 20px;
+        margin: 0 15px;
         // line-height: $smHeight;
       }
     }
