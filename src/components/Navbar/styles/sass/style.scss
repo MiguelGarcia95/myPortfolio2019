@@ -14,6 +14,9 @@ $lgHeight: 55px;
   height: $nHeight;
   font-family: $font;
   position: fixed;
+  background: #e0e0e0;
+  z-index: 5;
+
   .branding, .menu {
     text-align: center;
     color: $fColor;
