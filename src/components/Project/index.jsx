@@ -3,7 +3,7 @@ import './styles/css/styles.min.css';
 
 function Project() {
   return (
-    <div>
+    <div className="project">
       s
     </div>
   )

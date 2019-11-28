@@ -11,15 +11,13 @@ function Projects() {
     <div className='section projects'>
       <div className="page-container">
         <div className="content">
-          <div className="header">
+          <div className="title-content">
             <h1 className="background-title">Projects</h1>
             <h1 className="title">Projects</h1>
           </div>
 
           <div className="projects-display">
-            <div className="project">
-              {displayProjects()}
-            </div>
+            {displayProjects()}
           </div>
         </div>
       </div>
