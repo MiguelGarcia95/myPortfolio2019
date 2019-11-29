@@ -64,6 +64,9 @@ class App extends React.Component {
         <Navbar toggle={this.toggleNavbar} opened={navbar} />
         {/* <Header /> */}
         <Projects />
+        <Skills />
+        <About />
+        <Contact />
 
         {/* <Sidebar 
           onProjectClick={this.onProjectClick} 
@@ -75,13 +78,6 @@ class App extends React.Component {
         /> */}
   
         {/* <div id="scrollToTop"></div> */}
-        {/* <div className="content"> */}
-          {/* <Projects onProjectClick={this.onProjectClick} />
-          <ProjectDisplay project={project} sectionLeaves={this.sectionLeaves} sectionEnters={this.sectionEnters}  />
-          <Skills />
-          <About />
-          <Contact /> */}
-        {/* </div> */}
       </div>
     );
   }
