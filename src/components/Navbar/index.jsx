@@ -2,6 +2,10 @@ import React from 'react';
 import './styles/css/style.min.css';
 
 function Navbar({scrollTo, opened, toggle}) {
+  const onNavClick = sectionId => {
+    toggle();
+    scrollTo(sectionId);
+  }
   return (
     <div className='navbar'>
       <div className="page-container">
@@ -16,10 +20,10 @@ function Navbar({scrollTo, opened, toggle}) {
             <div className="bar"></div>
           </div>
           <div className={`menu-list ${opened && 'opened'}`}>
-            <p className="item">Projects</p> 
-            <p className="item">Skills</p>        
-            <p className="item">About</p>        
-            <p className="item">Contact</p>        
+            <p className="item" onClick={() => onNavClick('#projects')} >Projects</p> 
+            <p className="item" onClick={() => onNavClick('#skills')} >Skills</p>        
+            <p className="item" onClick={() => onNavClick('#about')} >About</p>        
+            <p className="item" onClick={() => onNavClick('#contact')} >Contact</p>        
           </div>
           <p className="menu-item" onClick={() => scrollTo('#contact')} >Contact</p>        
           <p className="menu-item" onClick={() => scrollTo('#about')} >About</p>        
