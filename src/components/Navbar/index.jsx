@@ -21,10 +21,10 @@ function Navbar({scrollTo, opened, toggle}) {
             <p className="item">About</p>        
             <p className="item">Contact</p>        
           </div>
-          <p className="menu-item">Contact</p>        
-          <p className="menu-item">About</p>        
-          <p className="menu-item">Skills</p>        
-          <p className="menu-item">Projects</p>        
+          <p className="menu-item" onClick={() => scrollTo('#contact')} >Contact</p>        
+          <p className="menu-item" onClick={() => scrollTo('#about')} >About</p>        
+          <p className="menu-item" onClick={() => scrollTo('#skills')} >Skills</p>        
+          <p className="menu-item" onClick={() => scrollTo('#projects')} >Projects</p>        
         </div>
       </div>
     </div>

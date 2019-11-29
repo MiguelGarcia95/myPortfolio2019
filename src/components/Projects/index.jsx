@@ -9,7 +9,7 @@ function Projects() {
   const displayProjects = () => projectData.map(project => <Project id={project.id} project={project} />);
 
   return (
-    <div className='section projects'>
+    <div className='section projects' id='projects' >
       <div className="page-container">
         <div className="content">
           <SectionTitle title="Projects" float='left' />

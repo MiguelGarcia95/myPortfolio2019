@@ -3,7 +3,7 @@ import SectionTitle from '../SectionTitle';
 
 function About() {
   return (
-    <div className='section about'>
+    <div className='section about' id='about'>
       <div className="page-container">
         <div className="content">
           <SectionTitle title='About' float='left' />

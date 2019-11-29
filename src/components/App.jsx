@@ -24,22 +24,22 @@ class App extends React.Component {
     this.scrollToTop();
   }
 
-  setSection = sectionName => this.setState({currentSection: sectionName});
+  // setSection = sectionName => this.setState({currentSection: sectionName});
 
-  isSectionActive = (currentSection, sectionName) => currentSection === sectionName;
+  // isSectionActive = (currentSection, sectionName) => currentSection === sectionName;
 
   toggleNavbar = () => this.setState({navbar: !this.state.navbar})
 
-  onProjectClick = project => {
-    if (!this.state.projectModal) {
-      this.sectionEnters('project-display');
-      this.sectionLeaves('projects');
-    }
-    this.setState({
-      project: project,
-      projectModal: !this.state.projectModal
-    });
-  }
+  // onProjectClick = project => {
+  //   if (!this.state.projectModal) {
+  //     this.sectionEnters('project-display');
+  //     this.sectionLeaves('projects');
+  //   }
+  //   this.setState({
+  //     project: project,
+  //     projectModal: !this.state.projectModal
+  //   });
+  // }
 
   // Replace ease
   // sectionEnters = sectionName => {
@@ -57,12 +57,15 @@ class App extends React.Component {
     window.TweenMax.to(window, 0.5, {scrollTo:{y:'#scrollToTop'}})
   }
 
+  navScrollTo = sectionId => {
+    window.TweenMax.to(window, 0.5, {scrollTo: {y:sectionId, offsetY: 80}});
+  }
+
   render() {
     const {currentSection, projectModal, project, navbar} = this.state;
     return (
       <div className="body-wrapper">
-        <Navbar toggle={this.toggleNavbar} opened={navbar} />
-        {/* <Header /> */}
+        <Navbar toggle={this.toggleNavbar} opened={navbar} scrollTo={this.navScrollTo} />
         <Projects />
         <Skills />
         <About />
