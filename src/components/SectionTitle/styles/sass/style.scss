@@ -9,17 +9,19 @@ $titleSize: 4rem;
   width: 100%;
   height: $headerHeight;
   font-family: $bFont;
-
   .background-title {
+    &.left {left: $titleOffset;}
+    &.right {right: $titleOffset;}
     position: absolute;
     z-index: 1;
-    left: $titleOffset;
     font-size: $bgTitleSize;
     letter-spacing: 10px;
     line-height: $headerHeight;
     opacity: 0.1;
   }
   .title {
+    &.left {text-align: left;}
+    &.right {text-align: right;}
     font-size: $titleSize;
     line-height: $headerHeight;
   }
@@ -28,7 +30,10 @@ $titleSize: 4rem;
 @media (max-width: 1400px) {
   $titleOffset: -25px;
   .title-content {
-    .background-title {left: $titleOffset;}
+    .background-title {
+      &.left {left: $titleOffset;}
+      &.right {right: $titleOffset;}
+    }
   }
 }
 
@@ -79,7 +84,8 @@ $titleSize: 4rem;
   $bgTitleSize: 5rem;
   .title-content {
     .background-title {
-      left: $titleOffset;
+      &.left {left: $titleOffset;}
+      &.right {right: $titleOffset;}
       font-size: $bgTitleSize;
     }
   }

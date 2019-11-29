@@ -12,8 +12,8 @@ function Projects() {
     <div className='section projects'>
       <div className="page-container">
         <div className="content">
-          <SectionTitle title="Projects" />
-          
+          <SectionTitle title="Projects" float='left' />
+
           <div className="projects-display">
             {displayProjects()}
           </div>
