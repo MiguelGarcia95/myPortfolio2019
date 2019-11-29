@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Skill({icon, name}) {
+function Skill({icon, name, size = ''}) {
   return (
-    <div className="skill">
+    <div className={`skill ${size}`}>
       <div className="skill-icon">
         <img src={icon} alt={name} />
       </div>

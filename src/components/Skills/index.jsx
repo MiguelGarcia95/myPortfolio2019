@@ -50,7 +50,7 @@ function Skills({scrollTo}) {
             {/* <Skill name='C#' icon={`${ICON_PATH}/csharp.png`} /> */}
             <Skill name='React Native' icon={`${ICON_PATH}/react-native.png`} />
             {/* <Skill name='.NET' icon={`${ICON_PATH}/aspnet.png`} /> */}
-            <Skill name='WordPress theme development' classes='lg' icon={`${ICON_PATH}/wordpress.png`} />
+            <Skill name='WordPress theme development' size='large' icon={`${ICON_PATH}/wordpress.png`} />
           </div> 
         </div>       
       </div>
