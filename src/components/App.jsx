@@ -7,7 +7,6 @@ import React from 'react';
 // import Contact from './Contact';
 import Navbar from './Navbar';
 import Projects from './Projects';
-import Header from './Header';
 import './styles/css/style.min.css';
 
 class App extends React.Component {
