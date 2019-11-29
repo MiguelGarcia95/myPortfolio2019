@@ -1,0 +1,98 @@
+$bFont: 'Fjalla One';
+$headerHeight: 200px;
+$titleOffset: -100px;
+$bgTitleSize: 10rem;
+$titleSize: 4rem;
+
+.title-content {
+  position: relative;
+  width: 100%;
+  height: $headerHeight;
+  font-family: $bFont;
+
+  .background-title {
+    position: absolute;
+    z-index: 1;
+    left: $titleOffset;
+    font-size: $bgTitleSize;
+    letter-spacing: 10px;
+    line-height: $headerHeight;
+    opacity: 0.1;
+  }
+  .title {
+    font-size: $titleSize;
+    line-height: $headerHeight;
+  }
+}
+
+@media (max-width: 1400px) {
+  $titleOffset: -25px;
+  .title-content {
+    .background-title {left: $titleOffset;}
+  }
+}
+
+@media (max-width: 650px) {
+  $bgTitleSize: 9rem;
+  .title-content {
+    .background-title {
+      font-size: $bgTitleSize;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+@media(max-width: 550px) {
+  $headerHeight: 150px;
+  $bgTitleSize: 7rem;
+  $titleSize: 3rem;
+  .title-content {
+    height: $headerHeight;
+    .background-title {
+      font-size: $bgTitleSize;
+      line-height: $headerHeight;
+    }
+    .title {
+      font-size: $titleSize;
+      line-height: $headerHeight;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  $headerHeight: 130px;
+  $bgTitleSize: 6rem;
+  .title-content {
+    height: $headerHeight;
+    .background-title {
+      font-size: $bgTitleSize;
+      line-height: $headerHeight;
+    }
+    .title {
+      line-height: $headerHeight;
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  $titleOffset: -15px;
+  $bgTitleSize: 5rem;
+  .title-content {
+    .background-title {
+      left: $titleOffset;
+      font-size: $bgTitleSize;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  $bgTitleSize: 4rem;
+  $titleSize: 2.5rem;
+  .title-content {
+    .background-title {
+      font-size: $bgTitleSize;
+      letter-spacing: 3px;
+    }
+    .title {font-size: $titleSize;}
+  }
+}

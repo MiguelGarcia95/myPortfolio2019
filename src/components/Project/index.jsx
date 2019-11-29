@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/css/styles.min.css';
 
 function Project({project}) {
   return (

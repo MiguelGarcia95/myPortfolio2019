@@ -1,4 +1,5 @@
 $font: 'Montserrat';
+
 $bFont: 'Fjalla One';
 $headerHeight: 200px;
 $titleOffset: -100px;
@@ -13,28 +14,28 @@ $imageHeight: 200px;
 .projects {
   background: #e0e0e0;
   padding-top: 120px;
-  
+  padding-bottom: 50px;
   .content {
-    .title-content {
-      position: relative;
-      width: 100%;
-      height: $headerHeight;
-      font-family: $bFont;
+    // .title-content {
+    //   position: relative;
+    //   width: 100%;
+    //   height: $headerHeight;
+    //   font-family: $bFont;
 
-      .background-title {
-        position: absolute;
-        z-index: 1;
-        left: $titleOffset;
-        font-size: $bgTitleSize;
-        letter-spacing: 10px;
-        line-height: $headerHeight;
-        opacity: 0.1;
-      }
-      .title {
-        font-size: $titleSize;
-        line-height: $headerHeight;
-      }
-    }
+    //   .background-title {
+    //     position: absolute;
+    //     z-index: 1;
+    //     left: $titleOffset;
+    //     font-size: $bgTitleSize;
+    //     letter-spacing: 10px;
+    //     line-height: $headerHeight;
+    //     opacity: 0.1;
+    //   }
+    //   .title {
+    //     font-size: $titleSize;
+    //     line-height: $headerHeight;
+    //   }
+    // }
 
     .projects-display {
       width: 100%;
@@ -101,16 +102,16 @@ $imageHeight: 200px;
   }
 }
 
-@media (max-width: 1400px) {
-  $titleOffset: -25px;
-  .projects {
-    .content {
-      .title-content {
-        .background-title {left: $titleOffset;}
-      }
-    }
-  }
-}
+// @media (max-width: 1400px) {
+//   $titleOffset: -25px;
+//   .projects {
+//     .content {
+//       .title-content {
+//         .background-title {left: $titleOffset;}
+//       }
+//     }
+//   }
+// }
 
 @media (max-width: 850px) {
   $projectWidth: 47.5%;
@@ -141,12 +142,13 @@ $imageHeight: 200px;
   $imageHeight: 250px;
   .projects {
     .content {
-      .title-content {
-        .background-title {
-          font-size: $bgTitleSize;
-          letter-spacing: 5px;
-        }
-      }
+
+      // .title-content {
+      //   .background-title {
+      //     font-size: $bgTitleSize;
+      //     letter-spacing: 5px;
+      //   }
+      // }
 
       .projects-display {
         .project {
@@ -165,44 +167,29 @@ $imageHeight: 200px;
 }
 
 @media (max-width: 550px) {
-  $headerHeight: 150px;
-  $bgTitleSize: 7rem;
-  $titleSize: 3rem;
   .projects {
     .content {
-      .title-content {
-        .background-title {
-          font-size: $bgTitleSize;
-          line-height: $headerHeight;
-        }
-        .title {
-          font-size: $titleSize;
-          line-height: $headerHeight;
-        }
-      }
-
       .projects-display {padding-top: 0px;}
     }
   }
 }
 
 @media (max-width: 500px) {
-  $headerHeight: 130px;
-  $bgTitleSize: 6rem;
   $projectHeight: 240px;
   $imageHeight: 200px;
   .projects {
     .content {
-      .title-content {
-        height: $headerHeight;
-        .background-title {
-          font-size: $bgTitleSize;
-          line-height: $headerHeight;
-        }
-        .title {
-          line-height: $headerHeight;
-        }
-      }
+
+      // .title-content {
+      //   height: $headerHeight;
+      //   .background-title {
+      //     font-size: $bgTitleSize;
+      //     line-height: $headerHeight;
+      //   }
+      //   .title {
+      //     line-height: $headerHeight;
+      //   }
+      // }
 
       .projects-display {
         .project {
@@ -215,35 +202,35 @@ $imageHeight: 200px;
 }
 
 
-@media (max-width: 400px) {
-  $titleOffset: -15px;
-  $bgTitleSize: 5rem;
-  .projects {
-    .content {
-      .title-content {
-        .background-title {
-          left: $titleOffset;
-          font-size: $bgTitleSize;
-        }
-      }
-    }
-  }
-}
+// @media (max-width: 400px) {
+//   // $titleOffset: -15px;
+//   // $bgTitleSize: 5rem;
+//   .projects {
+//     .content {
+//       // .title-content {
+//       //   .background-title {
+//       //     left: $titleOffset;
+//       //     font-size: $bgTitleSize;
+//       //   }
+//       // }
+//     }
+//   }
+// }
 
 
-@media (max-width: 350px) {
-  $bgTitleSize: 4rem;
-  $titleSize: 2.5rem;
-  .projects {
-    .content {
-      .title-content {
-        .background-title {
-          font-size: $bgTitleSize;
-          letter-spacing: 3px;
-        }
-        .title {font-size: $titleSize;}
-      }
+// @media (max-width: 350px) {
+//   $bgTitleSize: 4rem;
+//   $titleSize: 2.5rem;
+//   .projects {
+//     .content {
+//       .title-content {
+//         .background-title {
+//           font-size: $bgTitleSize;
+//           letter-spacing: 3px;
+//         }
+//         .title {font-size: $titleSize;}
+//       }
 
-    }
-  }
-}
+//     }
+//   }
+// }
