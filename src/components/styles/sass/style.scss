@@ -13,13 +13,13 @@ body {
   overflow-x: hidden;
   width: 100vw;
   max-width: 100%;
-  background-color: #f0f0f0;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  background: #e0e0e0;
+  // scrollbar-width: none;
+  // -ms-overflow-style: none;
 }
-::-webkit-scrollbar {
-  display: none;
-}
+// ::-webkit-scrollbar {
+//   display: none;
+// }
 
 // new
 
@@ -28,6 +28,8 @@ body {
   width: 100vw;
   max-width: 100%;
   min-height: 100vh;
+
+  box-sizing: border-box;
 }
 
 $pageContainer: 1400px;
