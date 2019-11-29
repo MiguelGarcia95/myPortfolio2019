@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionTitle from '../SectionTitle';
+import Skill from '../Skill';
 import './styles/css/style.min.css';
 
 const ICON_PATH = './assets/icons';
@@ -19,14 +20,9 @@ function Skills({scrollTo}) {
             </p>
           </div>
           <div className="skills-container">
-            <div className="skill">
-              <div className="skill-icon">
-                <img src={`${ICON_PATH}/html.png`} alt='html'/>
-              </div>
-              <div className="skill-name">
-                <p>HTML</p>
-              </div>
-            </div>
+
+            <Skill name='HTML' icon={`${ICON_PATH}/html.png`} />
+
           </div> 
         </div>       
       </div>
