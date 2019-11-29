@@ -19,7 +19,8 @@ $imageHeight: 200px;
     .projects-display {
       width: 100%;
       height: auto;
-      overflow: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
       padding-top: 50px;
       .project {
         width: $projectWidth;
