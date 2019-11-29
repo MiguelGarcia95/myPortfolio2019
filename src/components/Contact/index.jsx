@@ -6,7 +6,7 @@ function Contact() {
     <div className='section contact' id='contact'>
       <div className="page-container">
         <div className="content">
-          <SectionTitle title='Contact' float='right' />
+          <SectionTitle title='Contact' float='left' />
         </div>        
       </div>
     </div>

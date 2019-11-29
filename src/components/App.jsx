@@ -68,7 +68,7 @@ class App extends React.Component {
         <Navbar toggle={this.toggleNavbar} opened={navbar} scrollTo={this.navScrollTo} />
         <Projects />
         <Skills scrollTo={this.navScrollTo} />
-        <About />
+        {/* <About /> */}
         <Contact />
 
         {/* <Sidebar 

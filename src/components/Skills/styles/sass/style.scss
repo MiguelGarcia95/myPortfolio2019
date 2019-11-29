@@ -4,7 +4,6 @@ $bFont: 'Fjalla One';
 .skills {
   .content {
     .description, .skills-container {
-      width: 50%;
       min-height: 300px;
       float: left;
       box-sizing: border-box;
@@ -14,6 +13,7 @@ $bFont: 'Fjalla One';
       font-size: 1.1rem;
       font-weight: bold;
       padding-right: 20px;
+      width: 50%;
       p {
         margin: 20px 0;
       }
@@ -25,7 +25,14 @@ $bFont: 'Fjalla One';
       }
     }
     .skills-container {
-      padding-top: 25px;
+      padding: 25px;
+      width: 50%;
+      .skill-title {
+        font-family: $bFont;
+        font-size: 1.5rem;
+        width: 100%;
+        float: left;
+      }
       .skill {
         width: 80px; 
         height: 80px;
