@@ -12,16 +12,8 @@ function Projects() {
     <div className='section projects'>
       <div className="page-container">
         <div className="content">
-
           <SectionTitle title="Projects" />
-
-          {/* <div className="title-content">
-            <h1 className="background-title">Projects</h1>
-            <h1 className="title">Projects</h1>
-          </div> */}
-
-
-
+          
           <div className="projects-display">
             {displayProjects()}
           </div>
