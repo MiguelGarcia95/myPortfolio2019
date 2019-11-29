@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import SectionTitle from '../SectionTitle';
 
 function Contact() {
   return (
-    <div>
-      
+    <div className='section contact'>
+      <div className="page-container">
+        <div className="content">
+          <SectionTitle title='Contact' float='right' />
+        </div>        
+      </div>
     </div>
   )
 }

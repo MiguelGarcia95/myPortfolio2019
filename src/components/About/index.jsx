@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import SectionTitle from '../SectionTitle';
 
 function About() {
   return (
-    <div>
-      
+    <div className='section about'>
+      <div className="page-container">
+        <div className="content">
+          <SectionTitle title='About' float='left' />
+        </div>        
+      </div>
     </div>
   )
 }
