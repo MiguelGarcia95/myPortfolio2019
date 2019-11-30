@@ -2,13 +2,21 @@ $font: 'Montserrat';
 $bFont: 'Fjalla One';
 
 .contact {
+  position: relative;
   .content {
     .contact-form {
       width: 800px;
       margin: auto;
       text-align: center;
       margin-top: 50px;
-      .contact-message {}
+      .contact-message {
+        font-size: 1.4rem;
+        position: absolute;
+        top: 150px;
+        font-family: $bFont;
+        text-align: center;
+        left: 0; right: 0;
+      }
       .contact-title {
         font-family: $bFont;
         font-size: 2rem;
@@ -26,17 +34,27 @@ $bFont: 'Fjalla One';
           margin-top: 20px;
           background: transparent;
           border-bottom: 2px solid black;
-          
+          &.error {
+            border-bottom-color: rgba(255,0,0,0.5);
+          }
         }
-        input {
-
-        }
-        .error {}
         textarea {
           height: 200px;
           resize: none;
         }
-        button {}
+        button {
+          width: 200px;
+          padding: 15px 0;
+          margin-top: 25px;
+          box-sizing: border-box;
+          border: none;
+          background: rgba(0,0,0,0.15);
+          color: black;
+          font-weight: bold;
+          font-size: 1.3rem; 
+          font-family: $bFont;
+          cursor: pointer;
+        }
       }
     }
   }
