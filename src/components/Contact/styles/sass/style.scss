@@ -1,17 +1,42 @@
+$font: 'Montserrat';
+$bFont: 'Fjalla One';
+
 .contact {
-  .page-container {
-    .content {
-      .contact-form {
-        .contact-message {}
-        .contact-title {
+  .content {
+    .contact-form {
+      width: 800px;
+      margin: auto;
+      text-align: center;
+      margin-top: 50px;
+      .contact-message {}
+      .contact-title {
+        font-family: $bFont;
+        font-size: 2rem;
+        line-height: 50px;
+      }
+      form {
+        width: 100%;
+        input, textarea {
+          font-family: 'Fjalla One';
+          color: #232323;
+          width: 100%;
+          border: none;
+          padding: 15px;
+          box-sizing: border-box;
+          margin-top: 20px;
+          background: transparent;
+          border-bottom: 2px solid black;
+          
+        }
+        input {
 
         }
-        form {
-          input {}
-          .error {}
-          textarea {}
-          button {}
+        .error {}
+        textarea {
+          height: 200px;
+          resize: none;
         }
+        button {}
       }
     }
   }

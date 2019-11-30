@@ -1,9 +1,9 @@
 * {margin: 0;}
 
 input, textarea {
-  &::placeholder { color: #232323; opacity: 1; font-family: 'Fjalla One';}
-  &:-ms-input-placeholder { color: #232323; font-family: 'Fjalla One';}
-  &::-ms-input-placeholder { color: #232323; font-family: 'Fjalla One';}
+  &::placeholder { color: #777; opacity: 1; font-family: 'Fjalla One';}
+  &:-ms-input-placeholder { color: #777; font-family: 'Fjalla One';}
+  &::-ms-input-placeholder { color: #777; font-family: 'Fjalla One';}
   &:focus {outline: none;}
 }
 
