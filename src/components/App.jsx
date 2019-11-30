@@ -3,13 +3,12 @@ import React from 'react';
 // import Projects from './Projects';
 // import ProjectDisplay from './ProjectDisplay';
 // import About from './About';
-// import Skills from './Skills';
+// import About from './About';
 // import Contact from './Contact';
 import Navbar from './Navbar';
 import Projects from './Projects';
-import Skills from './Skills';
-import Contact from './Contact';
 import About from './About';
+import Contact from './Contact';
 import './styles/css/style.min.css';
 
 class App extends React.Component {
@@ -67,8 +66,7 @@ class App extends React.Component {
       <div className="body-wrapper">
         <Navbar toggle={this.toggleNavbar} opened={navbar} scrollTo={this.navScrollTo} />
         <Projects />
-        <Skills scrollTo={this.navScrollTo} />
-        {/* <About /> */}
+        <About scrollTo={this.navScrollTo} />
         <Contact />
 
         {/* <Sidebar 
