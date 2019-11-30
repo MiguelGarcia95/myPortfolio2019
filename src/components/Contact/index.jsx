@@ -7,6 +7,10 @@ function Contact() {
       <div className="page-container">
         <div className="content">
           <SectionTitle title='Contact' float='left' />
+
+          <div className="form">
+            
+          </div>
         </div>        
       </div>
     </div>
