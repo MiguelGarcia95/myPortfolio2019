@@ -1,6 +1,5 @@
 import React from 'react';
 import SectionTitle from '../SectionTitle';
-// import Skill from '../Skill';
 import './styles/css/style.min.css';
 
 // const ICON_PATH = './assets/icons';

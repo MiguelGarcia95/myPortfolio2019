@@ -1,11 +1,13 @@
 $font: 'Montserrat';
 $bFont: 'Fjalla One';
 
+$formWidth: 800px;
+
 .contact {
   position: relative;
   .content {
     .contact-form {
-      width: 800px;
+      width: $formWidth;
       margin: auto;
       text-align: center;
       margin-top: 50px;
@@ -16,11 +18,6 @@ $bFont: 'Fjalla One';
         font-family: $bFont;
         text-align: center;
         left: 0; right: 0;
-      }
-      .contact-title {
-        font-family: $bFont;
-        font-size: 2rem;
-        line-height: 50px;
       }
       form {
         width: 100%;
@@ -54,6 +51,38 @@ $bFont: 'Fjalla One';
           font-size: 1.3rem; 
           font-family: $bFont;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  $formWidth: 600px;
+  .contact {
+    .content {
+      .contact-form {width: $formWidth;}
+    }
+  }
+}
+
+@media(max-width: 850px) {
+  $formWidth: 500px;
+  .contact {
+    .content {
+      .contact-form {width: $formWidth;}
+    }
+  }
+}
+
+@media(max-width: 650px) {
+  $formWidth: 100%;
+  .contact {
+    .content {
+      .contact-form {
+        width: $formWidth;
+        form {
+          button {width: 100%;}
         }
       }
     }
