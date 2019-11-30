@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from '../SectionTitle';
 import {EMAILJSUSER} from '../../keys';
+import './styles/css/style.min.css';
 
 const emailjs = window.emailjs;
 
@@ -87,8 +88,16 @@ class Contact extends React.Component {
           <div className="content">
             <SectionTitle title='Contact' float='left' />
   
-            <div className="form">
-  
+            <div className='contact-form'>
+              {messageSent && <div className="contact-message"><p>{messageSent}</p></div> }
+              <div className="contact-title">Contact Me</div>
+              <form onSubmit={this.sendEmail} >
+                <input type="text" placeholder='Name' name='name' value={name} onChange={this.onChange} className={nameError ? 'error' : ''} />
+                <input type="text" placeholder='Subject' name='subject' value={subject} onChange={this.onChange} className={subjectError ? 'error' : ''} />
+                <input type="email" placeholder='Email' name='email' value={email} onChange={this.onChange} className={emailError ? 'error' : ''} />
+                <textarea placeholder="What's up?" name='message' value={message} onChange={this.onChange} className={messageError ? 'error' : ''} ></textarea>
+                <button>Send</button>
+              </form>
             </div>
           </div>        
         </div>
@@ -97,4 +106,4 @@ class Contact extends React.Component {
   }
 }
 
-export default Contact
+export default Contact;
