@@ -24,9 +24,9 @@ function About({scrollTo}) {
               Visit my <a className='link' href="https://github.com/MiguelGarcia95" target='_blank'>Github</a> or <span onClick={() => scrollTo('#contact')} className='link' >Contact</span> me.
             </p>
           </div>
-          <div className="skills-container">
+          {/* <div className="skills-container"> */}
 
-            <h2 className='skill-title'>Front End</h2>
+            {/* <h2 className='skill-title'>Front End</h2>
 
             <Skill name='HTML' icon={`${ICON_PATH}/html.png`} />
             <Skill name='css' icon={`${ICON_PATH}/css.png`} />
@@ -45,13 +45,13 @@ function About({scrollTo}) {
             <Skill name='mysql' icon={`${ICON_PATH}/mysql.png`} />
             <Skill name='mongodb' icon={`${ICON_PATH}/mongodb.png`} />
 
-            <h2 className='skill-title'>Learning</h2>
+            <h2 className='skill-title'>Learning</h2> */}
 
             {/* <Skill name='C#' icon={`${ICON_PATH}/csharp.png`} /> */}
-            <Skill name='React Native' icon={`${ICON_PATH}/react-native.png`} />
+            {/* <Skill name='React Native' size='medium' icon={`${ICON_PATH}/react-native.png`} /> */}
             {/* <Skill name='.NET' icon={`${ICON_PATH}/aspnet.png`} /> */}
-            <Skill name='WordPress theme development' size='large' icon={`${ICON_PATH}/wordpress.png`} />
-          </div> 
+            {/* <Skill name='WordPress theme development' size='large' icon={`${ICON_PATH}/wordpress.png`} /> */}
+          {/* </div>  */}
         </div>       
       </div>
     </div>
