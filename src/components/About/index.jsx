@@ -7,7 +7,7 @@ const ICON_PATH = './assets/icons';
 
 function About({scrollTo}) {
   return (
-    <div className='section skills' id='skills'>
+    <div className='section about' id='about'>
       <div className="page-container">
         <div className="content">
           <SectionTitle title='About' float='right' />
